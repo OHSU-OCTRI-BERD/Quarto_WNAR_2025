@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Creating Professional Presentations and Websites using R/Quarto",
     "section": "",
-    "text": "Content"
+    "text": "Welcome!\nBelow are links to the WNAR workshop on Creating Professional Presentations and Websites using R/Quarto.\n\n\n\nPart 0\nInstallation instructions\n\n\nPart 1\nWorkshop Overview\n\n\nPart 2\nCreating Presentations\n\n\nPart 3\nCreating Webpages"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,40 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "part2_presentations/presentations.html#where-are-we",
+    "href": "part2_presentations/presentations.html#where-are-we",
+    "title": "Part 1: Creating Presentations with Quarto",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "presentations.html#where-are-we",
+    "href": "presentations.html#where-are-we",
+    "title": "Part 1: Creating Presentations with Quarto",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "part3_webpages.html#where-are-we",
+    "href": "part3_webpages.html#where-are-we",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "part2_presentations.html#where-are-we",
+    "href": "part2_presentations.html#where-are-we",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "part1_overview.html#where-are-we",
+    "href": "part1_overview.html#where-are-we",
+    "title": "Part 1: Workshop Overview",
+    "section": "Where are we?",
+    "text": "Where are we?"
   }
 ]

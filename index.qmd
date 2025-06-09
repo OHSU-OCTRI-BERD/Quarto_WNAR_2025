@@ -1,7 +1,20 @@
 ---
 title: "Creating Professional Presentations and Websites using R/Quarto"
-subtitle: "WNAR 2025"
+subtitle: "WNAR Workshop 2025"
 author: "Jessica Minnier, Meike Niederhausen"
+institute: "OHSU-PSU School of Public Health"
+date: "6/15/25"
 ---
 
-Content
+<br>
+
+Welcome!
+
+Below are links to the WNAR workshop on *Creating Professional Presentations and Websites using R/Quarto*.
+
+|        |                                                   |
+|--------|---------------------------------------------------|
+| Part 0 | Installation instructions                         |
+| Part 1 | [Workshop Overview](part1_overview.qmd)           |
+| Part 2 | [Creating Presentations](part2_presentations.qmd) |
+| Part 3 | [Creating Webpages](part3_webpages.qmd)           |

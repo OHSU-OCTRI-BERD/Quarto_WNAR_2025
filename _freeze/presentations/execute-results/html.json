@@ -1,0 +1,20 @@
+{
+  "hash": "5b2e937c7d639ec605c20889e20efef0",
+  "result": {
+    "markdown": "---\ntitle: \"Part 1: Creating Presentations with Quarto\"\nsubtitle: \"WNAR Workshop 2025\"\nauthor: \"Jessica Minnier, PhD, Meike Niederhausen, PhD\"\ninstitute: \"OHSU-PSU School of Public Health\"\ndate: \"6/15/25\"\nformat: \n  revealjs:\n      incremental: false\n      scrollable: true\n      chalkboard: true\n      theme: [sky_modified_smaller_font.scss]\n      width:  1050 #default 1050\n      height: 700 #default 700\n      slide-number: true\n      html-math-method: mathjax\n  # html:\n  #   link-external-newwindow: true\n  #   toc: true\nexecute:\n  echo: true\n  freeze: auto  # re-render only when source changes\n# editor: visual\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n\n\n## Where are we?\n",
+    "supporting": [
+      "presentations_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
