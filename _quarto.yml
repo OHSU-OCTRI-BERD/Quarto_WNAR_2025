@@ -3,12 +3,34 @@ project:
   output-dir: docs
 
 website:
-  title: "Quarto_WNAR_2025"
+  title: "Quarto WNAR 2025"
   navbar:
-    left:
+    background: primary
+    search: true
+    # logo: "images/IMG_8165sq_med.png"
+    foreground: "#fff"
+    collapse-below: sm
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      # - href: presentations.qmd
+        # text: Presentations
+      # - href: webpages.qmd
+        # text: Webpages
+      - href: about.qmd
+        text: About
+  
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 4
+    contents:
+      - href: index.qmd
+        text: Home
+      # - href: presentations.qmd
+        # text: Presentations
+      # - href: webpages.qmd
+        # text: Webpages        
 
 format:
   html:

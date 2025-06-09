@@ -1,5 +1,7 @@
 ---
-title: "Quarto_WNAR_2025"
+title: "Creating Professional Presentations and Websites using R/Quarto"
+subtitle: "WNAR 2025"
+author: "Jessica Minnier, Meike Niederhausen"
 ---
 
-Testing
+Content
