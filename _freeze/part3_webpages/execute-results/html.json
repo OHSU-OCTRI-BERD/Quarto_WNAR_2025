@@ -1,7 +1,7 @@
 {
-  "hash": "6de5abe3eb2f89eaafd2ed9e9b82d198",
+  "hash": "094afb6501bb88fae28cda5f33e9312b",
   "result": {
-    "markdown": "---\ntitle: \"Part 3: Creating Webpages with Quarto\"\nsubtitle: \"WNAR Workshop 2025\"\nauthor: \"Jessica Minnier, PhD, Meike Niederhausen, PhD\"\ninstitute: \"OHSU-PSU School of Public Health\"\ndate: \"6/15/25\"\nformat: \n  revealjs:\n      incremental: false\n      scrollable: true\n      chalkboard: true\n      theme: [sky_modified_smaller_font.scss]\n      width:  1050 #default 1050\n      height: 700 #default 700\n      slide-number: true\n      html-math-method: mathjax\n  # html:\n  #   link-external-newwindow: true\n  #   toc: true\nexecute:\n  echo: true\n  freeze: auto  # re-render only when source changes\n# editor: visual\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n\n\n## Where are we?\n",
+    "markdown": "---\ntitle: \"Part 3: Creating Webpages with Quarto\"\nsubtitle: \"WNAR Workshop 2025\"\nauthor: \"Jessica Minnier, PhD, Meike Niederhausen, PhD\"\ninstitute: \"OHSU-PSU School of Public Health\"\ndate: \"6/15/25\"\nformat: \n  revealjs:\n      incremental: false\n      scrollable: true\n      chalkboard: true\n      theme: [sky_modified.scss]\n      width:  1050 #default 1050\n      height: 700 #default 700\n      slide-number: true\n      html-math-method: mathjax\n  # html:\n  #   link-external-newwindow: true\n  #   toc: true\nexecute:\n  echo: true\n  freeze: auto  # re-render only when source changes\n# editor: visual\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n\n\n## Sample website (workshop website) \n\nDownload from Github\n\n## Create Quarto website project\n\nNotes to self: BERD Github repo\n\n## Structure of webpage\n\n## Theme\n\n## Hosting \n\n* on github or netlify\n* quarto pub (requires quarto pub account)\n\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

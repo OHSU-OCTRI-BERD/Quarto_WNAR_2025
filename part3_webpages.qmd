@@ -9,7 +9,7 @@ format:
       incremental: false
       scrollable: true
       chalkboard: true
-      theme: [sky_modified_smaller_font.scss]
+      theme: [sky_modified.scss]
       width:  1050 #default 1050
       height: 700 #default 700
       slide-number: true
@@ -53,4 +53,21 @@ theme_set(theme_bw(base_size = 22))
 ```
 
 
-## Where are we?
+## Sample website (workshop website) 
+
+Download from Github
+
+## Create Quarto website project
+
+Notes to self: BERD Github repo
+
+## Structure of webpage
+
+## Theme
+
+## Hosting 
+
+* on github or netlify
+* quarto pub (requires quarto pub account)
+
+

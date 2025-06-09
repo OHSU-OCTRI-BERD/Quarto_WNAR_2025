@@ -47,5 +47,215 @@
     "title": "Part 1: Workshop Overview",
     "section": "Where are we?",
     "text": "Where are we?"
+  },
+  {
+    "objectID": "part2_presentations.html#outline",
+    "href": "part2_presentations.html#outline",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Outline",
+    "text": "Outline"
+  },
+  {
+    "objectID": "part2_presentations.html#create-project",
+    "href": "part2_presentations.html#create-project",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Create project",
+    "text": "Create project\nregular R project Mention difference with Quarto project"
+  },
+  {
+    "objectID": "part2_presentations.html#yaml",
+    "href": "part2_presentations.html#yaml",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "YAML",
+    "text": "YAML"
+  },
+  {
+    "objectID": "part2_presentations.html#html-jsreveal-slides",
+    "href": "part2_presentations.html#html-jsreveal-slides",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Html jsreveal slides",
+    "text": "Html jsreveal slides"
+  },
+  {
+    "objectID": "part2_presentations.html#how-to-create-a-new-slide",
+    "href": "part2_presentations.html#how-to-create-a-new-slide",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "How to create a new slide",
+    "text": "How to create a new slide"
+  },
+  {
+    "objectID": "part2_presentations.html#headertitle-slide-vs-regular-slide",
+    "href": "part2_presentations.html#headertitle-slide-vs-regular-slide",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Header/title slide vs regular slide",
+    "text": "Header/title slide vs regular slide"
+  },
+  {
+    "objectID": "part2_presentations.html#scrolling-slide-vs-not",
+    "href": "part2_presentations.html#scrolling-slide-vs-not",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "“Scrolling” slide vs not",
+    "text": "“Scrolling” slide vs not"
+  },
+  {
+    "objectID": "part2_presentations.html#lists",
+    "href": "part2_presentations.html#lists",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Lists",
+    "text": "Lists"
+  },
+  {
+    "objectID": "part2_presentations.html#tables",
+    "href": "part2_presentations.html#tables",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Tables",
+    "text": "Tables"
+  },
+  {
+    "objectID": "part2_presentations.html#columns",
+    "href": "part2_presentations.html#columns",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Columns",
+    "text": "Columns"
+  },
+  {
+    "objectID": "part2_presentations.html#tabs",
+    "href": "part2_presentations.html#tabs",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Tabs",
+    "text": "Tabs"
+  },
+  {
+    "objectID": "part2_presentations.html#adding-images-resizing",
+    "href": "part2_presentations.html#adding-images-resizing",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Adding images; resizing",
+    "text": "Adding images; resizing"
+  },
+  {
+    "objectID": "part2_presentations.html#code-output",
+    "href": "part2_presentations.html#code-output",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Code & output",
+    "text": "Code & output\nOutput in next column or next slide\nRevealing code\nHighlighting out code\nCollapsing code"
+  },
+  {
+    "objectID": "part2_presentations.html#callout-blocks",
+    "href": "part2_presentations.html#callout-blocks",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Callout blocks",
+    "text": "Callout blocks"
+  },
+  {
+    "objectID": "part2_presentations.html#revealing-stepwise",
+    "href": "part2_presentations.html#revealing-stepwise",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Revealing stepwise",
+    "text": "Revealing stepwise"
+  },
+  {
+    "objectID": "part2_presentations.html#font-size",
+    "href": "part2_presentations.html#font-size",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Font size",
+    "text": "Font size\nWhole document vs. Whole slide vs. part of slide\nCode font size vs. output font size\nSlide headers font size"
+  },
+  {
+    "objectID": "part2_presentations.html#font-color-within-document",
+    "href": "part2_presentations.html#font-color-within-document",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Font color within document: ",
+    "text": "Font color within document: \n\nPersonalize in a scss file??\n\n$theme-green: #40ab16;"
+  },
+  {
+    "objectID": "part2_presentations.html#themes-and-title-slide-material-yaml",
+    "href": "part2_presentations.html#themes-and-title-slide-material-yaml",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Themes and title slide material (YAML)",
+    "text": "Themes and title slide material (YAML)\nScss file - how to modify - later on??"
+  },
+  {
+    "objectID": "part2_presentations.html#annotations",
+    "href": "part2_presentations.html#annotations",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Annotations",
+    "text": "Annotations\nsaving json & adding annotations back in"
+  },
+  {
+    "objectID": "part2_presentations.html#chalkboard",
+    "href": "part2_presentations.html#chalkboard",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Chalkboard",
+    "text": "Chalkboard"
+  },
+  {
+    "objectID": "part2_presentations.html#outlines",
+    "href": "part2_presentations.html#outlines",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Outlines",
+    "text": "Outlines"
+  },
+  {
+    "objectID": "part2_presentations.html#speaker-notes",
+    "href": "part2_presentations.html#speaker-notes",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Speaker notes",
+    "text": "Speaker notes\n(like PPT notes; how to do this?)"
+  },
+  {
+    "objectID": "part2_presentations.html#html-reveal-js",
+    "href": "part2_presentations.html#html-reveal-js",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "html (Reveal JS)",
+    "text": "html (Reveal JS)\nExisting quarto report to slides"
+  },
+  {
+    "objectID": "part2_presentations.html#powerpoint",
+    "href": "part2_presentations.html#powerpoint",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "PowerPoint",
+    "text": "PowerPoint"
+  },
+  {
+    "objectID": "part2_presentations.html#latex-beamer-slides",
+    "href": "part2_presentations.html#latex-beamer-slides",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "LaTeX Beamer slides",
+    "text": "LaTeX Beamer slides"
+  },
+  {
+    "objectID": "part3_webpages.html#sample-website-workshop-website",
+    "href": "part3_webpages.html#sample-website-workshop-website",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Sample website (workshop website)",
+    "text": "Sample website (workshop website)\nDownload from Github"
+  },
+  {
+    "objectID": "part3_webpages.html#create-quarto-website-project",
+    "href": "part3_webpages.html#create-quarto-website-project",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Create Quarto website project",
+    "text": "Create Quarto website project\nNotes to self: BERD Github repo"
+  },
+  {
+    "objectID": "part3_webpages.html#structure-of-webpage",
+    "href": "part3_webpages.html#structure-of-webpage",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Structure of webpage",
+    "text": "Structure of webpage"
+  },
+  {
+    "objectID": "part3_webpages.html#theme",
+    "href": "part3_webpages.html#theme",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Theme",
+    "text": "Theme"
+  },
+  {
+    "objectID": "part3_webpages.html#hosting",
+    "href": "part3_webpages.html#hosting",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Hosting",
+    "text": "Hosting\n\non github or netlify\nquarto pub (requires quarto pub account)"
   }
 ]

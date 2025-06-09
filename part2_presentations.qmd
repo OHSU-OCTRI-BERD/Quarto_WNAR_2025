@@ -9,7 +9,7 @@ format:
       incremental: false
       scrollable: true
       chalkboard: true
-      theme: [sky_modified_smaller_font.scss]
+      theme: [sky_modified.scss]
       width:  1050 #default 1050
       height: 700 #default 700
       slide-number: true
@@ -53,4 +53,108 @@ theme_set(theme_bw(base_size = 22))
 ```
 
 
-## Where are we?
+## Outline
+
+
+## Create project
+
+regular R project
+Mention difference with Quarto project
+
+
+## YAML 
+
+
+# Basics
+
+## Html jsreveal slides
+
+
+## How to create a new slide
+
+## Header/title  slide vs regular slide
+
+## “Scrolling” slide vs not
+
+## Lists
+
+## Tables
+
+## Columns
+
+## Tabs
+
+
+## Adding images; resizing
+
+## Code & output
+
+
+### Output in next column or next slide
+
+### Revealing code
+
+### Highlighting out code
+
+### Collapsing code
+
+## Callout blocks
+
+## Revealing stepwise
+
+# Markup
+
+
+## Font size
+
+### Whole document vs. Whole slide vs. part of slide
+
+### Code font size vs. output font size
+
+### Slide headers font size
+
+
+## Font color within document: [  ]{style="color:green"}
+
+* Personalize in a scss file??
+    * `$theme-green: #40ab16;`
+
+## Themes and title slide material (YAML)
+
+### Scss file - how to modify - later on??
+
+# Presentation tools
+
+https://quarto.org/docs/presentations/revealjs/presenting.html 
+
+## Annotations
+
+saving json & adding annotations back in
+
+## Chalkboard
+
+## Outlines
+
+## Speaker notes 
+
+(like PPT notes; how to do this?)
+
+# Formats
+
+## html (Reveal JS)
+
+### Existing quarto report to slides
+
+## PowerPoint
+
+## LaTeX Beamer slides
+
+# Extra?
+
+* Tips on converting Rmd to Quarto
+* Convert jsreveal slides to code file (Meike: look at notes)
+* Convert to PDF (and when you can’t)
+* Icons
+* Hosting on github or netlify; quarto pub (requires quarto pub account)
+* Citations/references
+ 
