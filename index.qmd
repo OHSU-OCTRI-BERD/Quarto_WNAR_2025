@@ -12,9 +12,9 @@ Welcome!
 
 Below are links to the WNAR workshop on *Creating Professional Presentations and Websites using R/Quarto*.
 
-|        |                                                   |
-|--------|---------------------------------------------------|
-| Part 0 | Installation instructions                         |
-| Part 1 | [Workshop Overview](part1_overview.qmd)           |
-| Part 2 | [Creating Presentations](part2_presentations.qmd) |
-| Part 3 | [Creating Webpages](part3_webpages.qmd)           |
+|        |                                                                    |
+|---------------|---------------------------------------------------------|
+| Part 0 | Installation instructions                                          |
+| Part 1 | [Workshop Overview](part1_overview.qmd){target="_blank"}           |
+| Part 2 | [Creating Presentations](part2_presentations.qmd){target="_blank"} |
+| Part 3 | [Creating Webpages](part3_webpages.qmd){target="_blank"}           |

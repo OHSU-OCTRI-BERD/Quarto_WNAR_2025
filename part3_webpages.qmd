@@ -1,5 +1,6 @@
 ---
 title: "Part 3: Creating Webpages with Quarto"
+pagetitle: "Part 3: Creating Webpages with Quarto"
 subtitle: "WNAR Workshop 2025"
 author: "Jessica Minnier, PhD, Meike Niederhausen, PhD"
 institute: "OHSU-PSU School of Public Health"
@@ -57,13 +58,80 @@ theme_set(theme_bw(base_size = 22))
 
 Download from Github
 
-## Create Quarto website project
+# Create template Quarto website
 
-Notes to self: BERD Github repo
+## Create Quarto website project (1/3)
 
-## Structure of webpage
+1. From the R menu, select `File` -> `New Project...`
 
-## Theme
+
+
+::: columns
+::: {.column width="50%"}
+2. Select New Directory option (_NOT_ Existing Directory)
+
+![](images/web/project1.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+3. Select Quarto Website from the Project Types
+
+![](images/web/project2.png){fig-align="center"}
+:::
+:::
+
+## Create Quarto website project (2/3) 
+
+The __New Project Wizard__ window 
+  
+::: columns
+::: {.column width="50%"}
+
+::: {style="font-size: 90%;"}
+
+4. __[Directory name:]{style="color:purple"}__ Enter the name for your website project folder
+5. __[Browse]{style="color:green"}__ to the folder that the website project folder will be saved in
+6. Make sure the __[Engine]{style="color:blue"}__ is set to `Knitr`
+7. Optional:
+    * Select _Create a git repository_ if you plan on syncing your website to GitHub
+    * Select _Open in a new session_ if you want to keep your current R project open
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![](images/web/project4_annotated.png){fig-align="center"}
+
+::: {style="font-size: 90%;"}
+8. Click on __[Create Project]{style="color:darkorange"}__
+:::
+
+:::
+:::
+
+
+
+## Create Quarto website project (3/3)
+
+Your new Quarto website project should now open up in RStudio
+
+![](images/web/project5.png){fig-align="center"}
+
+
+# Website file structure
+
+## Template website
+
+
+
+
+## Workshop website
+
+
+
+## Themes
 
 ## Hosting 
 

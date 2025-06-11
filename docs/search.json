@@ -235,7 +235,7 @@
     "href": "part3_webpages.html#create-quarto-website-project",
     "title": "Part 3: Creating Webpages with Quarto",
     "section": "Create Quarto website project",
-    "text": "Create Quarto website project\nNotes to self: BERD Github repo"
+    "text": "Create Quarto website project\n\nFrom the R menu, select File -&gt; New Project...\n\n\n\n\nSelect New Directory option (NOT Existing Directory)\n\n\n\n\n\n\n\n\nSelect Quarto Website from the Project Types"
   },
   {
     "objectID": "part3_webpages.html#structure-of-webpage",
@@ -257,5 +257,75 @@
     "title": "Part 3: Creating Webpages with Quarto",
     "section": "Hosting",
     "text": "Hosting\n\non github or netlify\nquarto pub (requires quarto pub account)"
+  },
+  {
+    "objectID": "part3_webpages.html",
+    "href": "part3_webpages.html",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "",
+    "text": "Download from Github"
+  },
+  {
+    "objectID": "part3_webpages.html#template-website",
+    "href": "part3_webpages.html#template-website",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Template website",
+    "text": "Template website"
+  },
+  {
+    "objectID": "part3_webpages.html#workshop-website",
+    "href": "part3_webpages.html#workshop-website",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Workshop website",
+    "text": "Workshop website"
+  },
+  {
+    "objectID": "part3_webpages.html#themes",
+    "href": "part3_webpages.html#themes",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Themes",
+    "text": "Themes"
+  },
+  {
+    "objectID": "part3_webpages.html#create-quarto-website-project-1n",
+    "href": "part3_webpages.html#create-quarto-website-project-1n",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Create Quarto website project (1/n)",
+    "text": "Create Quarto website project (1/n)\n\nFrom the R menu, select File -&gt; New Project...\n\n\n\n\nSelect New Directory option (NOT Existing Directory)\n\n\n\n\n\n\n\n\nSelect Quarto Website from the Project Types"
+  },
+  {
+    "objectID": "part3_webpages.html#create-quarto-website-project-2n",
+    "href": "part3_webpages.html#create-quarto-website-project-2n",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Create Quarto website project (2/n)",
+    "text": "Create Quarto website project (2/n)\nThe New Project Wizard window\n\n\n\n\nDirectory name: Enter the name for your website project folder\nBrowse to the folder that the website project folder will be saved in\nMake sure the Engine is set to Knitr\nOptional:\n\nSelect Create a git repository if you plan on syncing your website to GitHub\nSelect Open in a new session if you want to keep your current R project open\n\n\n\n\n\n\n\n\n\n\n\nClick on Create Project"
+  },
+  {
+    "objectID": "part3_webpages.html#create-quarto-website-project-3n",
+    "href": "part3_webpages.html#create-quarto-website-project-3n",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Create Quarto website project (3/n)",
+    "text": "Create Quarto website project (3/n)"
+  },
+  {
+    "objectID": "part3_webpages.html#create-quarto-website-project-13",
+    "href": "part3_webpages.html#create-quarto-website-project-13",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Create Quarto website project (1/3)",
+    "text": "Create Quarto website project (1/3)\n\nFrom the R menu, select File -&gt; New Project...\n\n\n\n\nSelect New Directory option (NOT Existing Directory)\n\n\n\n\n\n\n\n\nSelect Quarto Website from the Project Types"
+  },
+  {
+    "objectID": "part3_webpages.html#create-quarto-website-project-23",
+    "href": "part3_webpages.html#create-quarto-website-project-23",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Create Quarto website project (2/3)",
+    "text": "Create Quarto website project (2/3)\nThe New Project Wizard window\n\n\n\n\nDirectory name: Enter the name for your website project folder\nBrowse to the folder that the website project folder will be saved in\nMake sure the Engine is set to Knitr\nOptional:\n\nSelect Create a git repository if you plan on syncing your website to GitHub\nSelect Open in a new session if you want to keep your current R project open\n\n\n\n\n\n\n\n\n\n\n\nClick on Create Project"
+  },
+  {
+    "objectID": "part3_webpages.html#create-quarto-website-project-33",
+    "href": "part3_webpages.html#create-quarto-website-project-33",
+    "title": "Part 3: Creating Webpages with Quarto",
+    "section": "Create Quarto website project (3/3)",
+    "text": "Create Quarto website project (3/3)\nYour new Quarto website project should now open up in RStudio"
   }
 ]

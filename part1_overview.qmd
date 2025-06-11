@@ -1,5 +1,6 @@
 ---
 title: "Part 1: Workshop Overview"
+pagetitle: "Part 1: Workshop Overview"
 subtitle: "WNAR Workshop 2025"
 author: "Jessica Minnier, PhD, Meike Niederhausen, PhD"
 institute: "OHSU-PSU School of Public Health"

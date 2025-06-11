@@ -1,5 +1,6 @@
 ---
 title: "Part 2: Creating Presentations with Quarto"
+pagetitle: "Part 2: Creating Presentations with Quarto"
 subtitle: "WNAR Workshop 2025"
 author: "Jessica Minnier, PhD, Meike Niederhausen, PhD"
 institute: "OHSU-PSU School of Public Health"
