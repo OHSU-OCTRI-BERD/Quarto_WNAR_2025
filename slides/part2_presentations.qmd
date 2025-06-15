@@ -48,6 +48,36 @@ theme_set(theme_bw(base_size = 22))
 
 ## Outline
 
+::: {.columns}
+                                        
+::: {.column width="50%"}
+* Create Quarto presentation file
+* YAML header
+* How to add new slides
+* Content Layout (scrolling, columns)
+* R code & output
+* Incremental reveals
+* Tabsets
+* Themes
+
+:::
+                                          
+::: {.column width="50%"}
+* Images
+* Fonts
+* Callout boxes
+* Title slide
+* Presentation tools
+* Slide file formats
+* Citations
+* Converting to pdf
+:::
+                                          
+:::
+
+
+
+
 # Getting Started: Your First Presentation
 
 Let's first dive into creating presentations with Quarto. We'll be focusing on `revealjs` for HTML slides, which are very interactive and allow for many types of customizations.
@@ -100,7 +130,8 @@ format: revealjs
 
 ## Revealjs
 
-`revealjs` uses the open source HTML presentation framework [`reveal.js`](https://revealjs.com/){target="_blank"}. Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.
+* `revealjs` uses the open source HTML presentation framework [`reveal.js`](https://revealjs.com/){target="_blank"}. 
+* Styles are set with CSS and come with built in markdown and LaTeX support as well as code syntax highlighting.
 
 More about revealjs can be found on the [Quarto.org docs website](https://quarto.org/docs/presentations/revealjs/){target="_blank"} (embedded below):
 
@@ -211,13 +242,28 @@ summary(penguins)
 -   `#| echo: true` shows the code.
 -   `#| eval: true` runs the code and shows the output.
 
+```{r}
+#| echo: true
+#| eval: true
+library(palmerpenguins)
+summary(penguins)
+```
+
 ## Code Output Layout
 
 You can control where the output of a code block appears.
 
--   `#| output-location: beside` places output next to the code.
 -   `#| output-location: slide` places output on a new slide following the code slide.
--   `#| output-location: column` places output in a column adjacent to the code.
+-   `#| output-location: column` places output in a column adjacent to the code (50/50 column split)
+
+```{r}
+#| echo: true
+#| eval: true
+#| output-location: column
+
+library(palmerpenguins)
+glimpse(penguins)
+```
 
 ## Revealing Code Stepwise
 
@@ -528,10 +574,12 @@ You can add html image options, such as a smaller width or size:
 These are attributes easily added in the visual editor Insert Image option, including a url link:
 
 ``` qmd
-[![OHSU Logo](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}](https://www.ohsu.edu)
+![![OHSU Logo](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}](https://www.ohsu.edu)
 ```
 
-[![OHSU Logo](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}](https://www.ohsu.edu)
+![[OHSU Logo](https://www.ohsu.edu){target="_blank"}](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}
+
+
 
 # Exercise 1b: Your First Presentation
 
@@ -691,7 +739,6 @@ format: revealjs
 ---
 ```
 
-## Animation \[TO ADD\]
 
 # More Advanced
 
@@ -1022,10 +1069,11 @@ The dataset contains 1000 observations...
 - 15 variables analyzed
 ```
 
-# Extra? \[TO ADD\]
+<!-- # Extra? \[TO ADD\] -->
 
--   Convert jsreveal slides to code file (Meike: look at notes)
--   Convert to PDF (and when you can’t)
--   Icons
--   Hosting on github or netlify; quarto pub (requires quarto pub account)
--   External links/urls
+<!-- -   Animation -->
+<!-- -   Convert jsreveal slides to code file (Meike: look at notes) -->
+<!-- -   Convert to PDF (and when you can’t) -->
+<!-- -   Icons -->
+<!-- -   Hosting on github or netlify; quarto pub (requires quarto pub account) -->
+<!-- -   External links/urls -->

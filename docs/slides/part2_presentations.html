@@ -433,6 +433,31 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 </section>
 <section id="outline" class="slide level2">
 <h2>Outline</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Create Quarto presentation file</li>
+<li>YAML header</li>
+<li>How to add new slides</li>
+<li>Content Layout (scrolling, columns)</li>
+<li>R code &amp; output</li>
+<li>Incremental reveals</li>
+<li>Tabsets</li>
+<li>Themes</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Images</li>
+<li>Fonts</li>
+<li>Callout boxes</li>
+<li>Title slide</li>
+<li>Presentation tools</li>
+<li>Slide file formats</li>
+<li>Citations</li>
+<li>Converting to pdf</li>
+</ul>
+</div>
+</div>
 </section>
 <section>
 <section id="getting-started-your-first-presentation" class="title-slide slide level1 center">
@@ -489,7 +514,10 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 </section>
 <section id="revealjs" class="slide level2">
 <h2>Revealjs</h2>
-<p><code>revealjs</code> uses the open source HTML presentation framework <a href="https://revealjs.com/" target="_blank"><code>reveal.js</code></a>. Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.</p>
+<ul>
+<li><code>revealjs</code> uses the open source HTML presentation framework <a href="https://revealjs.com/" target="_blank"><code>reveal.js</code></a>.</li>
+<li>Styles are set with CSS and come with built in markdown and LaTeX support as well as code syntax highlighting.</li>
+</ul>
 <p>More about revealjs can be found on the <a href="https://quarto.org/docs/presentations/revealjs/" target="_blank">Quarto.org docs website</a> (embedded below):</p>
 <iframe width="780" height="500" src="https://quarto.org/docs/presentations/revealjs/" title="Quarto revealjs">
 </iframe>
@@ -534,23 +562,23 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <span id="cb5-2"><a href="#cb5-2"></a><span class="fu">gt</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="soizxcnsmu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#soizxcnsmu table {
+<div id="ojvbznmzhd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ojvbznmzhd table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#soizxcnsmu thead, #soizxcnsmu tbody, #soizxcnsmu tfoot, #soizxcnsmu tr, #soizxcnsmu td, #soizxcnsmu th {
+#ojvbznmzhd thead, #ojvbznmzhd tbody, #ojvbznmzhd tfoot, #ojvbznmzhd tr, #ojvbznmzhd td, #ojvbznmzhd th {
   border-style: none;
 }
 
-#soizxcnsmu p {
+#ojvbznmzhd p {
   margin: 0;
   padding: 0;
 }
 
-#soizxcnsmu .gt_table {
+#ojvbznmzhd .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -576,12 +604,12 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-left-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_caption {
+#ojvbznmzhd .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#soizxcnsmu .gt_title {
+#ojvbznmzhd .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -593,7 +621,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-width: 0;
 }
 
-#soizxcnsmu .gt_subtitle {
+#ojvbznmzhd .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -605,7 +633,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-top-width: 0;
 }
 
-#soizxcnsmu .gt_heading {
+#ojvbznmzhd .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -617,13 +645,13 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_bottom_border {
+#ojvbznmzhd .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_col_headings {
+#ojvbznmzhd .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -638,7 +666,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_col_heading {
+#ojvbznmzhd .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -658,7 +686,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   overflow-x: hidden;
 }
 
-#soizxcnsmu .gt_column_spanner_outer {
+#ojvbznmzhd .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -670,15 +698,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 4px;
 }
 
-#soizxcnsmu .gt_column_spanner_outer:first-child {
+#ojvbznmzhd .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#soizxcnsmu .gt_column_spanner_outer:last-child {
+#ojvbznmzhd .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#soizxcnsmu .gt_column_spanner {
+#ojvbznmzhd .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -690,11 +718,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   width: 100%;
 }
 
-#soizxcnsmu .gt_spanner_row {
+#ojvbznmzhd .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#soizxcnsmu .gt_group_heading {
+#ojvbznmzhd .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -720,7 +748,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   text-align: left;
 }
 
-#soizxcnsmu .gt_empty_group_heading {
+#ojvbznmzhd .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -735,15 +763,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   vertical-align: middle;
 }
 
-#soizxcnsmu .gt_from_md > :first-child {
+#ojvbznmzhd .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#soizxcnsmu .gt_from_md > :last-child {
+#ojvbznmzhd .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#soizxcnsmu .gt_row {
+#ojvbznmzhd .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -762,7 +790,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   overflow-x: hidden;
 }
 
-#soizxcnsmu .gt_stub {
+#ojvbznmzhd .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -775,7 +803,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#soizxcnsmu .gt_stub_row_group {
+#ojvbznmzhd .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -789,15 +817,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   vertical-align: top;
 }
 
-#soizxcnsmu .gt_row_group_first td {
+#ojvbznmzhd .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#soizxcnsmu .gt_row_group_first th {
+#ojvbznmzhd .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#soizxcnsmu .gt_summary_row {
+#ojvbznmzhd .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -807,16 +835,16 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#soizxcnsmu .gt_first_summary_row {
+#ojvbznmzhd .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_first_summary_row.thick {
+#ojvbznmzhd .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#soizxcnsmu .gt_last_summary_row {
+#ojvbznmzhd .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -826,7 +854,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_grand_summary_row {
+#ojvbznmzhd .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -836,7 +864,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#soizxcnsmu .gt_first_grand_summary_row {
+#ojvbznmzhd .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -846,7 +874,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-top-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_last_grand_summary_row_top {
+#ojvbznmzhd .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -856,11 +884,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_striped {
+#ojvbznmzhd .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#soizxcnsmu .gt_table_body {
+#ojvbznmzhd .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -869,7 +897,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_footnotes {
+#ojvbznmzhd .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -883,7 +911,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_footnote {
+#ojvbznmzhd .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -892,7 +920,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#soizxcnsmu .gt_sourcenotes {
+#ojvbznmzhd .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -906,7 +934,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#soizxcnsmu .gt_sourcenote {
+#ojvbznmzhd .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -914,72 +942,72 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#soizxcnsmu .gt_left {
+#ojvbznmzhd .gt_left {
   text-align: left;
 }
 
-#soizxcnsmu .gt_center {
+#ojvbznmzhd .gt_center {
   text-align: center;
 }
 
-#soizxcnsmu .gt_right {
+#ojvbznmzhd .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#soizxcnsmu .gt_font_normal {
+#ojvbznmzhd .gt_font_normal {
   font-weight: normal;
 }
 
-#soizxcnsmu .gt_font_bold {
+#ojvbznmzhd .gt_font_bold {
   font-weight: bold;
 }
 
-#soizxcnsmu .gt_font_italic {
+#ojvbznmzhd .gt_font_italic {
   font-style: italic;
 }
 
-#soizxcnsmu .gt_super {
+#ojvbznmzhd .gt_super {
   font-size: 65%;
 }
 
-#soizxcnsmu .gt_footnote_marks {
+#ojvbznmzhd .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#soizxcnsmu .gt_asterisk {
+#ojvbznmzhd .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#soizxcnsmu .gt_indent_1 {
+#ojvbznmzhd .gt_indent_1 {
   text-indent: 5px;
 }
 
-#soizxcnsmu .gt_indent_2 {
+#ojvbznmzhd .gt_indent_2 {
   text-indent: 10px;
 }
 
-#soizxcnsmu .gt_indent_3 {
+#ojvbznmzhd .gt_indent_3 {
   text-indent: 15px;
 }
 
-#soizxcnsmu .gt_indent_4 {
+#ojvbznmzhd .gt_indent_4 {
   text-indent: 20px;
 }
 
-#soizxcnsmu .gt_indent_5 {
+#ojvbznmzhd .gt_indent_5 {
   text-indent: 25px;
 }
 
-#soizxcnsmu .katex-display {
+#ojvbznmzhd .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#soizxcnsmu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ojvbznmzhd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3804,23 +3832,23 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>penguins <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">4</span>) <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="mnkopxhnne" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mnkopxhnne table {
+<div id="uuhkvyysgv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uuhkvyysgv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mnkopxhnne thead, #mnkopxhnne tbody, #mnkopxhnne tfoot, #mnkopxhnne tr, #mnkopxhnne td, #mnkopxhnne th {
+#uuhkvyysgv thead, #uuhkvyysgv tbody, #uuhkvyysgv tfoot, #uuhkvyysgv tr, #uuhkvyysgv td, #uuhkvyysgv th {
   border-style: none;
 }
 
-#mnkopxhnne p {
+#uuhkvyysgv p {
   margin: 0;
   padding: 0;
 }
 
-#mnkopxhnne .gt_table {
+#uuhkvyysgv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3846,12 +3874,12 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-left-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_caption {
+#uuhkvyysgv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mnkopxhnne .gt_title {
+#uuhkvyysgv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3863,7 +3891,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-width: 0;
 }
 
-#mnkopxhnne .gt_subtitle {
+#uuhkvyysgv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3875,7 +3903,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-top-width: 0;
 }
 
-#mnkopxhnne .gt_heading {
+#uuhkvyysgv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3887,13 +3915,13 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_bottom_border {
+#uuhkvyysgv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_col_headings {
+#uuhkvyysgv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3908,7 +3936,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_col_heading {
+#uuhkvyysgv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3928,7 +3956,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   overflow-x: hidden;
 }
 
-#mnkopxhnne .gt_column_spanner_outer {
+#uuhkvyysgv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3940,15 +3968,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 4px;
 }
 
-#mnkopxhnne .gt_column_spanner_outer:first-child {
+#uuhkvyysgv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mnkopxhnne .gt_column_spanner_outer:last-child {
+#uuhkvyysgv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mnkopxhnne .gt_column_spanner {
+#uuhkvyysgv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3960,11 +3988,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   width: 100%;
 }
 
-#mnkopxhnne .gt_spanner_row {
+#uuhkvyysgv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mnkopxhnne .gt_group_heading {
+#uuhkvyysgv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3990,7 +4018,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   text-align: left;
 }
 
-#mnkopxhnne .gt_empty_group_heading {
+#uuhkvyysgv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4005,15 +4033,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   vertical-align: middle;
 }
 
-#mnkopxhnne .gt_from_md > :first-child {
+#uuhkvyysgv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mnkopxhnne .gt_from_md > :last-child {
+#uuhkvyysgv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mnkopxhnne .gt_row {
+#uuhkvyysgv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4032,7 +4060,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   overflow-x: hidden;
 }
 
-#mnkopxhnne .gt_stub {
+#uuhkvyysgv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4045,7 +4073,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#mnkopxhnne .gt_stub_row_group {
+#uuhkvyysgv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4059,15 +4087,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   vertical-align: top;
 }
 
-#mnkopxhnne .gt_row_group_first td {
+#uuhkvyysgv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mnkopxhnne .gt_row_group_first th {
+#uuhkvyysgv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mnkopxhnne .gt_summary_row {
+#uuhkvyysgv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4077,16 +4105,16 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#mnkopxhnne .gt_first_summary_row {
+#uuhkvyysgv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_first_summary_row.thick {
+#uuhkvyysgv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mnkopxhnne .gt_last_summary_row {
+#uuhkvyysgv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4096,7 +4124,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_grand_summary_row {
+#uuhkvyysgv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4106,7 +4134,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#mnkopxhnne .gt_first_grand_summary_row {
+#uuhkvyysgv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4116,7 +4144,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-top-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_last_grand_summary_row_top {
+#uuhkvyysgv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4126,11 +4154,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_striped {
+#uuhkvyysgv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mnkopxhnne .gt_table_body {
+#uuhkvyysgv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4139,7 +4167,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-bottom-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_footnotes {
+#uuhkvyysgv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4153,7 +4181,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_footnote {
+#uuhkvyysgv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4162,7 +4190,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#mnkopxhnne .gt_sourcenotes {
+#uuhkvyysgv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4176,7 +4204,7 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   border-right-color: #D3D3D3;
 }
 
-#mnkopxhnne .gt_sourcenote {
+#uuhkvyysgv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4184,72 +4212,72 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
   padding-right: 5px;
 }
 
-#mnkopxhnne .gt_left {
+#uuhkvyysgv .gt_left {
   text-align: left;
 }
 
-#mnkopxhnne .gt_center {
+#uuhkvyysgv .gt_center {
   text-align: center;
 }
 
-#mnkopxhnne .gt_right {
+#uuhkvyysgv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mnkopxhnne .gt_font_normal {
+#uuhkvyysgv .gt_font_normal {
   font-weight: normal;
 }
 
-#mnkopxhnne .gt_font_bold {
+#uuhkvyysgv .gt_font_bold {
   font-weight: bold;
 }
 
-#mnkopxhnne .gt_font_italic {
+#uuhkvyysgv .gt_font_italic {
   font-style: italic;
 }
 
-#mnkopxhnne .gt_super {
+#uuhkvyysgv .gt_super {
   font-size: 65%;
 }
 
-#mnkopxhnne .gt_footnote_marks {
+#uuhkvyysgv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mnkopxhnne .gt_asterisk {
+#uuhkvyysgv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mnkopxhnne .gt_indent_1 {
+#uuhkvyysgv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mnkopxhnne .gt_indent_2 {
+#uuhkvyysgv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mnkopxhnne .gt_indent_3 {
+#uuhkvyysgv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mnkopxhnne .gt_indent_4 {
+#uuhkvyysgv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mnkopxhnne .gt_indent_5 {
+#uuhkvyysgv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mnkopxhnne .katex-display {
+#uuhkvyysgv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mnkopxhnne div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#uuhkvyysgv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -4326,15 +4354,55 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <li><code>#| echo: true</code> shows the code.</li>
 <li><code>#| eval: true</code> runs the code and shows the output.</li>
 </ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">summary</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      species          island    bill_length_mm  bill_depth_mm  
+ Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  
+ Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  
+ Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  
+                                 Mean   :43.92   Mean   :17.15  
+                                 3rd Qu.:48.50   3rd Qu.:18.70  
+                                 Max.   :59.60   Max.   :21.50  
+                                 NA's   :2       NA's   :2      
+ flipper_length_mm  body_mass_g       sex           year     
+ Min.   :172.0     Min.   :2700   female:165   Min.   :2007  
+ 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  
+ Median :197.0     Median :4050   NA's  : 11   Median :2008  
+ Mean   :200.9     Mean   :4202                Mean   :2008  
+ 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  
+ Max.   :231.0     Max.   :6300                Max.   :2009  
+ NA's   :2         NA's   :2                                 </code></pre>
+</div>
+</div>
 </section>
 <section id="code-output-layout" class="slide level2">
 <h2>Code Output Layout</h2>
 <p>You can control where the output of a code block appears.</p>
 <ul>
-<li><code>#| output-location: beside</code> places output next to the code.</li>
 <li><code>#| output-location: slide</code> places output on a new slide following the code slide.</li>
-<li><code>#| output-location: column</code> places output in a column adjacent to the code.</li>
+<li><code>#| output-location: column</code> places output in a column adjacent to the code (50/50 column split)</li>
 </ul>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 344
+Columns: 8
+$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
+$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
+$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
+$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
+$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
+$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
+$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
+$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
+</div>
+</div>
+</div>
 </section>
 <section id="revealing-code-stepwise" class="slide level2">
 <h2>Revealing Code Stepwise</h2>
@@ -4345,26 +4413,26 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 </ul>
 <div class="columns">
 <div class="column">
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a><span class="in">```{r}</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a><span class="co">#| echo: true</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a><span class="co">#| output-location: "fragment"</span></span>
-<span id="cb11-4"><a href="#cb11-4"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb11-5"><a href="#cb11-5"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb11-6"><a href="#cb11-6"></a>x <span class="sc">+</span> y</span>
-<span id="cb11-7"><a href="#cb11-7"></a>x<span class="sc">*</span>y</span>
-<span id="cb11-8"><a href="#cb11-8"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a><span class="in">```{r}</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="co">#| echo: true</span></span>
+<span id="cb15-3"><a href="#cb15-3"></a><span class="co">#| output-location: "fragment"</span></span>
+<span id="cb15-4"><a href="#cb15-4"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb15-5"><a href="#cb15-5"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb15-6"><a href="#cb15-6"></a>x <span class="sc">+</span> y</span>
+<span id="cb15-7"><a href="#cb15-7"></a>x<span class="sc">*</span>y</span>
+<span id="cb15-8"><a href="#cb15-8"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <p>Each line will appear on a subsequent click.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb12-3"><a href="#cb12-3"></a>x <span class="sc">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a>x <span class="sc">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>x<span class="sc">*</span>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>x<span class="sc">*</span>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 6</code></pre>
 </div>
@@ -4395,25 +4463,25 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <p>Use <code>code-line-numbers</code> to highlight specific lines.</p>
 <div class="columns">
 <div class="column">
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1"></a><span class="in">```{r}</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a><span class="co">#| code-line-numbers: "3,5-6"</span></span>
-<span id="cb16-3"><a href="#cb16-3"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb16-4"><a href="#cb16-4"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb16-5"><a href="#cb16-5"></a>z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
-<span id="cb16-6"><a href="#cb16-6"></a></span>
-<span id="cb16-7"><a href="#cb16-7"></a>a <span class="ot">&lt;-</span> <span class="st">"hello"</span></span>
-<span id="cb16-8"><a href="#cb16-8"></a>b <span class="ot">&lt;-</span> <span class="st">"world"</span></span>
-<span id="cb16-9"><a href="#cb16-9"></a><span class="fu">paste</span>(a, b)</span>
-<span id="cb16-10"><a href="#cb16-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="in">```{r}</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="co">#| code-line-numbers: "3,5-6"</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb20-4"><a href="#cb20-4"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb20-5"><a href="#cb20-5"></a>z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
+<span id="cb20-6"><a href="#cb20-6"></a></span>
+<span id="cb20-7"><a href="#cb20-7"></a>a <span class="ot">&lt;-</span> <span class="st">"hello"</span></span>
+<span id="cb20-8"><a href="#cb20-8"></a>b <span class="ot">&lt;-</span> <span class="st">"world"</span></span>
+<span id="cb20-9"><a href="#cb20-9"></a><span class="fu">paste</span>(a, b)</span>
+<span id="cb20-10"><a href="#cb20-10"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="3,5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb17-3"><a href="#cb17-3"></a>z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
-<span id="cb17-4"><a href="#cb17-4"></a></span>
-<span id="cb17-5"><a href="#cb17-5"></a>a <span class="ot">&lt;-</span> <span class="st">"hello"</span></span>
-<span id="cb17-6"><a href="#cb17-6"></a>b <span class="ot">&lt;-</span> <span class="st">"world"</span></span>
-<span id="cb17-7"><a href="#cb17-7"></a><span class="fu">paste</span>(a, b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="3,5-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a>z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
+<span id="cb21-4"><a href="#cb21-4"></a></span>
+<span id="cb21-5"><a href="#cb21-5"></a>a <span class="ot">&lt;-</span> <span class="st">"hello"</span></span>
+<span id="cb21-6"><a href="#cb21-6"></a>b <span class="ot">&lt;-</span> <span class="st">"world"</span></span>
+<span id="cb21-7"><a href="#cb21-7"></a><span class="fu">paste</span>(a, b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "hello world"</code></pre>
 </div>
@@ -4424,15 +4492,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="collapsing-code" class="slide level2">
 <h2>Collapsing Code</h2>
 <p>Use <code>code-fold: true</code> to make code blocks expandable.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="in">```{r}</span></span>
-<span id="cb19-2"><a href="#cb19-2"></a><span class="co">#| code-fold: true</span></span>
-<span id="cb19-3"><a href="#cb19-3"></a><span class="co">#| echo: true</span></span>
-<span id="cb19-4"><a href="#cb19-4"></a><span class="fu">print</span>(<span class="st">"This code is hidden by default."</span>)</span>
-<span id="cb19-5"><a href="#cb19-5"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource markdown qmd number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1"></a><span class="in">```{r}</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a><span class="co">#| code-fold: true</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a><span class="co">#| echo: true</span></span>
+<span id="cb23-4"><a href="#cb23-4"></a><span class="fu">print</span>(<span class="st">"This code is hidden by default."</span>)</span>
+<span id="cb23-5"><a href="#cb23-5"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">print</span>(<span class="st">"This code is hidden by default."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">print</span>(<span class="st">"This code is hidden by default."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "This code is hidden by default."</code></pre>
@@ -4464,17 +4532,17 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="incremental-reveals" class="slide level2">
 <h2>Incremental Reveals</h2>
 <p>More customization to show parts of a slide step-by-step can be made with the <code>.fragment</code> class. This works on lists, text, images, and more.</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb22-1"><a href="#cb22-1"></a>::: {.fragment}</span>
-<span id="cb22-2"><a href="#cb22-2"></a>Fade in</span>
-<span id="cb22-3"><a href="#cb22-3"></a>:::</span>
-<span id="cb22-4"><a href="#cb22-4"></a></span>
-<span id="cb22-5"><a href="#cb22-5"></a>::: {.fragment .fade-out}</span>
-<span id="cb22-6"><a href="#cb22-6"></a>Fade out</span>
-<span id="cb22-7"><a href="#cb22-7"></a>:::</span>
-<span id="cb22-8"><a href="#cb22-8"></a></span>
-<span id="cb22-9"><a href="#cb22-9"></a>::: {.fragment .highlight-red}</span>
-<span id="cb22-10"><a href="#cb22-10"></a>Highlight red</span>
-<span id="cb22-11"><a href="#cb22-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb26-1"><a href="#cb26-1"></a>::: {.fragment}</span>
+<span id="cb26-2"><a href="#cb26-2"></a>Fade in</span>
+<span id="cb26-3"><a href="#cb26-3"></a>:::</span>
+<span id="cb26-4"><a href="#cb26-4"></a></span>
+<span id="cb26-5"><a href="#cb26-5"></a>::: {.fragment .fade-out}</span>
+<span id="cb26-6"><a href="#cb26-6"></a>Fade out</span>
+<span id="cb26-7"><a href="#cb26-7"></a>:::</span>
+<span id="cb26-8"><a href="#cb26-8"></a></span>
+<span id="cb26-9"><a href="#cb26-9"></a>::: {.fragment .highlight-red}</span>
+<span id="cb26-10"><a href="#cb26-10"></a>Highlight red</span>
+<span id="cb26-11"><a href="#cb26-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <p>Fade in</p>
 </div>
@@ -4491,17 +4559,17 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="tabsets" class="slide level2">
 <h2>Tabsets</h2>
 <p>You can add tabbed content to slides using the standard Quarto syntax for <a href="https://quarto.org/docs/output-formats/html-basics.html#tabsets" target="_blank">tabsets.</a> For example:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb23-1"><a href="#cb23-1"></a>::: {.panel-tabset}</span>
-<span id="cb23-2"><a href="#cb23-2"></a></span>
-<span id="cb23-3"><a href="#cb23-3"></a>### Tab A</span>
-<span id="cb23-4"><a href="#cb23-4"></a></span>
-<span id="cb23-5"><a href="#cb23-5"></a>Content for `Tab A`</span>
-<span id="cb23-6"><a href="#cb23-6"></a></span>
-<span id="cb23-7"><a href="#cb23-7"></a>### Tab B</span>
-<span id="cb23-8"><a href="#cb23-8"></a></span>
-<span id="cb23-9"><a href="#cb23-9"></a>Content for `Tab B`</span>
-<span id="cb23-10"><a href="#cb23-10"></a></span>
-<span id="cb23-11"><a href="#cb23-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb27-1"><a href="#cb27-1"></a>::: {.panel-tabset}</span>
+<span id="cb27-2"><a href="#cb27-2"></a></span>
+<span id="cb27-3"><a href="#cb27-3"></a>### Tab A</span>
+<span id="cb27-4"><a href="#cb27-4"></a></span>
+<span id="cb27-5"><a href="#cb27-5"></a>Content for `Tab A`</span>
+<span id="cb27-6"><a href="#cb27-6"></a></span>
+<span id="cb27-7"><a href="#cb27-7"></a>### Tab B</span>
+<span id="cb27-8"><a href="#cb27-8"></a></span>
+<span id="cb27-9"><a href="#cb27-9"></a>Content for `Tab B`</span>
+<span id="cb27-10"><a href="#cb27-10"></a></span>
+<span id="cb27-11"><a href="#cb27-11"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="tabsets---rendered" class="slide level2">
 <h2>Tabsets - Rendered</h2>
@@ -4529,12 +4597,12 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="themes" class="slide level2">
 <h2>Themes</h2>
 <p>You can change the entire look of your presentation with themes.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb24-1"><a href="#cb24-1"></a><span class="pp">---</span></span>
-<span id="cb24-2"><a href="#cb24-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Presentation"</span></span>
-<span id="cb24-3"><a href="#cb24-3"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb24-4"><a href="#cb24-4"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
-<span id="cb24-5"><a href="#cb24-5"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> dark</span></span>
-<span id="cb24-6"><a href="#cb24-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb28-1"><a href="#cb28-1"></a><span class="pp">---</span></span>
+<span id="cb28-2"><a href="#cb28-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Presentation"</span></span>
+<span id="cb28-3"><a href="#cb28-3"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb28-4"><a href="#cb28-4"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb28-5"><a href="#cb28-5"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> dark</span></span>
+<span id="cb28-6"><a href="#cb28-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Available themes include: <code>default</code>, <code>dark</code>, <code>simple</code>, <code>solarized</code>, <code>blood</code>, <code>moon</code>.</p>
 </section>
 <section id="custom-styles-with-scss" class="slide level2">
@@ -4544,22 +4612,22 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <li>Create a file named <code>custom.scss</code>.</li>
 <li>In this file, you can define variables and CSS rules, including changing font color:</li>
 </ol>
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource scss number-lines code-with-copy"><code class="sourceCode scss"><span id="cb25-1"><a href="#cb25-1"></a><span class="co">/*-- scss:defaults --*/</span></span>
-<span id="cb25-2"><a href="#cb25-2"></a><span class="va">$presentation-heading-font</span>: <span class="st">"Montserrat"</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
-<span id="cb25-3"><a href="#cb25-3"></a><span class="va">$theme-green</span>: <span class="cn">#40ab16</span><span class="op">;</span></span>
-<span id="cb25-4"><a href="#cb25-4"></a></span>
-<span id="cb25-5"><a href="#cb25-5"></a><span class="co">/*-- scss:rules --*/</span></span>
-<span id="cb25-6"><a href="#cb25-6"></a><span class="fu">.reveal</span> <span class="fu">.slide-background-content</span> {</span>
-<span id="cb25-7"><a href="#cb25-7"></a><span class="kw">background-color</span>: <span class="cn">#F0F0F0</span><span class="op">;</span></span>
-<span id="cb25-8"><a href="#cb25-8"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource scss number-lines code-with-copy"><code class="sourceCode scss"><span id="cb29-1"><a href="#cb29-1"></a><span class="co">/*-- scss:defaults --*/</span></span>
+<span id="cb29-2"><a href="#cb29-2"></a><span class="va">$presentation-heading-font</span>: <span class="st">"Montserrat"</span><span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb29-3"><a href="#cb29-3"></a><span class="va">$theme-green</span>: <span class="cn">#40ab16</span><span class="op">;</span></span>
+<span id="cb29-4"><a href="#cb29-4"></a></span>
+<span id="cb29-5"><a href="#cb29-5"></a><span class="co">/*-- scss:rules --*/</span></span>
+<span id="cb29-6"><a href="#cb29-6"></a><span class="fu">.reveal</span> <span class="fu">.slide-background-content</span> {</span>
+<span id="cb29-7"><a href="#cb29-7"></a><span class="kw">background-color</span>: <span class="cn">#F0F0F0</span><span class="op">;</span></span>
+<span id="cb29-8"><a href="#cb29-8"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="3" type="1">
 <li>Link it in your YAML:</li>
 </ol>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb26-1"><a href="#cb26-1"></a><span class="pp">---</span></span>
-<span id="cb26-2"><a href="#cb26-2"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb26-3"><a href="#cb26-3"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
-<span id="cb26-4"><a href="#cb26-4"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">default</span><span class="kw">,</span><span class="at"> custom.scss</span><span class="kw">]</span></span>
-<span id="cb26-5"><a href="#cb26-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb30-1"><a href="#cb30-1"></a><span class="pp">---</span></span>
+<span id="cb30-2"><a href="#cb30-2"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb30-3"><a href="#cb30-3"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb30-4"><a href="#cb30-4"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">default</span><span class="kw">,</span><span class="at"> custom.scss</span><span class="kw">]</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
 <section id="markup-fine-tuning" class="title-slide slide level1 center">
@@ -4569,9 +4637,9 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="lists" class="slide level2">
 <h2>Lists</h2>
 <p>You make lists in markdown using <code>-</code> or <code>*</code> such as:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb27-1"><a href="#cb27-1"></a>- Item 1</span>
-<span id="cb27-2"><a href="#cb27-2"></a>- Item 2</span>
-<span id="cb27-3"><a href="#cb27-3"></a>- Item 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb31-1"><a href="#cb31-1"></a>- Item 1</span>
+<span id="cb31-2"><a href="#cb31-2"></a>- Item 2</span>
+<span id="cb31-3"><a href="#cb31-3"></a>- Item 3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Item 1</li>
 <li>Item 2</li>
@@ -4583,11 +4651,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <p>One benefit of using or switching over to the Visual editor is that it is much easier to add tables.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb28-1"><a href="#cb28-1"></a>| Name    | Date     | Measure |</span>
-<span id="cb28-2"><a href="#cb28-2"></a>|---------|----------|---------|</span>
-<span id="cb28-3"><a href="#cb28-3"></a>| Jessica | 02/04/25 | 9.3     |</span>
-<span id="cb28-4"><a href="#cb28-4"></a>| Meike   | 01/03/25 | 10.1    |</span>
-<span id="cb28-5"><a href="#cb28-5"></a>| WNAR    |          | 10.5    |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb32-1"><a href="#cb32-1"></a>| Name    | Date     | Measure |</span>
+<span id="cb32-2"><a href="#cb32-2"></a>|---------|----------|---------|</span>
+<span id="cb32-3"><a href="#cb32-3"></a>| Jessica | 02/04/25 | 9.3     |</span>
+<span id="cb32-4"><a href="#cb32-4"></a>| Meike   | 01/03/25 | 10.1    |</span>
+<span id="cb32-5"><a href="#cb32-5"></a>| WNAR    |          | 10.5    |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <table>
 <thead>
@@ -4624,13 +4692,13 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="images" class="slide level2">
 <h2>Images</h2>
 <p>Add an image with a simple <code>![](filepath.png)</code></p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb29-1"><a href="#cb29-1"></a>![](/images/web/cat_laptop.gif)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb33-1"><a href="#cb33-1"></a>![](/images/web/cat_laptop.gif)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="columns">
 <div class="column" style="width:40%;">
 <p><img data-src="../images/web/cat_laptop.gif"></p>
 </div><div class="column" style="width:60%;">
 <p>You can add html image options, such as a smaller width or size:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb30-1"><a href="#cb30-1"></a>![](/images/web/cat_laptop.gif){width="100"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb34-1"><a href="#cb34-1"></a>![](/images/web/cat_laptop.gif){width="100"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img data-src="../images/web/cat_laptop.gif" width="100"></p>
 </div>
 </div>
@@ -4638,9 +4706,9 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="image-ctd" class="slide level2">
 <h2>Image, ctd</h2>
 <p>These are attributes easily added in the visual editor Insert Image option, including a url link:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb31-1"><a href="#cb31-1"></a>[![OHSU Logo](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}](https://www.ohsu.edu)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb35-1"><a href="#cb35-1"></a>![![OHSU Logo](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}](https://www.ohsu.edu)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="../images/web/ohsu_logo.jpg" alt="OHSU Logo" width="100" class="r-stretch quarto-figure-center"><p class="caption">OHSU Logo</p></section></section>
+<img data-src="../images/web/ohsu_logo.jpg" alt="OHSU Logo" width="100" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.ohsu.edu" target="_blank">OHSU Logo</a></p></section></section>
 <section>
 <section id="exercise-1b-your-first-presentation" class="title-slide slide level1 center">
 <h1>Exercise 1b: Your First Presentation</h1>
@@ -4655,21 +4723,21 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <ul>
 <li><strong>Whole Document:</strong> Use the font-size option in your YAML header.</li>
 </ul>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb32-2"><a href="#cb32-2"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
-<span id="cb32-3"><a href="#cb32-3"></a><span class="at">    </span><span class="fu">font-size</span><span class="kw">:</span><span class="at"> 24px</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb36-2"><a href="#cb36-2"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb36-3"><a href="#cb36-3"></a><span class="at">    </span><span class="fu">font-size</span><span class="kw">:</span><span class="at"> 24px</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><strong>Part of a Slide:</strong> Wrap text in brackets and use a class like <code>.smaller</code> or <code>.larger.</code></li>
 </ul>
-<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb33-1"><a href="#cb33-1"></a>This is [small text]{.smaller} and this is [large text]{.larger}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb37-1"><a href="#cb37-1"></a>This is [small text]{.smaller} and this is [large text]{.larger}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This is <span class="smaller">small text</span> and this is <span class="larger">large text</span>.</p>
 <p>(Note: If this doesn’t work, make sure your theme or <code>.scss</code> file defines these classes)</p>
 <ul>
 <li><strong>Whole Slide:</strong> Use the <code>r-fit-text</code> class to make text fill the slide.</li>
 </ul>
-<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb34-1"><a href="#cb34-1"></a>::: {.r-fit-text}</span>
-<span id="cb34-2"><a href="#cb34-2"></a>Big Text</span>
-<span id="cb34-3"><a href="#cb34-3"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb38-1"><a href="#cb38-1"></a>::: {.r-fit-text}</span>
+<span id="cb38-2"><a href="#cb38-2"></a>Big Text</span>
+<span id="cb38-3"><a href="#cb38-3"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="slide-with-big-text" class="slide level2">
 <h2>Slide with BIG TEXT</h2>
@@ -4683,12 +4751,12 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <ul>
 <li><strong>Slide Headers Font Size:</strong> Change heading sizes in <code>custom.scss</code>:</li>
 </ul>
-<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource scss number-lines code-with-copy"><code class="sourceCode scss"><span id="cb35-1"><a href="#cb35-1"></a><span class="va">$presentation-h1-font-size</span>: <span class="dv">2.5</span><span class="dt">em</span><span class="op">;</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a><span class="va">$presentation-h2-font-size</span>: <span class="dv">1.6</span><span class="dt">em</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource scss number-lines code-with-copy"><code class="sourceCode scss"><span id="cb39-1"><a href="#cb39-1"></a><span class="va">$presentation-h1-font-size</span>: <span class="dv">2.5</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb39-2"><a href="#cb39-2"></a><span class="va">$presentation-h2-font-size</span>: <span class="dv">1.6</span><span class="dt">em</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><strong>Code vs.&nbsp;Output Font Size:</strong> Adjust code block and output font sizes in <code>custom.scss</code>.</li>
 </ul>
-<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource scss number-lines code-with-copy"><code class="sourceCode scss"><span id="cb36-1"><a href="#cb36-1"></a><span class="va">$code-block-font-size</span>: <span class="dv">0.55</span><span class="dt">em</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource scss number-lines code-with-copy"><code class="sourceCode scss"><span id="cb40-1"><a href="#cb40-1"></a><span class="va">$code-block-font-size</span>: <span class="dv">0.55</span><span class="dt">em</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="callout-blocks" class="slide level2">
 <h2>Callout Blocks ⚠️</h2>
@@ -4696,15 +4764,15 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <p>You create them using fenced divs with a special class.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb37-1"><a href="#cb37-1"></a>Note</span>
-<span id="cb37-2"><a href="#cb37-2"></a>::: {.callout-note}</span>
-<span id="cb37-3"><a href="#cb37-3"></a>This is a note. Use it for helpful but not critical information.</span>
-<span id="cb37-4"><a href="#cb37-4"></a>:::</span>
-<span id="cb37-5"><a href="#cb37-5"></a></span>
-<span id="cb37-6"><a href="#cb37-6"></a>Important</span>
-<span id="cb37-7"><a href="#cb37-7"></a>::: {.callout-important}</span>
-<span id="cb37-8"><a href="#cb37-8"></a>This is important. Use it for key information the audience must know.</span>
-<span id="cb37-9"><a href="#cb37-9"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb41-1"><a href="#cb41-1"></a>Note</span>
+<span id="cb41-2"><a href="#cb41-2"></a>::: {.callout-note}</span>
+<span id="cb41-3"><a href="#cb41-3"></a>This is a note. Use it for helpful but not critical information.</span>
+<span id="cb41-4"><a href="#cb41-4"></a>:::</span>
+<span id="cb41-5"><a href="#cb41-5"></a></span>
+<span id="cb41-6"><a href="#cb41-6"></a>Important</span>
+<span id="cb41-7"><a href="#cb41-7"></a>::: {.callout-important}</span>
+<span id="cb41-8"><a href="#cb41-8"></a>This is important. Use it for key information the audience must know.</span>
+<span id="cb41-9"><a href="#cb41-9"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p>Note</p>
 <div class="callout callout-note callout-titled callout-style-default">
@@ -4741,22 +4809,22 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <h2>Callout Blocks, ctd</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb38-1"><a href="#cb38-1"></a>::: {.callout-note}</span>
-<span id="cb38-2"><a href="#cb38-2"></a>Note that there are five types of callouts, including:</span>
-<span id="cb38-3"><a href="#cb38-3"></a>`note`, `warning`, `important`, `tip`, and `caution`.</span>
-<span id="cb38-4"><a href="#cb38-4"></a>:::</span>
-<span id="cb38-5"><a href="#cb38-5"></a></span>
-<span id="cb38-6"><a href="#cb38-6"></a>::: {.callout-tip}</span>
-<span id="cb38-7"><a href="#cb38-7"></a>## Tip with Title</span>
-<span id="cb38-8"><a href="#cb38-8"></a></span>
-<span id="cb38-9"><a href="#cb38-9"></a>This is an example of a callout with a title.</span>
-<span id="cb38-10"><a href="#cb38-10"></a>:::</span>
-<span id="cb38-11"><a href="#cb38-11"></a></span>
-<span id="cb38-12"><a href="#cb38-12"></a>::: {.callout-caution collapse="true"}</span>
-<span id="cb38-13"><a href="#cb38-13"></a>## Expand To Learn About Collapse</span>
-<span id="cb38-14"><a href="#cb38-14"></a></span>
-<span id="cb38-15"><a href="#cb38-15"></a>This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.</span>
-<span id="cb38-16"><a href="#cb38-16"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb42-1"><a href="#cb42-1"></a>::: {.callout-note}</span>
+<span id="cb42-2"><a href="#cb42-2"></a>Note that there are five types of callouts, including:</span>
+<span id="cb42-3"><a href="#cb42-3"></a>`note`, `warning`, `important`, `tip`, and `caution`.</span>
+<span id="cb42-4"><a href="#cb42-4"></a>:::</span>
+<span id="cb42-5"><a href="#cb42-5"></a></span>
+<span id="cb42-6"><a href="#cb42-6"></a>::: {.callout-tip}</span>
+<span id="cb42-7"><a href="#cb42-7"></a>## Tip with Title</span>
+<span id="cb42-8"><a href="#cb42-8"></a></span>
+<span id="cb42-9"><a href="#cb42-9"></a>This is an example of a callout with a title.</span>
+<span id="cb42-10"><a href="#cb42-10"></a>:::</span>
+<span id="cb42-11"><a href="#cb42-11"></a></span>
+<span id="cb42-12"><a href="#cb42-12"></a>::: {.callout-caution collapse="true"}</span>
+<span id="cb42-13"><a href="#cb42-13"></a>## Expand To Learn About Collapse</span>
+<span id="cb42-14"><a href="#cb42-14"></a></span>
+<span id="cb42-15"><a href="#cb42-15"></a>This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.</span>
+<span id="cb42-16"><a href="#cb42-16"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -4804,21 +4872,18 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="customizing-the-title-slide" class="slide level2">
 <h2>Customizing the Title Slide</h2>
 <p>You can add more information to your title slide directly in the YAML header. This is useful for adding affiliations, subtitles, and logos.</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb39-1"><a href="#cb39-1"></a><span class="pp">---</span></span>
-<span id="cb39-2"><a href="#cb39-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Workshop Title"</span></span>
-<span id="cb39-3"><a href="#cb39-3"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"An In-depth Look at Quarto"</span></span>
-<span id="cb39-4"><a href="#cb39-4"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
-<span id="cb39-5"><a href="#cb39-5"></a><span class="fu">institute</span><span class="kw">:</span><span class="at"> </span><span class="st">"Department of Biostatistics, OHSU"</span></span>
-<span id="cb39-6"><a href="#cb39-6"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"today"</span></span>
-<span id="cb39-7"><a href="#cb39-7"></a><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
-<span id="cb39-8"><a href="#cb39-8"></a><span class="at">  </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"your-logo.png"</span></span>
-<span id="cb39-9"><a href="#cb39-9"></a><span class="at">  </span><span class="fu">data-background-size</span><span class="kw">:</span><span class="at"> </span><span class="st">"15%"</span></span>
-<span id="cb39-10"><a href="#cb39-10"></a><span class="at">  </span><span class="fu">data-background-position</span><span class="kw">:</span><span class="at"> </span><span class="st">"top right"</span></span>
-<span id="cb39-11"><a href="#cb39-11"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
-<span id="cb39-12"><a href="#cb39-12"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="animation-to-add" class="slide level2">
-<h2>Animation [TO ADD]</h2>
+<div class="sourceCode" id="cb43"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb43-1"><a href="#cb43-1"></a><span class="pp">---</span></span>
+<span id="cb43-2"><a href="#cb43-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Workshop Title"</span></span>
+<span id="cb43-3"><a href="#cb43-3"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"An In-depth Look at Quarto"</span></span>
+<span id="cb43-4"><a href="#cb43-4"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
+<span id="cb43-5"><a href="#cb43-5"></a><span class="fu">institute</span><span class="kw">:</span><span class="at"> </span><span class="st">"Department of Biostatistics, OHSU"</span></span>
+<span id="cb43-6"><a href="#cb43-6"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"today"</span></span>
+<span id="cb43-7"><a href="#cb43-7"></a><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
+<span id="cb43-8"><a href="#cb43-8"></a><span class="at">  </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="st">"your-logo.png"</span></span>
+<span id="cb43-9"><a href="#cb43-9"></a><span class="at">  </span><span class="fu">data-background-size</span><span class="kw">:</span><span class="at"> </span><span class="st">"15%"</span></span>
+<span id="cb43-10"><a href="#cb43-10"></a><span class="at">  </span><span class="fu">data-background-position</span><span class="kw">:</span><span class="at"> </span><span class="st">"top right"</span></span>
+<span id="cb43-11"><a href="#cb43-11"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb43-12"><a href="#cb43-12"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section id="more-advanced" class="title-slide slide level1 center">
 <h1>More Advanced</h1>
@@ -4847,13 +4912,13 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="speaker-notes" class="slide level2">
 <h2>Speaker Notes</h2>
 <p>Press <code>s</code> to open the speaker view, which shows your notes and a preview of the next slide. Add notes to a slide like this:</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb40-1"><a href="#cb40-1"></a>## My Slide</span>
-<span id="cb40-2"><a href="#cb40-2"></a>    </span>
-<span id="cb40-3"><a href="#cb40-3"></a>This is the content everyone sees.</span>
-<span id="cb40-4"><a href="#cb40-4"></a>    </span>
-<span id="cb40-5"><a href="#cb40-5"></a>::: {.notes}</span>
-<span id="cb40-6"><a href="#cb40-6"></a>These are my speaker notes. Only I can see them.</span>
-<span id="cb40-7"><a href="#cb40-7"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode numberSource qmd number-lines code-with-copy"><code class="sourceCode"><span id="cb44-1"><a href="#cb44-1"></a>## My Slide</span>
+<span id="cb44-2"><a href="#cb44-2"></a>    </span>
+<span id="cb44-3"><a href="#cb44-3"></a>This is the content everyone sees.</span>
+<span id="cb44-4"><a href="#cb44-4"></a>    </span>
+<span id="cb44-5"><a href="#cb44-5"></a>::: {.notes}</span>
+<span id="cb44-6"><a href="#cb44-6"></a>These are my speaker notes. Only I can see them.</span>
+<span id="cb44-7"><a href="#cb44-7"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="annotations-chalkboard" class="slide level2">
 <h2>Annotations &amp; Chalkboard ✍️</h2>
@@ -4863,11 +4928,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <li>Notes Canvas: Press <code>c</code> to toggle the notes canvas. This is like drawing on a transparent overlay that stays with the slide.</li>
 </ul>
 <p>Add the <code>chalkboard</code> option in the YAML header to include both the chalkboard and canvas options in your slides, :</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb41-1"><a href="#cb41-1"></a><span class="pp">---</span></span>
-<span id="cb41-2"><a href="#cb41-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb41-3"><a href="#cb41-3"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
-<span id="cb41-4"><a href="#cb41-4"></a><span class="at">      </span><span class="fu">chalkboard</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb41-5"><a href="#cb41-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb45-1"><a href="#cb45-1"></a><span class="pp">---</span></span>
+<span id="cb45-2"><a href="#cb45-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb45-3"><a href="#cb45-3"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb45-4"><a href="#cb45-4"></a><span class="at">      </span><span class="fu">chalkboard</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb45-5"><a href="#cb45-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="saving-loading-annotations" class="slide level2">
 <h2>Saving &amp; Loading Annotations:</h2>
@@ -4876,11 +4941,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <li>While in presentation mode, press <code>d</code> to download your drawings as a <code>drawing.json</code> file.</li>
 <li>To load these annotations back the next time you present, add the <code>chalkboard-src:</code> option to your YAML header:</li>
 </ul>
-<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb42-1"><a href="#cb42-1"></a><span class="pp">---</span></span>
-<span id="cb42-2"><a href="#cb42-2"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb42-3"><a href="#cb42-3"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
-<span id="cb42-4"><a href="#cb42-4"></a><span class="at">    </span><span class="fu">chalkboard-src</span><span class="kw">:</span><span class="at"> </span><span class="st">"drawing.json"</span></span>
-<span id="cb42-5"><a href="#cb42-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb46-1"><a href="#cb46-1"></a><span class="pp">---</span></span>
+<span id="cb46-2"><a href="#cb46-2"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb46-3"><a href="#cb46-3"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb46-4"><a href="#cb46-4"></a><span class="at">    </span><span class="fu">chalkboard-src</span><span class="kw">:</span><span class="at"> </span><span class="st">"drawing.json"</span></span>
+<span id="cb46-5"><a href="#cb46-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <img data-src="../images/web/quartopres_chalkboard.png" class="r-stretch"><div class="footnote">
 <p>Learn more at <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard" target="_blank">Quarto’s Presenting Slides &gt; Chalkboard</a></p>
@@ -4896,9 +4961,9 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <p>A great way to manage time for in-class exercises or breaks is to add a countdown timer directly into your slides. We can use the countdown package, which we installed earlier.</p>
 <p>Let’s set a 5-minute timer for a quick break.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>countdown<span class="sc">::</span><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>, <span class="at">play_sound =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a>countdown<span class="sc">::</span><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>, <span class="at">play_sound =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_8d89b771" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_a9e5fec8" data-update-every="1" data-play-sound="true" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -4916,11 +4981,11 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <li><code>beamer</code> — <a href="https://quarto.org/docs/presentations/beamer.html" target="_blank">Beamer</a> (LaTeX/PDF)</li>
 </ul>
 <p>To choose these, merely need to change the yaml <code>format:</code> to the type of talk you wish to produce, for example:</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb44-1"><a href="#cb44-1"></a><span class="pp">---</span></span>
-<span id="cb44-2"><a href="#cb44-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mathy Talk"</span></span>
-<span id="cb44-3"><a href="#cb44-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jane Doe"</span></span>
-<span id="cb44-4"><a href="#cb44-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> beamer</span></span>
-<span id="cb44-5"><a href="#cb44-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb48-1"><a href="#cb48-1"></a><span class="pp">---</span></span>
+<span id="cb48-2"><a href="#cb48-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mathy Talk"</span></span>
+<span id="cb48-3"><a href="#cb48-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jane Doe"</span></span>
+<span id="cb48-4"><a href="#cb48-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> beamer</span></span>
+<span id="cb48-5"><a href="#cb48-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="html-slides" class="slide level2">
 <h2>HTML Slides</h2>
@@ -4936,47 +5001,47 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <section id="setting-up-bibliography" class="slide level2">
 <h2>Setting Up Bibliography</h2>
 <p><strong>Step 1:</strong> Add to YAML header</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb45-1"><a href="#cb45-1"></a><span class="pp">---</span></span>
-<span id="cb45-2"><a href="#cb45-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Presentation"</span></span>
-<span id="cb45-3"><a href="#cb45-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
-<span id="cb45-4"><a href="#cb45-4"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb45-5"><a href="#cb45-5"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span></span>
-<span id="cb45-6"><a href="#cb45-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb49-1"><a href="#cb49-1"></a><span class="pp">---</span></span>
+<span id="cb49-2"><a href="#cb49-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Presentation"</span></span>
+<span id="cb49-3"><a href="#cb49-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span>
+<span id="cb49-4"><a href="#cb49-4"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb49-5"><a href="#cb49-5"></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span></span>
+<span id="cb49-6"><a href="#cb49-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(Use csl only if you have a custom csl file, see <a href="https://quarto.org/docs/authoring/citations.html" target="_blank">Citations</a>)</p>
 <p><strong>Step 2:</strong> Create <code>references.bib</code></p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource bibtex number-lines code-with-copy"><code class="sourceCode bibtex"><span id="cb46-1"><a href="#cb46-1"></a><span class="va">@article</span>{<span class="ot">smith2023</span>,</span>
-<span id="cb46-2"><a href="#cb46-2"></a>  <span class="dt">title</span>={Important Research},</span>
-<span id="cb46-3"><a href="#cb46-3"></a>  <span class="dt">author</span>={Smith, John},</span>
-<span id="cb46-4"><a href="#cb46-4"></a>  <span class="dt">journal</span>={Journal of Science},</span>
-<span id="cb46-5"><a href="#cb46-5"></a>  <span class="dt">year</span>={2023}</span>
-<span id="cb46-6"><a href="#cb46-6"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode numberSource bibtex number-lines code-with-copy"><code class="sourceCode bibtex"><span id="cb50-1"><a href="#cb50-1"></a><span class="va">@article</span>{<span class="ot">smith2023</span>,</span>
+<span id="cb50-2"><a href="#cb50-2"></a>  <span class="dt">title</span>={Important Research},</span>
+<span id="cb50-3"><a href="#cb50-3"></a>  <span class="dt">author</span>={Smith, John},</span>
+<span id="cb50-4"><a href="#cb50-4"></a>  <span class="dt">journal</span>={Journal of Science},</span>
+<span id="cb50-5"><a href="#cb50-5"></a>  <span class="dt">year</span>={2023}</span>
+<span id="cb50-6"><a href="#cb50-6"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="citation-syntax" class="slide level2">
 <h2>Citation Syntax</h2>
 <p><strong>In-text citations:</strong></p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb47-1"><a href="#cb47-1"></a>Research shows <span class="co">[</span><span class="ot">@smith2023</span><span class="co">]</span> that...</span>
-<span id="cb47-2"><a href="#cb47-2"></a>Multiple sources <span class="co">[</span><span class="ot">@smith2023; @jones2022</span><span class="co">]</span></span>
-<span id="cb47-3"><a href="#cb47-3"></a>Page numbers <span class="co">[</span><span class="ot">@smith2023, p. 15</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb51-1"><a href="#cb51-1"></a>Research shows <span class="co">[</span><span class="ot">@smith2023</span><span class="co">]</span> that...</span>
+<span id="cb51-2"><a href="#cb51-2"></a>Multiple sources <span class="co">[</span><span class="ot">@smith2023; @jones2022</span><span class="co">]</span></span>
+<span id="cb51-3"><a href="#cb51-3"></a>Page numbers <span class="co">[</span><span class="ot">@smith2023, p. 15</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Citation styles:</strong> - <code>[@smith2023]</code> → (Smith, 2023) - <code>@smith2023</code> → Smith (2023) - <code>[-@smith2023]</code> → (2023)</p>
 <p>Here we reference <span class="citation" data-cites="smith2023">(<a href="#/references" role="doc-biblioref" onclick="">Smith 2023</a>)</span>.</p>
 </section>
 <section id="references-slide" class="slide level2">
 <h2>References Slide</h2>
 <p><strong>Automatic references:</strong></p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1"></a><span class="fu">## References</span></span>
-<span id="cb48-2"><a href="#cb48-2"></a></span>
-<span id="cb48-3"><a href="#cb48-3"></a>::: {#refs}</span>
-<span id="cb48-4"><a href="#cb48-4"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb52-1"><a href="#cb52-1"></a><span class="fu">## References</span></span>
+<span id="cb52-2"><a href="#cb52-2"></a></span>
+<span id="cb52-3"><a href="#cb52-3"></a>::: {#refs}</span>
+<span id="cb52-4"><a href="#cb52-4"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Manual placement:</strong></p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb49-1"><a href="#cb49-1"></a><span class="pp">---</span></span>
-<span id="cb49-2"><a href="#cb49-2"></a><span class="fu">suppress-bibliography</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb49-3"><a href="#cb49-3"></a><span class="pp">---</span></span>
-<span id="cb49-4"><a href="#cb49-4"></a></span>
-<span id="cb49-5"><a href="#cb49-5"></a><span class="co"># Last slide</span></span>
-<span id="cb49-6"><a href="#cb49-6"></a><span class="co">## References {.smaller}</span></span>
-<span id="cb49-7"><a href="#cb49-7"></a></span>
-<span id="cb49-8"><a href="#cb49-8"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="co">#refs}</span></span>
-<span id="cb49-9"><a href="#cb49-9"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb53-1"><a href="#cb53-1"></a><span class="pp">---</span></span>
+<span id="cb53-2"><a href="#cb53-2"></a><span class="fu">suppress-bibliography</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb53-3"><a href="#cb53-3"></a><span class="pp">---</span></span>
+<span id="cb53-4"><a href="#cb53-4"></a></span>
+<span id="cb53-5"><a href="#cb53-5"></a><span class="co"># Last slide</span></span>
+<span id="cb53-6"><a href="#cb53-6"></a><span class="co">## References {.smaller}</span></span>
+<span id="cb53-7"><a href="#cb53-7"></a></span>
+<span id="cb53-8"><a href="#cb53-8"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="co">#refs}</span></span>
+<span id="cb53-9"><a href="#cb53-9"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
@@ -5005,9 +5070,9 @@ Smith, John. 2023. <span>“Important Research.”</span> <em>Journal of Science
 <pre><code>pres.html
 pres_files/</code></pre>
 <p>You might alternatively want to create an entirely self-contained HTML document (with images, CSS style sheets, JavaScript, etc. embedded into the HTML file). You can do this by specifying the embed-resources option:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb51-2"><a href="#cb51-2"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
-<span id="cb51-3"><a href="#cb51-3"></a><span class="at">    </span><span class="fu">embed-resources</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb55-1"><a href="#cb55-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb55-2"><a href="#cb55-2"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb55-3"><a href="#cb55-3"></a><span class="at">    </span><span class="fu">embed-resources</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This will produce a standalone HTML file with no external dependencies, using data: URIs to incorporate the contents of linked scripts, style sheets, images, and videos. The resulting file should be self contained, in the sense that it needs no external files and no net access to be displayed properly by a browser.</p>
 <div class="footer">
 <p>From <a href="https://quarto.org/docs/output-formats/html-basics.html#self-contained" target="_blank">Quarto docs</a></p>
@@ -5020,36 +5085,36 @@ pres_files/</code></pre>
 </section>
 <section id="method-1-using-chromechromium" class="slide level2">
 <h2>Method 1: Using Chrome/Chromium</h2>
-<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb52-1"><a href="#cb52-1"></a><span class="co"># Install chromium if needed</span></span>
-<span id="cb52-2"><a href="#cb52-2"></a><span class="ex">quarto</span> install chromium</span>
-<span id="cb52-3"><a href="#cb52-3"></a></span>
-<span id="cb52-4"><a href="#cb52-4"></a><span class="co"># Render to PDF</span></span>
-<span id="cb52-5"><a href="#cb52-5"></a><span class="ex">quarto</span> render presentation.qmd <span class="at">--to</span> revealjs</span>
-<span id="cb52-6"><a href="#cb52-6"></a><span class="co"># Then use browser print function</span></span>
-<span id="cb52-7"><a href="#cb52-7"></a><span class="co"># Or use decktape (next slide)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a href="#cb56-1"></a><span class="co"># Install chromium if needed</span></span>
+<span id="cb56-2"><a href="#cb56-2"></a><span class="ex">quarto</span> install chromium</span>
+<span id="cb56-3"><a href="#cb56-3"></a></span>
+<span id="cb56-4"><a href="#cb56-4"></a><span class="co"># Render to PDF</span></span>
+<span id="cb56-5"><a href="#cb56-5"></a><span class="ex">quarto</span> render presentation.qmd <span class="at">--to</span> revealjs</span>
+<span id="cb56-6"><a href="#cb56-6"></a><span class="co"># Then use browser print function</span></span>
+<span id="cb56-7"><a href="#cb56-7"></a><span class="co"># Or use decktape (next slide)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="method-2-using-decktape" class="slide level2">
 <h2>Method 2: Using Decktape</h2>
-<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a href="#cb53-1"></a><span class="co"># Install decktape</span></span>
-<span id="cb53-2"><a href="#cb53-2"></a><span class="ex">npm</span> install <span class="at">-g</span> decktape</span>
-<span id="cb53-3"><a href="#cb53-3"></a></span>
-<span id="cb53-4"><a href="#cb53-4"></a><span class="co"># Convert HTML to PDF</span></span>
-<span id="cb53-5"><a href="#cb53-5"></a><span class="ex">decktape</span> reveal presentation.html presentation.pdf</span>
-<span id="cb53-6"><a href="#cb53-6"></a></span>
-<span id="cb53-7"><a href="#cb53-7"></a><span class="co"># With custom options</span></span>
-<span id="cb53-8"><a href="#cb53-8"></a><span class="ex">decktape</span> reveal presentation.html presentation.pdf <span class="dt">\</span></span>
-<span id="cb53-9"><a href="#cb53-9"></a>  <span class="at">--size</span> 1920x1080 <span class="at">--load-pause</span> 2000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb57-1"><a href="#cb57-1"></a><span class="co"># Install decktape</span></span>
+<span id="cb57-2"><a href="#cb57-2"></a><span class="ex">npm</span> install <span class="at">-g</span> decktape</span>
+<span id="cb57-3"><a href="#cb57-3"></a></span>
+<span id="cb57-4"><a href="#cb57-4"></a><span class="co"># Convert HTML to PDF</span></span>
+<span id="cb57-5"><a href="#cb57-5"></a><span class="ex">decktape</span> reveal presentation.html presentation.pdf</span>
+<span id="cb57-6"><a href="#cb57-6"></a></span>
+<span id="cb57-7"><a href="#cb57-7"></a><span class="co"># With custom options</span></span>
+<span id="cb57-8"><a href="#cb57-8"></a><span class="ex">decktape</span> reveal presentation.html presentation.pdf <span class="dt">\</span></span>
+<span id="cb57-9"><a href="#cb57-9"></a>  <span class="at">--size</span> 1920x1080 <span class="at">--load-pause</span> 2000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="method-3-direct-pdf-format" class="slide level2">
 <h2>Method 3: Direct PDF Format</h2>
-<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb54-1"><a href="#cb54-1"></a><span class="pp">---</span></span>
-<span id="cb54-2"><a href="#cb54-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Presentation"</span></span>
-<span id="cb54-3"><a href="#cb54-3"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb54-4"><a href="#cb54-4"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb54-5"><a href="#cb54-5"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb54-6"><a href="#cb54-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a href="#cb55-1"></a><span class="co"># Render both formats</span></span>
-<span id="cb55-2"><a href="#cb55-2"></a><span class="ex">quarto</span> render presentation.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb58-1"><a href="#cb58-1"></a><span class="pp">---</span></span>
+<span id="cb58-2"><a href="#cb58-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Presentation"</span></span>
+<span id="cb58-3"><a href="#cb58-3"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb58-4"><a href="#cb58-4"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb58-5"><a href="#cb58-5"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb58-6"><a href="#cb58-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb59-1"><a href="#cb59-1"></a><span class="co"># Render both formats</span></span>
+<span id="cb59-2"><a href="#cb59-2"></a><span class="ex">quarto</span> render presentation.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section></section>
 <section>
 <section id="converting-qmd-reports-to-slides" class="title-slide slide level1 center">
@@ -5059,11 +5124,11 @@ pres_files/</code></pre>
 <section id="from-document-to-presentation" class="slide level2">
 <h2>From Document to Presentation</h2>
 <p><strong>Step 1:</strong> Change the YAML header</p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb56-1"><a href="#cb56-1"></a><span class="co"># From this:</span></span>
-<span id="cb56-2"><a href="#cb56-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb56-3"><a href="#cb56-3"></a></span>
-<span id="cb56-4"><a href="#cb56-4"></a><span class="co"># To this:</span></span>
-<span id="cb56-5"><a href="#cb56-5"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb60-1"><a href="#cb60-1"></a><span class="co"># From this:</span></span>
+<span id="cb60-2"><a href="#cb60-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb60-3"><a href="#cb60-3"></a></span>
+<span id="cb60-4"><a href="#cb60-4"></a><span class="co"># To this:</span></span>
+<span id="cb60-5"><a href="#cb60-5"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Step 2:</strong> Adjust heading levels - <code>#</code> becomes section dividers - <code>##</code> becomes slide titles - <code>###</code> becomes slide subtitles</p>
 </section>
 <section id="content-adaptation-tips" class="slide level2">
@@ -5074,45 +5139,42 @@ pres_files/</code></pre>
 <li><strong>Add slide breaks</strong> with <code>---</code> if needed</li>
 <li><strong>Use incremental reveals</strong> with <code>{.incremental}</code></li>
 </ul>
-<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb57-1"><a href="#cb57-1"></a>::: {.incremental}</span>
-<span id="cb57-2"><a href="#cb57-2"></a><span class="ss">- </span>First point</span>
-<span id="cb57-3"><a href="#cb57-3"></a><span class="ss">- </span>Second point</span>
-<span id="cb57-4"><a href="#cb57-4"></a><span class="ss">- </span>Third point</span>
-<span id="cb57-5"><a href="#cb57-5"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb61-1"><a href="#cb61-1"></a>::: {.incremental}</span>
+<span id="cb61-2"><a href="#cb61-2"></a><span class="ss">- </span>First point</span>
+<span id="cb61-3"><a href="#cb61-3"></a><span class="ss">- </span>Second point</span>
+<span id="cb61-4"><a href="#cb61-4"></a><span class="ss">- </span>Third point</span>
+<span id="cb61-5"><a href="#cb61-5"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="example-conversion" class="slide level2">
 <h2>Example Conversion</h2>
 <p><strong>Before (Report):</strong></p>
-<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb58-1"><a href="#cb58-1"></a><span class="fu"># Analysis Results</span></span>
-<span id="cb58-2"><a href="#cb58-2"></a>Our analysis shows significant findings...</span>
-<span id="cb58-3"><a href="#cb58-3"></a></span>
-<span id="cb58-4"><a href="#cb58-4"></a><span class="fu">## Data Summary</span></span>
-<span id="cb58-5"><a href="#cb58-5"></a>The dataset contains 1000 observations...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb62-1"><a href="#cb62-1"></a><span class="fu"># Analysis Results</span></span>
+<span id="cb62-2"><a href="#cb62-2"></a>Our analysis shows significant findings...</span>
+<span id="cb62-3"><a href="#cb62-3"></a></span>
+<span id="cb62-4"><a href="#cb62-4"></a><span class="fu">## Data Summary</span></span>
+<span id="cb62-5"><a href="#cb62-5"></a>The dataset contains 1000 observations...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>After (Slides):</strong></p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb59-1"><a href="#cb59-1"></a><span class="fu"># Analysis Results</span></span>
-<span id="cb59-2"><a href="#cb59-2"></a></span>
-<span id="cb59-3"><a href="#cb59-3"></a><span class="fu">## Key Findings</span></span>
-<span id="cb59-4"><a href="#cb59-4"></a><span class="ss">- </span>Significant results discovered</span>
-<span id="cb59-5"><a href="#cb59-5"></a><span class="ss">- </span>Strong correlations identified</span>
-<span id="cb59-6"><a href="#cb59-6"></a></span>
-<span id="cb59-7"><a href="#cb59-7"></a><span class="fu">## Data Summary</span></span>
-<span id="cb59-8"><a href="#cb59-8"></a><span class="ss">- </span>1000 observations</span>
-<span id="cb59-9"><a href="#cb59-9"></a><span class="ss">- </span>15 variables analyzed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section></section>
-<section id="extra-to-add" class="title-slide slide level1 center">
-<h1>Extra? [TO ADD]</h1>
-<ul>
-<li>Convert jsreveal slides to code file (Meike: look at notes)</li>
-<li>Convert to PDF (and when you can’t)</li>
-<li>Icons</li>
-<li>Hosting on github or netlify; quarto pub (requires quarto pub account)</li>
-<li>External links/urls</li>
-</ul>
+<div class="sourceCode" id="cb63"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu"># Analysis Results</span></span>
+<span id="cb63-2"><a href="#cb63-2"></a></span>
+<span id="cb63-3"><a href="#cb63-3"></a><span class="fu">## Key Findings</span></span>
+<span id="cb63-4"><a href="#cb63-4"></a><span class="ss">- </span>Significant results discovered</span>
+<span id="cb63-5"><a href="#cb63-5"></a><span class="ss">- </span>Strong correlations identified</span>
+<span id="cb63-6"><a href="#cb63-6"></a></span>
+<span id="cb63-7"><a href="#cb63-7"></a><span class="fu">## Data Summary</span></span>
+<span id="cb63-8"><a href="#cb63-8"></a><span class="ss">- </span>1000 observations</span>
+<span id="cb63-9"><a href="#cb63-9"></a><span class="ss">- </span>15 variables analyzed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- # Extra? \[TO ADD\] -->
+<!-- -   Animation -->
+<!-- -   Convert jsreveal slides to code file (Meike: look at notes) -->
+<!-- -   Convert to PDF (and when you can’t) -->
+<!-- -   Icons -->
+<!-- -   Hosting on github or netlify; quarto pub (requires quarto pub account) -->
+<!-- -   External links/urls -->
 
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

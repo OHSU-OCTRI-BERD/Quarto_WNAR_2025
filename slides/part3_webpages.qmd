@@ -176,6 +176,8 @@ What files are needed to create a Quarto website?
 
 ![](/images/web/files1.png){fig-align="center"}
 
+_Note: If you do not have GitHub set up, then you will not have the `.gitignore` file._
+
 #### `_quarto.yml`
 
 This is the config file that specifies the general structure of the website
@@ -364,6 +366,16 @@ Learn more: [Hybrid Navigation](https://quarto.org/docs/websites/website-navigat
 
 
 :::
+
+## Exercise 1: navigation practice
+
+1.  Add a link to a quarto page to the top navigation bar. 
+    * You can create a new qmd file to link to, or link to a slide file you created in part 2.
+
+<br>
+
+2.  Add a link to a quarto page to the side bar. 
+    * You can link to the same page as the top bar if you like.
 
 
 ## Blog-style webpage
@@ -639,6 +651,12 @@ format:
 :::
 
 :::
+
+## Exercise 2: time for a new theme!
+
+1.  Change the theme for your website. 
+    * Check out options at [Bootswatch](https://bootswatch.com/){target="_blank"}.
+
 
 # Publish your website (or webpage)
 

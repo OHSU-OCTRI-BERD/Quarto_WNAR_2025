@@ -57,7 +57,11 @@ theme_set(theme_bw(base_size = 22))
 
 ## Welcome! 👋
 
+<br>
+
 This workshop will teach you how to create professional presentations and websites using Quarto, an open-source scientific and technical publishing system that builds on R Markdown.
+
+<br>
 
 **Workshop Goals:**
 
@@ -65,6 +69,8 @@ This workshop will teach you how to create professional presentations and websit
 -   Learn to create dynamic HTML presentations.
 -   Build and customize a personal or project website.
 -   Gain confidence in using Quarto for your own projects.
+
+
 
 
 ## Who we are
@@ -109,6 +115,28 @@ This workshop will teach you how to create professional presentations and websit
 :::
 :::
 
+
+## Introductions
+
+<br>
+
+* Please introduce yourself
+
+<br>
+
+* What level of experience do you have with R? RMarkdown? Quarto?
+
+## Logistics
+
+<br>
+
+* Workshop is from 1:00 pm - 5:00 pm
+    * Break at 3:00-3:15 pm
+
+<br>
+
+* *Please ask questions!!*
+
 ## Part 0: Installation
 
 Before we begin, please ensure you have the following installed:
@@ -127,6 +155,8 @@ remotes::install_github("gadenbuie/countdown")
 - **tidyverse**: A collection of R packages for data science.
 - **gt**: For creating beautiful tables.
 - **countdown**: To add timers to your slides.
+
+If you do not already have **rmarkdown** installed, please install that as well.
 
 
 # Quarto Overview

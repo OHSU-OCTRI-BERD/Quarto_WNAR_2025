@@ -44,3 +44,5 @@ remotes::install_github("gadenbuie/countdown")
 - **tidyverse**: A collection of R packages for data science.
 - **gt**: For creating beautiful tables.
 - **countdown**: To add timers to your slides.
+
+If you do not already have **rmarkdown** installed, please install that as well.

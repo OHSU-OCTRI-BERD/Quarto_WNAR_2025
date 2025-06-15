@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "part1_overview.html#welcome",
-    "href": "part1_overview.html#welcome",
-    "title": "Part 1: Workshop Overview",
-    "section": "",
-    "text": "This workshop will teach you how to create professional presentations and websites using Quarto, an open-source scientific and technical publishing system that builds on R Markdown.\nWorkshop Goals:\n\nUnderstand the power of Quarto for reproducible reporting.\nLearn to create dynamic HTML presentations.\nBuild and customize a personal or project website.\nGain confidence in using Quarto for your own projects."
-  },
-  {
-    "objectID": "part1_overview.html#who-we-are",
-    "href": "part1_overview.html#who-we-are",
-    "title": "Part 1: Workshop Overview",
-    "section": "Who we are",
-    "text": "Who we are\n\n\n\n\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssociate Professor of Biostatistics\n @m_niederhausen  @niederhausen   ohsu-psu-sph.org  niederh [at] ohsu [dot] edu"
-  },
-  {
-    "objectID": "part1_overview.html#part-0-installation",
-    "href": "part1_overview.html#part-0-installation",
-    "title": "Part 1: Workshop Overview",
-    "section": "Part 0: Installation",
-    "text": "Part 0: Installation\nBefore we begin, please ensure you have the following installed:\n\nR: A recent version of R is required. You can download it from the Comprehensive R Archive Network (CRAN).\nRStudio: Download the latest version from the RStudio website. Quarto is built right into RStudio, making it the easiest way to get started.\n\nYou will also need to install a few R packages. Open RStudio and run the following code in the console:\ninstall.packages(c(\"palmerpenguins\", \"tidyverse\", \"gt\", \"remotes\"))\nremotes::install_github(\"gadenbuie/countdown\")\n\npalmerpenguins: For example datasets.\ntidyverse: A collection of R packages for data science.\ngt: For creating beautiful tables.\ncountdown: To add timers to your slides."
-  },
-  {
-    "objectID": "part1_overview.html#what-is-quarto",
-    "href": "part1_overview.html#what-is-quarto",
-    "title": "Part 1: Workshop Overview",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\nQuarto is a next-generation version of R Markdown from Posit. It is a powerful tool that allows you to create dynamic documents, presentations, and websites from a single source file.\nKey Features:\n\nMulti-language Support: Use R, Python, Julia, and Observable JS in the same document.\nLiterate Programming: Combine narrative text with code to create reproducible reports.\nMultiple Outputs: Generate high-quality output in various formats including HTML, PDF, MS Word, e-books, and more."
-  },
-  {
-    "objectID": "part1_overview.html#why-quarto-for-biostatisticians",
-    "href": "part1_overview.html#why-quarto-for-biostatisticians",
-    "title": "Part 1: Workshop Overview",
-    "section": "Why Quarto for Biostatisticians?",
-    "text": "Why Quarto for Biostatisticians?\nFor biostatisticians, reproducibility and clear communication important. Quarto allows us to do both well.\n\nReproducible Research: Seamlessly integrate your R code, statistical analyses, and visualizations directly into your reports and presentations.\nProfessional Outputs: Create polished articles, presentations for conferences, and websites for your lab or personal portfolio.\nCollaboration: Quarto projects are easy to share and collaborate on using version control systems like Git."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -42,942 +7,88 @@
     "text": "This website and slides were created for the Creating Professional Presentations and Websites using R/Quarto workshop presented at the 2025 WNAR/IMS Annual Meeting on June 15, 2025.\nThe website structure was set up to be used as an example for demonstrating options when creating websites using Quarto in RStudio. See Part 3 slides for more information."
   },
   {
-    "objectID": "part2_presentations.html#outline",
-    "href": "part2_presentations.html#outline",
-    "title": "Part 2: Creating Presentations with Quarto",
+    "objectID": "about.html#workshop-abstract",
+    "href": "about.html#workshop-abstract",
+    "title": "About",
+    "section": "Workshop Abstract",
+    "text": "Workshop Abstract\nThis course aims to teach statisticians and data scientists across all sectors of academia and industry to create professional style presentations and websites in R and RStudio using the recently developed Quarto package. This package is an extension of RMarkdown and most often used for literate programming reports that incorporate code from R and other programming languages with text, graphs, and results. However, this powerful package can create much more than just an analysis report. This workshop will teach R users who may be novices in Quarto about the other useful applications of Quarto, specifically how to build websites for their professional profiles as well as courses, and how to make presentations for talks and teaching. Quarto presentations can include code and results within slides as well as harness useful presentation tools such as annotations, outlines, notes, etc. Presentations can be formatted as html (Reveal JS), PowerPoint, or LaTeX Beamer slides. Participants will need to bring laptops with R and RStudio installed, and will receive instructions prior to the course to install required R packages. Example website and presentations can be found at https://niederhausen.github.io/BSTA_511_F24/"
+  },
+  {
+    "objectID": "about.html#instructors",
+    "href": "about.html#instructors",
+    "title": "About",
+    "section": "Instructors",
+    "text": "Instructors\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu\n\n\n\n\n\n\nOHSU-PSU School of Public Health\nOregon Clinical and Translational Research Institute (OCTRI) BERD"
+  },
+  {
+    "objectID": "about.html#acknowledgements",
+    "href": "about.html#acknowledgements",
+    "title": "About",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThank you to Andrew Bray for presenting the From R Markdown to Quarto ASA Travelling Workshop to the Oregon Chapter of the ASA in June 2023. This workshop was a great starting point in making the switch from RMarkdown to Quarto and also creating Quarto webpages."
+  },
+  {
+    "objectID": "slides/part3_webpages.html#outline",
+    "href": "slides/part3_webpages.html#outline",
+    "title": "Part 3: Creating Websites with Quarto",
     "section": "Outline",
-    "text": "Outline"
+    "text": "Outline\n\nSample websites\nCreate Quarto website project\nFile structure of a website\nNavigation options\nBlog-style webpage\nThemes\nHosting"
   },
   {
-    "objectID": "part2_presentations.html#create-a-new-rstudio-project-or-quarto-project",
-    "href": "part2_presentations.html#create-a-new-rstudio-project-or-quarto-project",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Create a new Rstudio Project (or Quarto Project)",
-    "text": "Create a new Rstudio Project (or Quarto Project)\n\nDirectionsScreenshots\n\n\n\nIn RStudio, go to File &gt; New Project... &gt; New Directory &gt; New Project.\n\n\nYou may choose New Project OR Quarto Project\nIf you choose Quarto Project, a .qmd file will already be present in your folder. You would still follow the next steps.\nA Quarto Project has an extra file to define settings in .qmd files. This is not necessary for our purposes, but it is an option if you will be using lots of .qmd files for various tasks.\n\n\nGive your project a name (i.e. QuartoPres) and choose a location (i.e. Desktop). Check the box “Open in new session”"
-  },
-  {
-    "objectID": "part2_presentations.html#create-a-new-quarto-presentation-file",
-    "href": "part2_presentations.html#create-a-new-quarto-presentation-file",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Create a new Quarto Presentation file",
-    "text": "Create a new Quarto Presentation file\n\nNow go to File &gt; New File &gt; Quarto Presentation. Uncheck the box “Use visual markdown editor”. Click “create”\nThis will create a new file with a .qmd extension. This is your presentation file!"
-  },
-  {
-    "objectID": "part2_presentations.html#the-yaml-header",
-    "href": "part2_presentations.html#the-yaml-header",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "The YAML Header",
-    "text": "The YAML Header\nEvery .qmd file starts with a YAML (YAML Ain’t Markup Language) header. This is where you control the main settings for your document.\nBy default, these basic options are filled in, and you can edit them or add additional options (more later):\n---\ntitle: \"My Presentation\"\nauthor: \"Your Name\"\nformat: revealjs\n---"
-  },
-  {
-    "objectID": "part2_presentations.html#revealjs",
-    "href": "part2_presentations.html#revealjs",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Revealjs",
-    "text": "Revealjs\nrevealjs uses the open source HTML presentation framework reveal.js. Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.\nMore about revealjs can be found on the Quarto.org docs website (embedded below):"
-  },
-  {
-    "objectID": "part2_presentations.html#creating-slides",
-    "href": "part2_presentations.html#creating-slides",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Creating Slides",
-    "text": "Creating Slides\nYou create new slides using markdown headers (# or ##).\n# This is a Title Slide\n\nThis is the content of my first slide.\n\n## This is a New Slide\n\nEach `##` starts a new slide.\n\n## creates a standard slide with a heading.\nA slide with only a title and no body text becomes a title/section slide."
-  },
-  {
-    "objectID": "part2_presentations.html#scrolling-slides",
-    "href": "part2_presentations.html#scrolling-slides",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Scrolling Slides 📜",
-    "text": "Scrolling Slides 📜\nFor slides with a lot of content, you can make them scrollable.\n## A Long Slide {.scrollable}\n\nThis slide has a lot of content that might not fit on one screen. By adding `{.scrollable}`, you allow the user to scroll down to see the rest of the content.\n...\nYou can also include this in the YAML header to make this a global setting so all slides are scrollable.\nformat: \n  revealjs:\n      scrollable: true"
-  },
-  {
-    "objectID": "part2_presentations.html#a-long-slide",
-    "href": "part2_presentations.html#a-long-slide",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "A Long Slide",
-    "text": "A Long Slide\nThis slide has a lot of content that might not fit on one screen.\n\nlibrary(palmerpenguins)\ngt(penguins)\n\n\n\n\n\n  \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n    Adelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n    Adelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n    Adelie\nTorgersen\n38.9\n17.8\n181\n3625\nfemale\n2007\n    Adelie\nTorgersen\n39.2\n19.6\n195\n4675\nmale\n2007\n    Adelie\nTorgersen\n34.1\n18.1\n193\n3475\nNA\n2007\n    Adelie\nTorgersen\n42.0\n20.2\n190\n4250\nNA\n2007\n    Adelie\nTorgersen\n37.8\n17.1\n186\n3300\nNA\n2007\n    Adelie\nTorgersen\n37.8\n17.3\n180\n3700\nNA\n2007\n    Adelie\nTorgersen\n41.1\n17.6\n182\n3200\nfemale\n2007\n    Adelie\nTorgersen\n38.6\n21.2\n191\n3800\nmale\n2007\n    Adelie\nTorgersen\n34.6\n21.1\n198\n4400\nmale\n2007\n    Adelie\nTorgersen\n36.6\n17.8\n185\n3700\nfemale\n2007\n    Adelie\nTorgersen\n38.7\n19.0\n195\n3450\nfemale\n2007\n    Adelie\nTorgersen\n42.5\n20.7\n197\n4500\nmale\n2007\n    Adelie\nTorgersen\n34.4\n18.4\n184\n3325\nfemale\n2007\n    Adelie\nTorgersen\n46.0\n21.5\n194\n4200\nmale\n2007\n    Adelie\nBiscoe\n37.8\n18.3\n174\n3400\nfemale\n2007\n    Adelie\nBiscoe\n37.7\n18.7\n180\n3600\nmale\n2007\n    Adelie\nBiscoe\n35.9\n19.2\n189\n3800\nfemale\n2007\n    Adelie\nBiscoe\n38.2\n18.1\n185\n3950\nmale\n2007\n    Adelie\nBiscoe\n38.8\n17.2\n180\n3800\nmale\n2007\n    Adelie\nBiscoe\n35.3\n18.9\n187\n3800\nfemale\n2007\n    Adelie\nBiscoe\n40.6\n18.6\n183\n3550\nmale\n2007\n    Adelie\nBiscoe\n40.5\n17.9\n187\n3200\nfemale\n2007\n    Adelie\nBiscoe\n37.9\n18.6\n172\n3150\nfemale\n2007\n    Adelie\nBiscoe\n40.5\n18.9\n180\n3950\nmale\n2007\n    Adelie\nDream\n39.5\n16.7\n178\n3250\nfemale\n2007\n    Adelie\nDream\n37.2\n18.1\n178\n3900\nmale\n2007\n    Adelie\nDream\n39.5\n17.8\n188\n3300\nfemale\n2007\n    Adelie\nDream\n40.9\n18.9\n184\n3900\nmale\n2007\n    Adelie\nDream\n36.4\n17.0\n195\n3325\nfemale\n2007\n    Adelie\nDream\n39.2\n21.1\n196\n4150\nmale\n2007\n    Adelie\nDream\n38.8\n20.0\n190\n3950\nmale\n2007\n    Adelie\nDream\n42.2\n18.5\n180\n3550\nfemale\n2007\n    Adelie\nDream\n37.6\n19.3\n181\n3300\nfemale\n2007\n    Adelie\nDream\n39.8\n19.1\n184\n4650\nmale\n2007\n    Adelie\nDream\n36.5\n18.0\n182\n3150\nfemale\n2007\n    Adelie\nDream\n40.8\n18.4\n195\n3900\nmale\n2007\n    Adelie\nDream\n36.0\n18.5\n186\n3100\nfemale\n2007\n    Adelie\nDream\n44.1\n19.7\n196\n4400\nmale\n2007\n    Adelie\nDream\n37.0\n16.9\n185\n3000\nfemale\n2007\n    Adelie\nDream\n39.6\n18.8\n190\n4600\nmale\n2007\n    Adelie\nDream\n41.1\n19.0\n182\n3425\nmale\n2007\n    Adelie\nDream\n37.5\n18.9\n179\n2975\nNA\n2007\n    Adelie\nDream\n36.0\n17.9\n190\n3450\nfemale\n2007\n    Adelie\nDream\n42.3\n21.2\n191\n4150\nmale\n2007\n    Adelie\nBiscoe\n39.6\n17.7\n186\n3500\nfemale\n2008\n    Adelie\nBiscoe\n40.1\n18.9\n188\n4300\nmale\n2008\n    Adelie\nBiscoe\n35.0\n17.9\n190\n3450\nfemale\n2008\n    Adelie\nBiscoe\n42.0\n19.5\n200\n4050\nmale\n2008\n    Adelie\nBiscoe\n34.5\n18.1\n187\n2900\nfemale\n2008\n    Adelie\nBiscoe\n41.4\n18.6\n191\n3700\nmale\n2008\n    Adelie\nBiscoe\n39.0\n17.5\n186\n3550\nfemale\n2008\n    Adelie\nBiscoe\n40.6\n18.8\n193\n3800\nmale\n2008\n    Adelie\nBiscoe\n36.5\n16.6\n181\n2850\nfemale\n2008\n    Adelie\nBiscoe\n37.6\n19.1\n194\n3750\nmale\n2008\n    Adelie\nBiscoe\n35.7\n16.9\n185\n3150\nfemale\n2008\n    Adelie\nBiscoe\n41.3\n21.1\n195\n4400\nmale\n2008\n    Adelie\nBiscoe\n37.6\n17.0\n185\n3600\nfemale\n2008\n    Adelie\nBiscoe\n41.1\n18.2\n192\n4050\nmale\n2008\n    Adelie\nBiscoe\n36.4\n17.1\n184\n2850\nfemale\n2008\n    Adelie\nBiscoe\n41.6\n18.0\n192\n3950\nmale\n2008\n    Adelie\nBiscoe\n35.5\n16.2\n195\n3350\nfemale\n2008\n    Adelie\nBiscoe\n41.1\n19.1\n188\n4100\nmale\n2008\n    Adelie\nTorgersen\n35.9\n16.6\n190\n3050\nfemale\n2008\n    Adelie\nTorgersen\n41.8\n19.4\n198\n4450\nmale\n2008\n    Adelie\nTorgersen\n33.5\n19.0\n190\n3600\nfemale\n2008\n    Adelie\nTorgersen\n39.7\n18.4\n190\n3900\nmale\n2008\n    Adelie\nTorgersen\n39.6\n17.2\n196\n3550\nfemale\n2008\n    Adelie\nTorgersen\n45.8\n18.9\n197\n4150\nmale\n2008\n    Adelie\nTorgersen\n35.5\n17.5\n190\n3700\nfemale\n2008\n    Adelie\nTorgersen\n42.8\n18.5\n195\n4250\nmale\n2008\n    Adelie\nTorgersen\n40.9\n16.8\n191\n3700\nfemale\n2008\n    Adelie\nTorgersen\n37.2\n19.4\n184\n3900\nmale\n2008\n    Adelie\nTorgersen\n36.2\n16.1\n187\n3550\nfemale\n2008\n    Adelie\nTorgersen\n42.1\n19.1\n195\n4000\nmale\n2008\n    Adelie\nTorgersen\n34.6\n17.2\n189\n3200\nfemale\n2008\n    Adelie\nTorgersen\n42.9\n17.6\n196\n4700\nmale\n2008\n    Adelie\nTorgersen\n36.7\n18.8\n187\n3800\nfemale\n2008\n    Adelie\nTorgersen\n35.1\n19.4\n193\n4200\nmale\n2008\n    Adelie\nDream\n37.3\n17.8\n191\n3350\nfemale\n2008\n    Adelie\nDream\n41.3\n20.3\n194\n3550\nmale\n2008\n    Adelie\nDream\n36.3\n19.5\n190\n3800\nmale\n2008\n    Adelie\nDream\n36.9\n18.6\n189\n3500\nfemale\n2008\n    Adelie\nDream\n38.3\n19.2\n189\n3950\nmale\n2008\n    Adelie\nDream\n38.9\n18.8\n190\n3600\nfemale\n2008\n    Adelie\nDream\n35.7\n18.0\n202\n3550\nfemale\n2008\n    Adelie\nDream\n41.1\n18.1\n205\n4300\nmale\n2008\n    Adelie\nDream\n34.0\n17.1\n185\n3400\nfemale\n2008\n    Adelie\nDream\n39.6\n18.1\n186\n4450\nmale\n2008\n    Adelie\nDream\n36.2\n17.3\n187\n3300\nfemale\n2008\n    Adelie\nDream\n40.8\n18.9\n208\n4300\nmale\n2008\n    Adelie\nDream\n38.1\n18.6\n190\n3700\nfemale\n2008\n    Adelie\nDream\n40.3\n18.5\n196\n4350\nmale\n2008\n    Adelie\nDream\n33.1\n16.1\n178\n2900\nfemale\n2008\n    Adelie\nDream\n43.2\n18.5\n192\n4100\nmale\n2008\n    Adelie\nBiscoe\n35.0\n17.9\n192\n3725\nfemale\n2009\n    Adelie\nBiscoe\n41.0\n20.0\n203\n4725\nmale\n2009\n    Adelie\nBiscoe\n37.7\n16.0\n183\n3075\nfemale\n2009\n    Adelie\nBiscoe\n37.8\n20.0\n190\n4250\nmale\n2009\n    Adelie\nBiscoe\n37.9\n18.6\n193\n2925\nfemale\n2009\n    Adelie\nBiscoe\n39.7\n18.9\n184\n3550\nmale\n2009\n    Adelie\nBiscoe\n38.6\n17.2\n199\n3750\nfemale\n2009\n    Adelie\nBiscoe\n38.2\n20.0\n190\n3900\nmale\n2009\n    Adelie\nBiscoe\n38.1\n17.0\n181\n3175\nfemale\n2009\n    Adelie\nBiscoe\n43.2\n19.0\n197\n4775\nmale\n2009\n    Adelie\nBiscoe\n38.1\n16.5\n198\n3825\nfemale\n2009\n    Adelie\nBiscoe\n45.6\n20.3\n191\n4600\nmale\n2009\n    Adelie\nBiscoe\n39.7\n17.7\n193\n3200\nfemale\n2009\n    Adelie\nBiscoe\n42.2\n19.5\n197\n4275\nmale\n2009\n    Adelie\nBiscoe\n39.6\n20.7\n191\n3900\nfemale\n2009\n    Adelie\nBiscoe\n42.7\n18.3\n196\n4075\nmale\n2009\n    Adelie\nTorgersen\n38.6\n17.0\n188\n2900\nfemale\n2009\n    Adelie\nTorgersen\n37.3\n20.5\n199\n3775\nmale\n2009\n    Adelie\nTorgersen\n35.7\n17.0\n189\n3350\nfemale\n2009\n    Adelie\nTorgersen\n41.1\n18.6\n189\n3325\nmale\n2009\n    Adelie\nTorgersen\n36.2\n17.2\n187\n3150\nfemale\n2009\n    Adelie\nTorgersen\n37.7\n19.8\n198\n3500\nmale\n2009\n    Adelie\nTorgersen\n40.2\n17.0\n176\n3450\nfemale\n2009\n    Adelie\nTorgersen\n41.4\n18.5\n202\n3875\nmale\n2009\n    Adelie\nTorgersen\n35.2\n15.9\n186\n3050\nfemale\n2009\n    Adelie\nTorgersen\n40.6\n19.0\n199\n4000\nmale\n2009\n    Adelie\nTorgersen\n38.8\n17.6\n191\n3275\nfemale\n2009\n    Adelie\nTorgersen\n41.5\n18.3\n195\n4300\nmale\n2009\n    Adelie\nTorgersen\n39.0\n17.1\n191\n3050\nfemale\n2009\n    Adelie\nTorgersen\n44.1\n18.0\n210\n4000\nmale\n2009\n    Adelie\nTorgersen\n38.5\n17.9\n190\n3325\nfemale\n2009\n    Adelie\nTorgersen\n43.1\n19.2\n197\n3500\nmale\n2009\n    Adelie\nDream\n36.8\n18.5\n193\n3500\nfemale\n2009\n    Adelie\nDream\n37.5\n18.5\n199\n4475\nmale\n2009\n    Adelie\nDream\n38.1\n17.6\n187\n3425\nfemale\n2009\n    Adelie\nDream\n41.1\n17.5\n190\n3900\nmale\n2009\n    Adelie\nDream\n35.6\n17.5\n191\n3175\nfemale\n2009\n    Adelie\nDream\n40.2\n20.1\n200\n3975\nmale\n2009\n    Adelie\nDream\n37.0\n16.5\n185\n3400\nfemale\n2009\n    Adelie\nDream\n39.7\n17.9\n193\n4250\nmale\n2009\n    Adelie\nDream\n40.2\n17.1\n193\n3400\nfemale\n2009\n    Adelie\nDream\n40.6\n17.2\n187\n3475\nmale\n2009\n    Adelie\nDream\n32.1\n15.5\n188\n3050\nfemale\n2009\n    Adelie\nDream\n40.7\n17.0\n190\n3725\nmale\n2009\n    Adelie\nDream\n37.3\n16.8\n192\n3000\nfemale\n2009\n    Adelie\nDream\n39.0\n18.7\n185\n3650\nmale\n2009\n    Adelie\nDream\n39.2\n18.6\n190\n4250\nmale\n2009\n    Adelie\nDream\n36.6\n18.4\n184\n3475\nfemale\n2009\n    Adelie\nDream\n36.0\n17.8\n195\n3450\nfemale\n2009\n    Adelie\nDream\n37.8\n18.1\n193\n3750\nmale\n2009\n    Adelie\nDream\n36.0\n17.1\n187\n3700\nfemale\n2009\n    Adelie\nDream\n41.5\n18.5\n201\n4000\nmale\n2009\n    Gentoo\nBiscoe\n46.1\n13.2\n211\n4500\nfemale\n2007\n    Gentoo\nBiscoe\n50.0\n16.3\n230\n5700\nmale\n2007\n    Gentoo\nBiscoe\n48.7\n14.1\n210\n4450\nfemale\n2007\n    Gentoo\nBiscoe\n50.0\n15.2\n218\n5700\nmale\n2007\n    Gentoo\nBiscoe\n47.6\n14.5\n215\n5400\nmale\n2007\n    Gentoo\nBiscoe\n46.5\n13.5\n210\n4550\nfemale\n2007\n    Gentoo\nBiscoe\n45.4\n14.6\n211\n4800\nfemale\n2007\n    Gentoo\nBiscoe\n46.7\n15.3\n219\n5200\nmale\n2007\n    Gentoo\nBiscoe\n43.3\n13.4\n209\n4400\nfemale\n2007\n    Gentoo\nBiscoe\n46.8\n15.4\n215\n5150\nmale\n2007\n    Gentoo\nBiscoe\n40.9\n13.7\n214\n4650\nfemale\n2007\n    Gentoo\nBiscoe\n49.0\n16.1\n216\n5550\nmale\n2007\n    Gentoo\nBiscoe\n45.5\n13.7\n214\n4650\nfemale\n2007\n    Gentoo\nBiscoe\n48.4\n14.6\n213\n5850\nmale\n2007\n    Gentoo\nBiscoe\n45.8\n14.6\n210\n4200\nfemale\n2007\n    Gentoo\nBiscoe\n49.3\n15.7\n217\n5850\nmale\n2007\n    Gentoo\nBiscoe\n42.0\n13.5\n210\n4150\nfemale\n2007\n    Gentoo\nBiscoe\n49.2\n15.2\n221\n6300\nmale\n2007\n    Gentoo\nBiscoe\n46.2\n14.5\n209\n4800\nfemale\n2007\n    Gentoo\nBiscoe\n48.7\n15.1\n222\n5350\nmale\n2007\n    Gentoo\nBiscoe\n50.2\n14.3\n218\n5700\nmale\n2007\n    Gentoo\nBiscoe\n45.1\n14.5\n215\n5000\nfemale\n2007\n    Gentoo\nBiscoe\n46.5\n14.5\n213\n4400\nfemale\n2007\n    Gentoo\nBiscoe\n46.3\n15.8\n215\n5050\nmale\n2007\n    Gentoo\nBiscoe\n42.9\n13.1\n215\n5000\nfemale\n2007\n    Gentoo\nBiscoe\n46.1\n15.1\n215\n5100\nmale\n2007\n    Gentoo\nBiscoe\n44.5\n14.3\n216\n4100\nNA\n2007\n    Gentoo\nBiscoe\n47.8\n15.0\n215\n5650\nmale\n2007\n    Gentoo\nBiscoe\n48.2\n14.3\n210\n4600\nfemale\n2007\n    Gentoo\nBiscoe\n50.0\n15.3\n220\n5550\nmale\n2007\n    Gentoo\nBiscoe\n47.3\n15.3\n222\n5250\nmale\n2007\n    Gentoo\nBiscoe\n42.8\n14.2\n209\n4700\nfemale\n2007\n    Gentoo\nBiscoe\n45.1\n14.5\n207\n5050\nfemale\n2007\n    Gentoo\nBiscoe\n59.6\n17.0\n230\n6050\nmale\n2007\n    Gentoo\nBiscoe\n49.1\n14.8\n220\n5150\nfemale\n2008\n    Gentoo\nBiscoe\n48.4\n16.3\n220\n5400\nmale\n2008\n    Gentoo\nBiscoe\n42.6\n13.7\n213\n4950\nfemale\n2008\n    Gentoo\nBiscoe\n44.4\n17.3\n219\n5250\nmale\n2008\n    Gentoo\nBiscoe\n44.0\n13.6\n208\n4350\nfemale\n2008\n    Gentoo\nBiscoe\n48.7\n15.7\n208\n5350\nmale\n2008\n    Gentoo\nBiscoe\n42.7\n13.7\n208\n3950\nfemale\n2008\n    Gentoo\nBiscoe\n49.6\n16.0\n225\n5700\nmale\n2008\n    Gentoo\nBiscoe\n45.3\n13.7\n210\n4300\nfemale\n2008\n    Gentoo\nBiscoe\n49.6\n15.0\n216\n4750\nmale\n2008\n    Gentoo\nBiscoe\n50.5\n15.9\n222\n5550\nmale\n2008\n    Gentoo\nBiscoe\n43.6\n13.9\n217\n4900\nfemale\n2008\n    Gentoo\nBiscoe\n45.5\n13.9\n210\n4200\nfemale\n2008\n    Gentoo\nBiscoe\n50.5\n15.9\n225\n5400\nmale\n2008\n    Gentoo\nBiscoe\n44.9\n13.3\n213\n5100\nfemale\n2008\n    Gentoo\nBiscoe\n45.2\n15.8\n215\n5300\nmale\n2008\n    Gentoo\nBiscoe\n46.6\n14.2\n210\n4850\nfemale\n2008\n    Gentoo\nBiscoe\n48.5\n14.1\n220\n5300\nmale\n2008\n    Gentoo\nBiscoe\n45.1\n14.4\n210\n4400\nfemale\n2008\n    Gentoo\nBiscoe\n50.1\n15.0\n225\n5000\nmale\n2008\n    Gentoo\nBiscoe\n46.5\n14.4\n217\n4900\nfemale\n2008\n    Gentoo\nBiscoe\n45.0\n15.4\n220\n5050\nmale\n2008\n    Gentoo\nBiscoe\n43.8\n13.9\n208\n4300\nfemale\n2008\n    Gentoo\nBiscoe\n45.5\n15.0\n220\n5000\nmale\n2008\n    Gentoo\nBiscoe\n43.2\n14.5\n208\n4450\nfemale\n2008\n    Gentoo\nBiscoe\n50.4\n15.3\n224\n5550\nmale\n2008\n    Gentoo\nBiscoe\n45.3\n13.8\n208\n4200\nfemale\n2008\n    Gentoo\nBiscoe\n46.2\n14.9\n221\n5300\nmale\n2008\n    Gentoo\nBiscoe\n45.7\n13.9\n214\n4400\nfemale\n2008\n    Gentoo\nBiscoe\n54.3\n15.7\n231\n5650\nmale\n2008\n    Gentoo\nBiscoe\n45.8\n14.2\n219\n4700\nfemale\n2008\n    Gentoo\nBiscoe\n49.8\n16.8\n230\n5700\nmale\n2008\n    Gentoo\nBiscoe\n46.2\n14.4\n214\n4650\nNA\n2008\n    Gentoo\nBiscoe\n49.5\n16.2\n229\n5800\nmale\n2008\n    Gentoo\nBiscoe\n43.5\n14.2\n220\n4700\nfemale\n2008\n    Gentoo\nBiscoe\n50.7\n15.0\n223\n5550\nmale\n2008\n    Gentoo\nBiscoe\n47.7\n15.0\n216\n4750\nfemale\n2008\n    Gentoo\nBiscoe\n46.4\n15.6\n221\n5000\nmale\n2008\n    Gentoo\nBiscoe\n48.2\n15.6\n221\n5100\nmale\n2008\n    Gentoo\nBiscoe\n46.5\n14.8\n217\n5200\nfemale\n2008\n    Gentoo\nBiscoe\n46.4\n15.0\n216\n4700\nfemale\n2008\n    Gentoo\nBiscoe\n48.6\n16.0\n230\n5800\nmale\n2008\n    Gentoo\nBiscoe\n47.5\n14.2\n209\n4600\nfemale\n2008\n    Gentoo\nBiscoe\n51.1\n16.3\n220\n6000\nmale\n2008\n    Gentoo\nBiscoe\n45.2\n13.8\n215\n4750\nfemale\n2008\n    Gentoo\nBiscoe\n45.2\n16.4\n223\n5950\nmale\n2008\n    Gentoo\nBiscoe\n49.1\n14.5\n212\n4625\nfemale\n2009\n    Gentoo\nBiscoe\n52.5\n15.6\n221\n5450\nmale\n2009\n    Gentoo\nBiscoe\n47.4\n14.6\n212\n4725\nfemale\n2009\n    Gentoo\nBiscoe\n50.0\n15.9\n224\n5350\nmale\n2009\n    Gentoo\nBiscoe\n44.9\n13.8\n212\n4750\nfemale\n2009\n    Gentoo\nBiscoe\n50.8\n17.3\n228\n5600\nmale\n2009\n    Gentoo\nBiscoe\n43.4\n14.4\n218\n4600\nfemale\n2009\n    Gentoo\nBiscoe\n51.3\n14.2\n218\n5300\nmale\n2009\n    Gentoo\nBiscoe\n47.5\n14.0\n212\n4875\nfemale\n2009\n    Gentoo\nBiscoe\n52.1\n17.0\n230\n5550\nmale\n2009\n    Gentoo\nBiscoe\n47.5\n15.0\n218\n4950\nfemale\n2009\n    Gentoo\nBiscoe\n52.2\n17.1\n228\n5400\nmale\n2009\n    Gentoo\nBiscoe\n45.5\n14.5\n212\n4750\nfemale\n2009\n    Gentoo\nBiscoe\n49.5\n16.1\n224\n5650\nmale\n2009\n    Gentoo\nBiscoe\n44.5\n14.7\n214\n4850\nfemale\n2009\n    Gentoo\nBiscoe\n50.8\n15.7\n226\n5200\nmale\n2009\n    Gentoo\nBiscoe\n49.4\n15.8\n216\n4925\nmale\n2009\n    Gentoo\nBiscoe\n46.9\n14.6\n222\n4875\nfemale\n2009\n    Gentoo\nBiscoe\n48.4\n14.4\n203\n4625\nfemale\n2009\n    Gentoo\nBiscoe\n51.1\n16.5\n225\n5250\nmale\n2009\n    Gentoo\nBiscoe\n48.5\n15.0\n219\n4850\nfemale\n2009\n    Gentoo\nBiscoe\n55.9\n17.0\n228\n5600\nmale\n2009\n    Gentoo\nBiscoe\n47.2\n15.5\n215\n4975\nfemale\n2009\n    Gentoo\nBiscoe\n49.1\n15.0\n228\n5500\nmale\n2009\n    Gentoo\nBiscoe\n47.3\n13.8\n216\n4725\nNA\n2009\n    Gentoo\nBiscoe\n46.8\n16.1\n215\n5500\nmale\n2009\n    Gentoo\nBiscoe\n41.7\n14.7\n210\n4700\nfemale\n2009\n    Gentoo\nBiscoe\n53.4\n15.8\n219\n5500\nmale\n2009\n    Gentoo\nBiscoe\n43.3\n14.0\n208\n4575\nfemale\n2009\n    Gentoo\nBiscoe\n48.1\n15.1\n209\n5500\nmale\n2009\n    Gentoo\nBiscoe\n50.5\n15.2\n216\n5000\nfemale\n2009\n    Gentoo\nBiscoe\n49.8\n15.9\n229\n5950\nmale\n2009\n    Gentoo\nBiscoe\n43.5\n15.2\n213\n4650\nfemale\n2009\n    Gentoo\nBiscoe\n51.5\n16.3\n230\n5500\nmale\n2009\n    Gentoo\nBiscoe\n46.2\n14.1\n217\n4375\nfemale\n2009\n    Gentoo\nBiscoe\n55.1\n16.0\n230\n5850\nmale\n2009\n    Gentoo\nBiscoe\n44.5\n15.7\n217\n4875\nNA\n2009\n    Gentoo\nBiscoe\n48.8\n16.2\n222\n6000\nmale\n2009\n    Gentoo\nBiscoe\n47.2\n13.7\n214\n4925\nfemale\n2009\n    Gentoo\nBiscoe\nNA\nNA\nNA\nNA\nNA\n2009\n    Gentoo\nBiscoe\n46.8\n14.3\n215\n4850\nfemale\n2009\n    Gentoo\nBiscoe\n50.4\n15.7\n222\n5750\nmale\n2009\n    Gentoo\nBiscoe\n45.2\n14.8\n212\n5200\nfemale\n2009\n    Gentoo\nBiscoe\n49.9\n16.1\n213\n5400\nmale\n2009\n    Chinstrap\nDream\n46.5\n17.9\n192\n3500\nfemale\n2007\n    Chinstrap\nDream\n50.0\n19.5\n196\n3900\nmale\n2007\n    Chinstrap\nDream\n51.3\n19.2\n193\n3650\nmale\n2007\n    Chinstrap\nDream\n45.4\n18.7\n188\n3525\nfemale\n2007\n    Chinstrap\nDream\n52.7\n19.8\n197\n3725\nmale\n2007\n    Chinstrap\nDream\n45.2\n17.8\n198\n3950\nfemale\n2007\n    Chinstrap\nDream\n46.1\n18.2\n178\n3250\nfemale\n2007\n    Chinstrap\nDream\n51.3\n18.2\n197\n3750\nmale\n2007\n    Chinstrap\nDream\n46.0\n18.9\n195\n4150\nfemale\n2007\n    Chinstrap\nDream\n51.3\n19.9\n198\n3700\nmale\n2007\n    Chinstrap\nDream\n46.6\n17.8\n193\n3800\nfemale\n2007\n    Chinstrap\nDream\n51.7\n20.3\n194\n3775\nmale\n2007\n    Chinstrap\nDream\n47.0\n17.3\n185\n3700\nfemale\n2007\n    Chinstrap\nDream\n52.0\n18.1\n201\n4050\nmale\n2007\n    Chinstrap\nDream\n45.9\n17.1\n190\n3575\nfemale\n2007\n    Chinstrap\nDream\n50.5\n19.6\n201\n4050\nmale\n2007\n    Chinstrap\nDream\n50.3\n20.0\n197\n3300\nmale\n2007\n    Chinstrap\nDream\n58.0\n17.8\n181\n3700\nfemale\n2007\n    Chinstrap\nDream\n46.4\n18.6\n190\n3450\nfemale\n2007\n    Chinstrap\nDream\n49.2\n18.2\n195\n4400\nmale\n2007\n    Chinstrap\nDream\n42.4\n17.3\n181\n3600\nfemale\n2007\n    Chinstrap\nDream\n48.5\n17.5\n191\n3400\nmale\n2007\n    Chinstrap\nDream\n43.2\n16.6\n187\n2900\nfemale\n2007\n    Chinstrap\nDream\n50.6\n19.4\n193\n3800\nmale\n2007\n    Chinstrap\nDream\n46.7\n17.9\n195\n3300\nfemale\n2007\n    Chinstrap\nDream\n52.0\n19.0\n197\n4150\nmale\n2007\n    Chinstrap\nDream\n50.5\n18.4\n200\n3400\nfemale\n2008\n    Chinstrap\nDream\n49.5\n19.0\n200\n3800\nmale\n2008\n    Chinstrap\nDream\n46.4\n17.8\n191\n3700\nfemale\n2008\n    Chinstrap\nDream\n52.8\n20.0\n205\n4550\nmale\n2008\n    Chinstrap\nDream\n40.9\n16.6\n187\n3200\nfemale\n2008\n    Chinstrap\nDream\n54.2\n20.8\n201\n4300\nmale\n2008\n    Chinstrap\nDream\n42.5\n16.7\n187\n3350\nfemale\n2008\n    Chinstrap\nDream\n51.0\n18.8\n203\n4100\nmale\n2008\n    Chinstrap\nDream\n49.7\n18.6\n195\n3600\nmale\n2008\n    Chinstrap\nDream\n47.5\n16.8\n199\n3900\nfemale\n2008\n    Chinstrap\nDream\n47.6\n18.3\n195\n3850\nfemale\n2008\n    Chinstrap\nDream\n52.0\n20.7\n210\n4800\nmale\n2008\n    Chinstrap\nDream\n46.9\n16.6\n192\n2700\nfemale\n2008\n    Chinstrap\nDream\n53.5\n19.9\n205\n4500\nmale\n2008\n    Chinstrap\nDream\n49.0\n19.5\n210\n3950\nmale\n2008\n    Chinstrap\nDream\n46.2\n17.5\n187\n3650\nfemale\n2008\n    Chinstrap\nDream\n50.9\n19.1\n196\n3550\nmale\n2008\n    Chinstrap\nDream\n45.5\n17.0\n196\n3500\nfemale\n2008\n    Chinstrap\nDream\n50.9\n17.9\n196\n3675\nfemale\n2009\n    Chinstrap\nDream\n50.8\n18.5\n201\n4450\nmale\n2009\n    Chinstrap\nDream\n50.1\n17.9\n190\n3400\nfemale\n2009\n    Chinstrap\nDream\n49.0\n19.6\n212\n4300\nmale\n2009\n    Chinstrap\nDream\n51.5\n18.7\n187\n3250\nmale\n2009\n    Chinstrap\nDream\n49.8\n17.3\n198\n3675\nfemale\n2009\n    Chinstrap\nDream\n48.1\n16.4\n199\n3325\nfemale\n2009\n    Chinstrap\nDream\n51.4\n19.0\n201\n3950\nmale\n2009\n    Chinstrap\nDream\n45.7\n17.3\n193\n3600\nfemale\n2009\n    Chinstrap\nDream\n50.7\n19.7\n203\n4050\nmale\n2009\n    Chinstrap\nDream\n42.5\n17.3\n187\n3350\nfemale\n2009\n    Chinstrap\nDream\n52.2\n18.8\n197\n3450\nmale\n2009\n    Chinstrap\nDream\n45.2\n16.6\n191\n3250\nfemale\n2009\n    Chinstrap\nDream\n49.3\n19.9\n203\n4050\nmale\n2009\n    Chinstrap\nDream\n50.2\n18.8\n202\n3800\nmale\n2009\n    Chinstrap\nDream\n45.6\n19.4\n194\n3525\nfemale\n2009\n    Chinstrap\nDream\n51.9\n19.5\n206\n3950\nmale\n2009\n    Chinstrap\nDream\n46.8\n16.5\n189\n3650\nfemale\n2009\n    Chinstrap\nDream\n45.7\n17.0\n195\n3650\nfemale\n2009\n    Chinstrap\nDream\n55.8\n19.8\n207\n4000\nmale\n2009\n    Chinstrap\nDream\n43.5\n18.1\n202\n3400\nfemale\n2009\n    Chinstrap\nDream\n49.6\n18.2\n193\n3775\nmale\n2009\n    Chinstrap\nDream\n50.8\n19.0\n210\n4100\nmale\n2009\n    Chinstrap\nDream\n50.2\n18.7\n198\n3775\nfemale\n2009\n  \n  \n  \n\n\n\n\n\nsummary(penguins)\n\n      species          island    bill_length_mm  bill_depth_mm  \n Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  \n Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  \n Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  \n                                 Mean   :43.92   Mean   :17.15  \n                                 3rd Qu.:48.50   3rd Qu.:18.70  \n                                 Max.   :59.60   Max.   :21.50  \n                                 NA's   :2       NA's   :2      \n flipper_length_mm  body_mass_g       sex           year     \n Min.   :172.0     Min.   :2700   female:165   Min.   :2007  \n 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  \n Median :197.0     Median :4050   NA's  : 11   Median :2008  \n Mean   :200.9     Mean   :4202                Mean   :2008  \n 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  \n Max.   :231.0     Max.   :6300                Max.   :2009  \n NA's   :2         NA's   :2"
-  },
-  {
-    "objectID": "part2_presentations.html#columns",
-    "href": "part2_presentations.html#columns",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Columns",
-    "text": "Columns\nYou can arrange content in columns using Pandoc’s fenced div blocks.\n::: {.columns}\n                                        \n::: {.column width=\"50%\"}\nThis is the left column. You can put text, images, or code here.\n:::\n                                          \n::: {.column width=\"50%\"}\nThis is the right column.\n:::\n                                          \n:::"
-  },
-  {
-    "objectID": "part2_presentations.html#columns-an-example",
-    "href": "part2_presentations.html#columns-an-example",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Columns, an Example",
-    "text": "Columns, an Example\nHere is a 30/70 split:\n\n\nHere we have the first four rows of the Palmer Penguins Data set.\n\n\npenguins %&gt;% head(4) %&gt;% gt()\n\n\n\n\n\n  \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007"
-  },
-  {
-    "objectID": "part2_presentations.html#displaying-code-and-output",
-    "href": "part2_presentations.html#displaying-code-and-output",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Displaying Code and Output",
-    "text": "Displaying Code and Output\n```{r}\n#| echo: true\n#| eval: true\nlibrary(palmerpenguins)\nsummary(penguins)\n```\n\n#| echo: true shows the code.\n#| eval: true runs the code and shows the output."
-  },
-  {
-    "objectID": "part2_presentations.html#code-output-layout",
-    "href": "part2_presentations.html#code-output-layout",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Code Output Layout",
-    "text": "Code Output Layout\nYou can control where the output of a code block appears.\n\n#| output-location: beside places output next to the code.\n#| output-location: slide places output on a new slide following the code slide.\n#| output-location: column places output in a column adjacent to the code."
-  },
-  {
-    "objectID": "part2_presentations.html#revealing-code-stepwise",
-    "href": "part2_presentations.html#revealing-code-stepwise",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Revealing Code Stepwise",
-    "text": "Revealing Code Stepwise\nYou can reveal code and its output incrementally.\n\n#| output-location: fragment delays showing output until advancing with a click.\n#| output-location: column-fragment places output in a column adjacent to the code and delays showing until advancing with a click.\n\n\n\n```{r}\n#| echo: true\n#| output-location: \"fragment\"\nx &lt;- 3\ny &lt;- 2\nx + y\nx*y\n```\n\nEach line will appear on a subsequent click.\n\nx &lt;- 3\ny &lt;- 2\nx + y\n\n\n\n[1] 5\n\nx*y\n\n[1] 6"
-  },
-  {
-    "objectID": "part2_presentations.html#highlighting-code",
-    "href": "part2_presentations.html#highlighting-code",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Highlighting Code",
-    "text": "Highlighting Code\nUse code-line-numbers to highlight specific lines.\n\n\n```{r}\n#| code-line-numbers: \"3,5-6\"\nx &lt;- 1\ny &lt;- 2\nz &lt;- x + y\n\na &lt;- \"hello\"\nb &lt;- \"world\"\npaste(a, b)\n```\n\n\nx &lt;- 1\ny &lt;- 2\nz &lt;- x + y\n\na &lt;- \"hello\"\nb &lt;- \"world\"\npaste(a, b)\n\n[1] \"hello world\""
-  },
-  {
-    "objectID": "part2_presentations.html#collapsing-code",
-    "href": "part2_presentations.html#collapsing-code",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Collapsing Code",
-    "text": "Collapsing Code\nUse code-fold: true to make code blocks expandable.\n```{r}\n#| code-fold: true\n#| echo: true\nprint(\"This code is hidden by default.\")\n```\n\n\nCode\nprint(\"This code is hidden by default.\")\n\n\n[1] \"This code is hidden by default.\""
-  },
-  {
-    "objectID": "part2_presentations.html#lists-to-add",
-    "href": "part2_presentations.html#lists-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Lists [TO ADD]",
-    "text": "Lists [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#tables-to-add",
-    "href": "part2_presentations.html#tables-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tables [TO ADD]",
-    "text": "Tables [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#tabs-to-add",
-    "href": "part2_presentations.html#tabs-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tabs [TO ADD]",
-    "text": "Tabs [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#adding-images-resizing-to-add",
-    "href": "part2_presentations.html#adding-images-resizing-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Adding images; resizing [TO ADD]",
-    "text": "Adding images; resizing [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#incremental-reveals",
-    "href": "part2_presentations.html#incremental-reveals",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Incremental Reveals",
-    "text": "Incremental Reveals\nMore customization to show parts of a slide step-by-step can be made with the .fragment class. This works on lists, text, images, and more.\n::: {.fragment}\nFade in\n:::\n\n::: {.fragment .fade-out}\nFade out\n:::\n\n::: {.fragment .highlight-red}\nHighlight red\n:::\n\nFade in\n\n\nFade out\n\n\nHighlight red\n\n\nLearn more: Fragments"
-  },
-  {
-    "objectID": "part2_presentations.html#themes",
-    "href": "part2_presentations.html#themes",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Themes",
-    "text": "Themes\nYou can change the entire look of your presentation with themes.\n---\ntitle: \"My Presentation\"\nformat:\n  revealjs:\n    theme: dark\n---\nAvailable themes include: default, dark, simple, solarized, blood, moon."
-  },
-  {
-    "objectID": "part2_presentations.html#custom-styles-with-scss",
-    "href": "part2_presentations.html#custom-styles-with-scss",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Custom Styles with SCSS",
-    "text": "Custom Styles with SCSS\nFor more control, you can use a .scss file to customize your theme.\n\nCreate a file named custom.scss.\nIn this file, you can define variables and CSS rules, including changing font color:\n\n/*-- scss:defaults --*/\n$presentation-heading-font: \"Montserrat\", sans-serif;\n$theme-green: #40ab16;\n\n/*-- scss:rules --*/\n.reveal .slide-background-content {\nbackground-color: #F0F0F0;\n}\n\nLink it in your YAML:\n\n---\nformat:\n  revealjs:\n    theme: [default, custom.scss]\n---"
-  },
-  {
-    "objectID": "part2_presentations.html#controlling-font-size",
-    "href": "part2_presentations.html#controlling-font-size",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Controlling Font Size",
-    "text": "Controlling Font Size\nYou can adjust font size at different levels.\n\nWhole Document: Use the font-size option in your YAML header.\n\nformat:\n  revealjs:\n    font-size: 24px\n\nPart of a Slide: Wrap text in brackets and use a class like .smaller or .larger.\n\nThis is [small text]{.smaller} and this is [large text]{.larger}.\nThis is small text and this is large text.\n(Note: If this doesn’t work, make sure your theme or .scss file defines these classes)\n\nWhole Slide: Use the r-fit-text class to make text fill the slide.\n\n::: {.r-fit-text}\nBig Text\n:::"
-  },
-  {
-    "objectID": "part2_presentations.html#slide-with-big-text",
-    "href": "part2_presentations.html#slide-with-big-text",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Slide with BIG TEXT",
-    "text": "Slide with BIG TEXT\n\nBig Text"
-  },
-  {
-    "objectID": "part2_presentations.html#customizing-text-styles",
-    "href": "part2_presentations.html#customizing-text-styles",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Customizing Text Styles",
-    "text": "Customizing Text Styles\nFor more specific control over fonts for headers or code, you can use a custom .scss file.\n\nSlide Headers Font Size: Change heading sizes in custom.scss:\n\n$presentation-h1-font-size: 2.5em;\n$presentation-h2-font-size: 1.6em;\n\nCode vs. Output Font Size: Adjust code block and output font sizes in custom.scss.\n\n$code-block-font-size: 0.55em;"
-  },
-  {
-    "objectID": "part2_presentations.html#callout-blocks",
-    "href": "part2_presentations.html#callout-blocks",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Callout Blocks ⚠️",
-    "text": "Callout Blocks ⚠️\nCallouts are an excellent way to draw attention to specific pieces of information. They are especially useful for notes, warnings, or tips.\nYou create them using fenced divs with a special class.\n\n\nNote\n::: {.callout-note}\nThis is a note. Use it for helpful but not critical information.\n:::\n\nImportant\n::: {.callout-important}\nThis is important. Use it for key information the audience must know.\n:::\n\nNote\n\n\n\n\n\n\nNote\n\n\nThis is a note. Use it for helpful but not critical information.\n\n\n\nImportant\n\n\n\n\n\n\nImportant\n\n\nThis is important. Use it for key information the audience must know."
-  },
-  {
-    "objectID": "part2_presentations.html#callout-blocks-ctd",
-    "href": "part2_presentations.html#callout-blocks-ctd",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Callout Blocks, ctd",
-    "text": "Callout Blocks, ctd\n\n\n::: {.callout-note}\nNote that there are five types of callouts, including:\n`note`, `warning`, `important`, `tip`, and `caution`.\n:::\n\n::: {.callout-tip}\n## Tip with Title\n\nThis is an example of a callout with a title.\n:::\n\n::: {.callout-caution collapse=\"true\"}\n## Expand To Learn About Collapse\n\nThis is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse=\"true\"` to collapse it by default or `collapse=\"false\"` to make a collapsible callout that is expanded by default.\n:::\n\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\n\n\n\n\n\nTip with Title\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default.\n\n\n\n\n\nFrom https://quarto.org/docs/authoring/callouts.html"
-  },
-  {
-    "objectID": "part2_presentations.html#customizing-the-title-slide",
-    "href": "part2_presentations.html#customizing-the-title-slide",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Customizing the Title Slide",
-    "text": "Customizing the Title Slide\nYou can add more information to your title slide directly in the YAML header. This is useful for adding affiliations, subtitles, and logos.\n---\ntitle: \"Workshop Title\"\nsubtitle: \"An In-depth Look at Quarto\"\nauthor: \"Your Name\"\ninstitute: \"Department of Biostatistics, OHSU\"\ndate: \"today\"\ntitle-slide-attributes:\n  data-background-image: \"your-logo.png\"\n  data-background-size: \"15%\"\n  data-background-position: \"top right\"\nformat: revealjs\n---"
-  },
-  {
-    "objectID": "part2_presentations.html#presentation-tools",
-    "href": "part2_presentations.html#presentation-tools",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Presentation Tools",
-    "text": "Presentation Tools\nrevealjs comes with powerful tools to enhance your presentations.\nMore about presenter tools can be found on the Quarto.org docs website"
-  },
-  {
-    "objectID": "part2_presentations.html#speaker-notes",
-    "href": "part2_presentations.html#speaker-notes",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Speaker Notes",
-    "text": "Speaker Notes\nPress s to open the speaker view, which shows your notes and a preview of the next slide. Add notes to a slide like this:\n## My Slide\n    \nThis is the content everyone sees.\n    \n::: {.notes}\nThese are my speaker notes. Only I can see them.\n:::"
-  },
-  {
-    "objectID": "part2_presentations.html#annotations-chalkboard",
-    "href": "part2_presentations.html#annotations-chalkboard",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Annotations & Chalkboard ✍️",
-    "text": "Annotations & Chalkboard ✍️\nRevealjs includes a “chalkboard” that you can use for live drawings and a “notes canvas” for more permanent annotations.\n\nChalkboard: Press b to toggle the chalkboard. You can draw directly on the slide. Press b again to hide it.\nNotes Canvas: Press c to toggle the notes canvas. This is like drawing on a transparent overlay that stays with the slide.\n\nAdd the chalkboard option in the YAML header to include both the chalkboard and canvas options in your slides, :\n---\nformat: \n  revealjs:\n      chalkboard: true\n---"
-  },
-  {
-    "objectID": "part2_presentations.html#outlines",
-    "href": "part2_presentations.html#outlines",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Outlines",
-    "text": "Outlines\nPress o to see an outline of your presentation."
-  },
-  {
-    "objectID": "part2_presentations.html#adding-a-countdown-timer",
-    "href": "part2_presentations.html#adding-a-countdown-timer",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Adding a Countdown Timer ⏳",
-    "text": "Adding a Countdown Timer ⏳\nA great way to manage time for in-class exercises or breaks is to add a countdown timer directly into your slides. We can use the countdown package, which we installed earlier.\nLet’s set a 5-minute timer for a quick break.\n\ncountdown::countdown(minutes = 5, play_sound = TRUE)\n\n\n−+\n05:00\n\n\n\nThis will embed a timer on the slide. You can customize the duration, text, colors, and whether it plays a sound when finished."
-  },
-  {
-    "objectID": "part2_presentations.html#html-reveal-js-to-add",
-    "href": "part2_presentations.html#html-reveal-js-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "html (Reveal JS) [TO ADD]",
-    "text": "html (Reveal JS) [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#powerpoint-to-add",
-    "href": "part2_presentations.html#powerpoint-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "PowerPoint [TO ADD]",
-    "text": "PowerPoint [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#latex-beamer-slides-to-add",
-    "href": "part2_presentations.html#latex-beamer-slides-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "LaTeX Beamer slides [TO ADD]",
-    "text": "LaTeX Beamer slides [TO ADD]\n---\ntitle: \"Mathy Talk\"\nauthor: \"Jane Doe\"\nformat: beamer\n---"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Creating Professional Presentations and Websites using R/Quarto",
-    "section": "",
-    "text": "Welcome!\nBelow are links to the WNAR workshop on Creating Professional Presentations and Websites using R/Quarto.\n\n\n\nPart 0\nInstallation instructions\n\n\nPart 1\nWorkshop Overview\n\n\nPart 2\nCreating Presentations\n\n\nPart 3\nCreating Webpages"
-  },
-  {
-    "objectID": "part3_webpages.html#sample-website-workshop-website",
-    "href": "part3_webpages.html#sample-website-workshop-website",
+    "objectID": "slides/part3_webpages.html#sample-websites",
+    "href": "slides/part3_webpages.html#sample-websites",
     "title": "Part 3: Creating Websites with Quarto",
-    "section": "Sample website (workshop website)",
-    "text": "Sample website (workshop website)\nDownload from Github"
+    "section": "Sample websites",
+    "text": "Sample websites\n\nWorkshop websiteBSTA 511 Fall 2024BSTA 526 Winter 2025\n\n\nhttps://ohsu-octri-berd.github.io/Quarto_WNAR_2025/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_511_F24/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_526_W25/"
   },
   {
-    "objectID": "part3_webpages.html#create-quarto-website-project-13",
-    "href": "part3_webpages.html#create-quarto-website-project-13",
+    "objectID": "slides/part3_webpages.html#create-quarto-website-project",
+    "href": "slides/part3_webpages.html#create-quarto-website-project",
     "title": "Part 3: Creating Websites with Quarto",
-    "section": "Create Quarto website project (1/3)",
-    "text": "Create Quarto website project (1/3)\n\nFrom the R menu, select File -&gt; New Project...\n\n\n\n\nSelect New Directory option (NOT Existing Directory)\n\n\n\n\n\n\n\n\nSelect Quarto Website from the Project Types"
-  },
-  {
-    "objectID": "part3_webpages.html#create-quarto-website-project-23",
-    "href": "part3_webpages.html#create-quarto-website-project-23",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Create Quarto website project (2/3)",
-    "text": "Create Quarto website project (2/3)\nThe New Project Wizard window\n\n\n\n\nDirectory name: Enter the name for your website project folder\nBrowse to the folder that the website project folder will be saved in\nMake sure the Engine is set to Knitr\nOptional:\n\nSelect Create a git repository if you plan on syncing your website to GitHub\nSelect Open in a new session if you want to keep your current R project open\n\n\n\n\n\n\n\n\n\n\n\nClick on Create Project"
-  },
-  {
-    "objectID": "part3_webpages.html#create-quarto-website-project-33",
-    "href": "part3_webpages.html#create-quarto-website-project-33",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Create Quarto website project (3/3)",
-    "text": "Create Quarto website project (3/3)\nYour new Quarto website project should now open up in RStudio"
-  },
-  {
-    "objectID": "part3_webpages.html#template-website",
-    "href": "part3_webpages.html#template-website",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Template website",
-    "text": "Template website"
-  },
-  {
-    "objectID": "part3_webpages.html#workshop-website",
-    "href": "part3_webpages.html#workshop-website",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Workshop website",
-    "text": "Workshop website"
-  },
-  {
-    "objectID": "part3_webpages.html#themes",
-    "href": "part3_webpages.html#themes",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Themes",
-    "text": "Themes"
-  },
-  {
-    "objectID": "part3_webpages.html#hosting",
-    "href": "part3_webpages.html#hosting",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Hosting",
-    "text": "Hosting\n\non github or netlify\nquarto pub (requires quarto pub account)"
-  },
-  {
-    "objectID": "part2_presentations.html#lists",
-    "href": "part2_presentations.html#lists",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Lists",
-    "text": "Lists\nYou make lists in markdown using - or * such as:\n- Item 1\n- Item 2\n- Item 3\n\nItem 1\nItem 2\nItem 3"
-  },
-  {
-    "objectID": "part2_presentations.html#tables",
-    "href": "part2_presentations.html#tables",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tables",
-    "text": "Tables\nOne benefit of using or switching over to the Visual editor is that it is much easier to add tables.\n\n\n| Name    | Date     | Measure |\n|---------|----------|---------|\n| Jessica | 02/04/25 | 9.3     |\n| Meike   | 01/03/25 | 10.1    |\n| WNAR    |          | 10.5    |\n\n\n\n\nName\nDate\nMeasure\n\n\n\n\nJessica\n02/04/25\n9.3\n\n\nMeike\n01/03/25\n10.1\n\n\nWNAR\n\n10.5\n\n\n\n\n\n\nMore at Quarto Docs: Tables"
-  },
-  {
-    "objectID": "part2_presentations.html#images",
-    "href": "part2_presentations.html#images",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Images",
-    "text": "Images\nAdd an image with a simple ![](filepath.png)\n![](images/web/cat_laptop.gif)\n\n\n\n\nYou can add html image options, such as a smaller width or size:\n![](images/web/cat_laptop.gif){width=\"100\"}"
-  },
-  {
-    "objectID": "part2_presentations.html#animation-to-add",
-    "href": "part2_presentations.html#animation-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Animation [TO ADD]",
-    "text": "Animation [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#incremental-lists",
-    "href": "part2_presentations.html#incremental-lists",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Incremental Lists",
-    "text": "Incremental Lists\nLists can optionally be displayed incrementally:\n\n\nFirst item\nSecond item\nThird item\n\n\n\n Insert pauses to make other types of content display incrementally with &lt;br/&gt;.\n\nLearn more: Incremental Lists"
-  },
-  {
-    "objectID": "part2_presentations.html#images-fix-this",
-    "href": "part2_presentations.html#images-fix-this",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Images [FIX THIS]",
-    "text": "Images [FIX THIS]\n\n\n![](images/web/ohsu_logo.jpg)\n\nOr resize:\n![](images/web/ohsu_logo.jpg){width=\"10\"}\n\n\nThis are attributes easily added in the visual editor Insert Image option:\n[![OHSU Logo](images/web/ohsu_logo.jpg){fig-alt=\"OHSU Logo\" fig-align=\"center\"}](https://www.ohsu.edu)\n\n\n\n\n\n\n\nOHSU Logo"
-  },
-  {
-    "objectID": "part2_presentations.html#tabsets-to-add",
-    "href": "part2_presentations.html#tabsets-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tabsets [TO ADD]",
-    "text": "Tabsets [TO ADD]\nYou can add tabbed content to slides using the standard Quarto syntax for tabsets. For example:\n::: {.panel-tabset}\n\n### Tab A\n\nContent for `Tab A`\n\n### Tab B\n\nContent for `Tab B`\n\n:::\n\nTab ATab B\n\n\nContent for Tab A\n\n\nContent for Tab B"
-  },
-  {
-    "objectID": "part2_presentations.html#tabsets",
-    "href": "part2_presentations.html#tabsets",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tabsets",
-    "text": "Tabsets\nYou can add tabbed content to slides using the standard Quarto syntax for tabsets. For example:\n::: {.panel-tabset}\n\n### Tab A\n\nContent for `Tab A`\n\n### Tab B\n\nContent for `Tab B`\n\n:::"
-  },
-  {
-    "objectID": "part2_presentations.html#tabsets---rendered",
-    "href": "part2_presentations.html#tabsets---rendered",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tabsets - Rendered",
-    "text": "Tabsets - Rendered\nYou can add tabbed content to slides using the standard Quarto syntax for tabsets. For example:\n\nTab ATab BTab C\n\n\nContent for Tab A\n\n\nContent for Tab B\n\n\nContent for Tab C"
-  },
-  {
-    "objectID": "part2_presentations.html#tabsets---rendered-why-are-tabs-weird",
-    "href": "part2_presentations.html#tabsets---rendered-why-are-tabs-weird",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tabsets - Rendered [WHY ARE TABS WEIRD]",
-    "text": "Tabsets - Rendered [WHY ARE TABS WEIRD]\nYou can add tabbed content to slides using the standard Quarto syntax for tabsets. For example:\n\nTab ATab BTab C\n\n\nContent for Tab A\n\n\nContent for Tab B\n\n\nContent for Tab C"
-  },
-  {
-    "objectID": "part2_presentations.html#self-contained",
-    "href": "part2_presentations.html#self-contained",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Self Contained",
-    "text": "Self Contained\nHTML documents typically have a number of external dependencies (e.g. images, CSS style sheets, JavaScript, etc.). By default these dependencies are placed in a _files directory alongside your document. For example, if you render report.qmd to HTML:\nThen the following output is produced:\npres.html\npres_files/\nYou might alternatively want to create an entirely self-contained HTML document (with images, CSS style sheets, JavaScript, etc. embedded into the HTML file). You can do this by specifying the embed-resources option:\nformat:\n  revealjs:\n    embed-resources: true\nThis will produce a standalone HTML file with no external dependencies, using data: URIs to incorporate the contents of linked scripts, style sheets, images, and videos. The resulting file should be self contained, in the sense that it needs no external files and no net access to be displayed properly by a browser.\n\nFrom Quarto docs"
-  },
-  {
-    "objectID": "part2_presentations.html#existing-quarto-report-to-slides-to-add",
-    "href": "part2_presentations.html#existing-quarto-report-to-slides-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Existing quarto report to slides [TO ADD]",
-    "text": "Existing quarto report to slides [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#publishing-to-add",
-    "href": "part2_presentations.html#publishing-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Publishing [TO ADD]",
-    "text": "Publishing [TO ADD]\nhttps://quarto.org/docs/publishing/"
-  },
-  {
-    "objectID": "part2_presentations.html#convert-to-pdf-to-add",
-    "href": "part2_presentations.html#convert-to-pdf-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Convert to PDF [TO ADD]",
-    "text": "Convert to PDF [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations.html#self-contained-html",
-    "href": "part2_presentations.html#self-contained-html",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Self Contained (HTML)",
-    "text": "Self Contained (HTML)\nHTML documents typically have a number of external dependencies (e.g. images, CSS style sheets, JavaScript, etc.). By default these dependencies are placed in a _files directory alongside your document. For example, if you render report.qmd to HTML:\nThen the following output is produced:\npres.html\npres_files/\nYou might alternatively want to create an entirely self-contained HTML document (with images, CSS style sheets, JavaScript, etc. embedded into the HTML file). You can do this by specifying the embed-resources option:\nformat:\n  revealjs:\n    embed-resources: true\nThis will produce a standalone HTML file with no external dependencies, using data: URIs to incorporate the contents of linked scripts, style sheets, images, and videos. The resulting file should be self contained, in the sense that it needs no external files and no net access to be displayed properly by a browser.\n\nFrom Quarto docs"
-  },
-  {
-    "objectID": "part2_presentations.html#html-slides",
-    "href": "part2_presentations.html#html-slides",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "HTML Slides",
-    "text": "HTML Slides\n\nFrom Quarto Docs: Presentations: There are pros and cons to each of these formats. The most capable format by far is revealjs, so it is highly recommended unless you have specific Office or LaTeX output requirements. Note that revealjs presentations can be presented as HTML slides or can be printed to PDF for easier distribution."
-  },
-  {
-    "objectID": "part2_presentations.html#citations",
-    "href": "part2_presentations.html#citations",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Citations",
-    "text": "Citations\nhttps://quarto.org/docs/authoring/citations.html"
-  },
-  {
-    "objectID": "part2_presentations.html#citations-to-add",
-    "href": "part2_presentations.html#citations-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Citations [TO ADD]",
-    "text": "Citations [TO ADD]\nhttps://quarto.org/docs/authoring/citations.html"
-  },
-  {
-    "objectID": "part2_presentations.html#images-fix-this-make-better",
-    "href": "part2_presentations.html#images-fix-this-make-better",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Images [FIX THIS MAKE BETTER]",
-    "text": "Images [FIX THIS MAKE BETTER]\nAdd an image with a simple ![](filepath.png)\n\n\n![](images/web/cat_laptop.gif)\n\n\nYou can add html image options, such as a smaller width or size:\n![](images/web/cat_laptop.gif){width=\"100\"}"
-  },
-  {
-    "objectID": "part2_presentations.html#image-ctd",
-    "href": "part2_presentations.html#image-ctd",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Image, ctd",
-    "text": "Image, ctd\nThese are attributes easily added in the visual editor Insert Image option, including a url link:\n[![OHSU Logo](images/web/ohsu_logo.jpg){width=\"100\" fig-alt=\"OHSU Logo\" fig-align=\"center\"}](https://www.ohsu.edu)\n\nOHSU Logo"
-  },
-  {
-    "objectID": "part2_presentations.html#controlling-font-size-why-isnt-smaller-larger-working",
-    "href": "part2_presentations.html#controlling-font-size-why-isnt-smaller-larger-working",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Controlling Font Size [WHY ISN’T SMALLER LARGER WORKING?]",
-    "text": "Controlling Font Size [WHY ISN’T SMALLER LARGER WORKING?]\nYou can adjust font size at different levels.\n\nWhole Document: Use the font-size option in your YAML header.\n\nformat:\n  revealjs:\n    font-size: 24px\n\nPart of a Slide: Wrap text in brackets and use a class like .smaller or .larger.\n\nThis is [small text]{.smaller} and this is [large text]{.larger}.\nThis is small text and this is large text.\n\nWhole Slide: Use the r-fit-text class to make text fill the slide.\n\n::: {.r-fit-text}\nBig Text\n:::"
-  },
-  {
-    "objectID": "part2_presentations.html#setting-up-bibliography",
-    "href": "part2_presentations.html#setting-up-bibliography",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Setting Up Bibliography",
-    "text": "Setting Up Bibliography\nStep 1: Add to YAML header\n---\ntitle: \"My Presentation\"\nformat: revealjs\nbibliography: references.bib\ncsl: apa.csl\n---\n(Use csl only if you have a custom csl file, see Citations)\nStep 2: Create references.bib\n@article{smith2023,\n  title={Important Research},\n  author={Smith, John},\n  journal={Journal of Science},\n  year={2023}\n}"
-  },
-  {
-    "objectID": "part2_presentations.html#citation-syntax",
-    "href": "part2_presentations.html#citation-syntax",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Citation Syntax",
-    "text": "Citation Syntax\nIn-text citations:\nResearch shows [@smith2023] that...\nMultiple sources [@smith2023; @jones2022]\nPage numbers [@smith2023, p. 15]\nCitation styles: - [@smith2023] → (Smith, 2023) - @smith2023 → Smith (2023) - [-@smith2023] → (2023)\nHere we reference (Smith 2023)."
-  },
-  {
-    "objectID": "part2_presentations.html#references-slide",
-    "href": "part2_presentations.html#references-slide",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "References Slide",
-    "text": "References Slide\nAutomatic references:\n## References\n\n::: {#refs}\n:::\nManual placement:\n---\nsuppress-bibliography: true\n---\n\n# Last slide\n## References {.smaller}\n\n::: {#refs}\n:::"
-  },
-  {
-    "objectID": "part2_presentations.html#references",
-    "href": "part2_presentations.html#references",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "References",
-    "text": "References\n\n\nSmith, John. 2023. “Important Research.” Journal of Science.\n\n\n\nLearn more at Quarto Citations"
-  },
-  {
-    "objectID": "part2_presentations.html#method-1-using-chromechromium",
-    "href": "part2_presentations.html#method-1-using-chromechromium",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Method 1: Using Chrome/Chromium",
-    "text": "Method 1: Using Chrome/Chromium\n# Install chromium if needed\nquarto install chromium\n\n# Render to PDF\nquarto render presentation.qmd --to revealjs\n# Then use browser print function\n# Or use decktape (next slide)"
-  },
-  {
-    "objectID": "part2_presentations.html#method-2-using-decktape",
-    "href": "part2_presentations.html#method-2-using-decktape",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Method 2: Using Decktape",
-    "text": "Method 2: Using Decktape\n# Install decktape\nnpm install -g decktape\n\n# Convert HTML to PDF\ndecktape reveal presentation.html presentation.pdf\n\n# With custom options\ndecktape reveal presentation.html presentation.pdf \\\n  --size 1920x1080 --load-pause 2000"
-  },
-  {
-    "objectID": "part2_presentations.html#method-3-direct-pdf-format",
-    "href": "part2_presentations.html#method-3-direct-pdf-format",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Method 3: Direct PDF Format",
-    "text": "Method 3: Direct PDF Format\n---\ntitle: \"My Presentation\"\nformat:\n  revealjs: default\n  pdf: default\n---\n# Render both formats\nquarto render presentation.qmd"
-  },
-  {
-    "objectID": "part2_presentations.html#from-document-to-presentation",
-    "href": "part2_presentations.html#from-document-to-presentation",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "From Document to Presentation",
-    "text": "From Document to Presentation\nStep 1: Change the YAML header\n# From this:\nformat: html\n\n# To this:\nformat: revealjs\nStep 2: Adjust heading levels - # becomes section dividers - ## becomes slide titles - ### becomes slide subtitles"
-  },
-  {
-    "objectID": "part2_presentations.html#content-adaptation-tips",
-    "href": "part2_presentations.html#content-adaptation-tips",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Content Adaptation Tips",
-    "text": "Content Adaptation Tips\n\nBreak long paragraphs into bullet points\nSplit dense content across multiple slides\nAdd slide breaks with --- if needed\nUse incremental reveals with {.incremental}\n\n::: {.incremental}\n- First point\n- Second point\n- Third point\n:::"
-  },
-  {
-    "objectID": "part2_presentations.html#example-conversion",
-    "href": "part2_presentations.html#example-conversion",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Example Conversion",
-    "text": "Example Conversion\nBefore (Report):\n# Analysis Results\nOur analysis shows significant findings...\n\n## Data Summary\nThe dataset contains 1000 observations...\nAfter (Slides):\n# Analysis Results\n\n## Key Findings\n- Significant results discovered\n- Strong correlations identified\n\n## Data Summary\n- 1000 observations\n- 15 variables analyzed"
-  },
-  {
-    "objectID": "part2_presentations.html#publishing-meike-can-you-add",
-    "href": "part2_presentations.html#publishing-meike-can-you-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Publishing [MEIKE CAN YOU ADD?]",
-    "text": "Publishing [MEIKE CAN YOU ADD?]\nhttps://quarto.org/docs/publishing/"
-  },
-  {
-    "objectID": "part2_presentations.html#saving-loading-annotations",
-    "href": "part2_presentations.html#saving-loading-annotations",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Saving & Loading Annotations:",
-    "text": "Saving & Loading Annotations:\nYour drawings are not saved by default. To save them:\n\nWhile in presentation mode, press d to download your drawings as a drawing.json file.\nTo load these annotations back the next time you present, add the chalkboard-src: option to your YAML header:\n\n---\nformat:\n  revealjs:\n    chalkboard-src: \"drawing.json\"\n---\n\n\nLearn more at Quarto’s Presenting Slides &gt; Chalkboard"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#create-a-new-rstudio-project-or-quarto-project",
-    "href": "part2_presentations_beamer.html#create-a-new-rstudio-project-or-quarto-project",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Create a new Rstudio Project (or Quarto Project)",
-    "text": "Create a new Rstudio Project (or Quarto Project)\n\nDirectionsScreenshots\n\n\n\nIn RStudio, go to File &gt; New Project... &gt; New Directory &gt; New Project.\n\n\nYou may choose New Project OR Quarto Project\nIf you choose Quarto Project, a .qmd file will already be present in your folder. You would still follow the next steps.\nA Quarto Project has an extra file to define settings in .qmd files. This is not necessary for our purposes, but it is an option if you will be using lots of .qmd files for various tasks.\n\n\nGive your project a name (i.e. QuartoPres) and choose a location (i.e. Desktop). Check the box “Open in new session”"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#create-a-new-quarto-presentation-file",
-    "href": "part2_presentations_beamer.html#create-a-new-quarto-presentation-file",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Create a new Quarto Presentation file",
-    "text": "Create a new Quarto Presentation file\n\nNow go to File &gt; New File &gt; Quarto Presentation. Uncheck the box “Use visual markdown editor”. Click “create”\nThis will create a new file with a .qmd extension. This is your presentation file!"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#the-yaml-header",
-    "href": "part2_presentations_beamer.html#the-yaml-header",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "The YAML Header",
-    "text": "The YAML Header\nEvery .qmd file starts with a YAML (YAML Ain’t Markup Language) header. This is where you control the main settings for your document.\nBy default, these basic options are filled in, and you can edit them or add additional options (more later):\n---\ntitle: \"My Presentation\"\nauthor: \"Your Name\"\nformat: revealjs\n---"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#revealjs",
-    "href": "part2_presentations_beamer.html#revealjs",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Revealjs",
-    "text": "Revealjs\nrevealjs uses the open source HTML presentation framework reveal.js. Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.\nMore about revealjs can be found on the Quarto.org docs website (embedded below):"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#creating-slides",
-    "href": "part2_presentations_beamer.html#creating-slides",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Creating Slides",
-    "text": "Creating Slides\nYou create new slides using markdown headers (# or ##).\n# This is a Title Slide\n\nThis is the content of my first slide.\n\n## This is a New Slide\n\nEach `##` starts a new slide.\n\n## creates a standard slide with a heading.\nA slide with only a title and no body text becomes a title/section slide."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#scrolling-slides",
-    "href": "part2_presentations_beamer.html#scrolling-slides",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Scrolling Slides 📜",
-    "text": "Scrolling Slides 📜\nFor slides with a lot of content, you can make them scrollable.\n## A Long Slide {.scrollable}\n\nThis slide has a lot of content that might not fit on one screen. By adding `{.scrollable}`, you allow the user to scroll down to see the rest of the content.\n...\nYou can also include this in the YAML header to make this a global setting so all slides are scrollable.\nformat: \n  revealjs:\n      scrollable: true"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#a-long-slide",
-    "href": "part2_presentations_beamer.html#a-long-slide",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "A Long Slide",
-    "text": "A Long Slide\nThis slide has a lot of content that might not fit on one screen.\n\nlibrary(palmerpenguins)\ngt(penguins)\n\n\n\n\n\n  \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n    Adelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n    Adelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n    Adelie\nTorgersen\n38.9\n17.8\n181\n3625\nfemale\n2007\n    Adelie\nTorgersen\n39.2\n19.6\n195\n4675\nmale\n2007\n    Adelie\nTorgersen\n34.1\n18.1\n193\n3475\nNA\n2007\n    Adelie\nTorgersen\n42.0\n20.2\n190\n4250\nNA\n2007\n    Adelie\nTorgersen\n37.8\n17.1\n186\n3300\nNA\n2007\n    Adelie\nTorgersen\n37.8\n17.3\n180\n3700\nNA\n2007\n    Adelie\nTorgersen\n41.1\n17.6\n182\n3200\nfemale\n2007\n    Adelie\nTorgersen\n38.6\n21.2\n191\n3800\nmale\n2007\n    Adelie\nTorgersen\n34.6\n21.1\n198\n4400\nmale\n2007\n    Adelie\nTorgersen\n36.6\n17.8\n185\n3700\nfemale\n2007\n    Adelie\nTorgersen\n38.7\n19.0\n195\n3450\nfemale\n2007\n    Adelie\nTorgersen\n42.5\n20.7\n197\n4500\nmale\n2007\n    Adelie\nTorgersen\n34.4\n18.4\n184\n3325\nfemale\n2007\n    Adelie\nTorgersen\n46.0\n21.5\n194\n4200\nmale\n2007\n    Adelie\nBiscoe\n37.8\n18.3\n174\n3400\nfemale\n2007\n    Adelie\nBiscoe\n37.7\n18.7\n180\n3600\nmale\n2007\n    Adelie\nBiscoe\n35.9\n19.2\n189\n3800\nfemale\n2007\n    Adelie\nBiscoe\n38.2\n18.1\n185\n3950\nmale\n2007\n    Adelie\nBiscoe\n38.8\n17.2\n180\n3800\nmale\n2007\n    Adelie\nBiscoe\n35.3\n18.9\n187\n3800\nfemale\n2007\n    Adelie\nBiscoe\n40.6\n18.6\n183\n3550\nmale\n2007\n    Adelie\nBiscoe\n40.5\n17.9\n187\n3200\nfemale\n2007\n    Adelie\nBiscoe\n37.9\n18.6\n172\n3150\nfemale\n2007\n    Adelie\nBiscoe\n40.5\n18.9\n180\n3950\nmale\n2007\n    Adelie\nDream\n39.5\n16.7\n178\n3250\nfemale\n2007\n    Adelie\nDream\n37.2\n18.1\n178\n3900\nmale\n2007\n    Adelie\nDream\n39.5\n17.8\n188\n3300\nfemale\n2007\n    Adelie\nDream\n40.9\n18.9\n184\n3900\nmale\n2007\n    Adelie\nDream\n36.4\n17.0\n195\n3325\nfemale\n2007\n    Adelie\nDream\n39.2\n21.1\n196\n4150\nmale\n2007\n    Adelie\nDream\n38.8\n20.0\n190\n3950\nmale\n2007\n    Adelie\nDream\n42.2\n18.5\n180\n3550\nfemale\n2007\n    Adelie\nDream\n37.6\n19.3\n181\n3300\nfemale\n2007\n    Adelie\nDream\n39.8\n19.1\n184\n4650\nmale\n2007\n    Adelie\nDream\n36.5\n18.0\n182\n3150\nfemale\n2007\n    Adelie\nDream\n40.8\n18.4\n195\n3900\nmale\n2007\n    Adelie\nDream\n36.0\n18.5\n186\n3100\nfemale\n2007\n    Adelie\nDream\n44.1\n19.7\n196\n4400\nmale\n2007\n    Adelie\nDream\n37.0\n16.9\n185\n3000\nfemale\n2007\n    Adelie\nDream\n39.6\n18.8\n190\n4600\nmale\n2007\n    Adelie\nDream\n41.1\n19.0\n182\n3425\nmale\n2007\n    Adelie\nDream\n37.5\n18.9\n179\n2975\nNA\n2007\n    Adelie\nDream\n36.0\n17.9\n190\n3450\nfemale\n2007\n    Adelie\nDream\n42.3\n21.2\n191\n4150\nmale\n2007\n    Adelie\nBiscoe\n39.6\n17.7\n186\n3500\nfemale\n2008\n    Adelie\nBiscoe\n40.1\n18.9\n188\n4300\nmale\n2008\n    Adelie\nBiscoe\n35.0\n17.9\n190\n3450\nfemale\n2008\n    Adelie\nBiscoe\n42.0\n19.5\n200\n4050\nmale\n2008\n    Adelie\nBiscoe\n34.5\n18.1\n187\n2900\nfemale\n2008\n    Adelie\nBiscoe\n41.4\n18.6\n191\n3700\nmale\n2008\n    Adelie\nBiscoe\n39.0\n17.5\n186\n3550\nfemale\n2008\n    Adelie\nBiscoe\n40.6\n18.8\n193\n3800\nmale\n2008\n    Adelie\nBiscoe\n36.5\n16.6\n181\n2850\nfemale\n2008\n    Adelie\nBiscoe\n37.6\n19.1\n194\n3750\nmale\n2008\n    Adelie\nBiscoe\n35.7\n16.9\n185\n3150\nfemale\n2008\n    Adelie\nBiscoe\n41.3\n21.1\n195\n4400\nmale\n2008\n    Adelie\nBiscoe\n37.6\n17.0\n185\n3600\nfemale\n2008\n    Adelie\nBiscoe\n41.1\n18.2\n192\n4050\nmale\n2008\n    Adelie\nBiscoe\n36.4\n17.1\n184\n2850\nfemale\n2008\n    Adelie\nBiscoe\n41.6\n18.0\n192\n3950\nmale\n2008\n    Adelie\nBiscoe\n35.5\n16.2\n195\n3350\nfemale\n2008\n    Adelie\nBiscoe\n41.1\n19.1\n188\n4100\nmale\n2008\n    Adelie\nTorgersen\n35.9\n16.6\n190\n3050\nfemale\n2008\n    Adelie\nTorgersen\n41.8\n19.4\n198\n4450\nmale\n2008\n    Adelie\nTorgersen\n33.5\n19.0\n190\n3600\nfemale\n2008\n    Adelie\nTorgersen\n39.7\n18.4\n190\n3900\nmale\n2008\n    Adelie\nTorgersen\n39.6\n17.2\n196\n3550\nfemale\n2008\n    Adelie\nTorgersen\n45.8\n18.9\n197\n4150\nmale\n2008\n    Adelie\nTorgersen\n35.5\n17.5\n190\n3700\nfemale\n2008\n    Adelie\nTorgersen\n42.8\n18.5\n195\n4250\nmale\n2008\n    Adelie\nTorgersen\n40.9\n16.8\n191\n3700\nfemale\n2008\n    Adelie\nTorgersen\n37.2\n19.4\n184\n3900\nmale\n2008\n    Adelie\nTorgersen\n36.2\n16.1\n187\n3550\nfemale\n2008\n    Adelie\nTorgersen\n42.1\n19.1\n195\n4000\nmale\n2008\n    Adelie\nTorgersen\n34.6\n17.2\n189\n3200\nfemale\n2008\n    Adelie\nTorgersen\n42.9\n17.6\n196\n4700\nmale\n2008\n    Adelie\nTorgersen\n36.7\n18.8\n187\n3800\nfemale\n2008\n    Adelie\nTorgersen\n35.1\n19.4\n193\n4200\nmale\n2008\n    Adelie\nDream\n37.3\n17.8\n191\n3350\nfemale\n2008\n    Adelie\nDream\n41.3\n20.3\n194\n3550\nmale\n2008\n    Adelie\nDream\n36.3\n19.5\n190\n3800\nmale\n2008\n    Adelie\nDream\n36.9\n18.6\n189\n3500\nfemale\n2008\n    Adelie\nDream\n38.3\n19.2\n189\n3950\nmale\n2008\n    Adelie\nDream\n38.9\n18.8\n190\n3600\nfemale\n2008\n    Adelie\nDream\n35.7\n18.0\n202\n3550\nfemale\n2008\n    Adelie\nDream\n41.1\n18.1\n205\n4300\nmale\n2008\n    Adelie\nDream\n34.0\n17.1\n185\n3400\nfemale\n2008\n    Adelie\nDream\n39.6\n18.1\n186\n4450\nmale\n2008\n    Adelie\nDream\n36.2\n17.3\n187\n3300\nfemale\n2008\n    Adelie\nDream\n40.8\n18.9\n208\n4300\nmale\n2008\n    Adelie\nDream\n38.1\n18.6\n190\n3700\nfemale\n2008\n    Adelie\nDream\n40.3\n18.5\n196\n4350\nmale\n2008\n    Adelie\nDream\n33.1\n16.1\n178\n2900\nfemale\n2008\n    Adelie\nDream\n43.2\n18.5\n192\n4100\nmale\n2008\n    Adelie\nBiscoe\n35.0\n17.9\n192\n3725\nfemale\n2009\n    Adelie\nBiscoe\n41.0\n20.0\n203\n4725\nmale\n2009\n    Adelie\nBiscoe\n37.7\n16.0\n183\n3075\nfemale\n2009\n    Adelie\nBiscoe\n37.8\n20.0\n190\n4250\nmale\n2009\n    Adelie\nBiscoe\n37.9\n18.6\n193\n2925\nfemale\n2009\n    Adelie\nBiscoe\n39.7\n18.9\n184\n3550\nmale\n2009\n    Adelie\nBiscoe\n38.6\n17.2\n199\n3750\nfemale\n2009\n    Adelie\nBiscoe\n38.2\n20.0\n190\n3900\nmale\n2009\n    Adelie\nBiscoe\n38.1\n17.0\n181\n3175\nfemale\n2009\n    Adelie\nBiscoe\n43.2\n19.0\n197\n4775\nmale\n2009\n    Adelie\nBiscoe\n38.1\n16.5\n198\n3825\nfemale\n2009\n    Adelie\nBiscoe\n45.6\n20.3\n191\n4600\nmale\n2009\n    Adelie\nBiscoe\n39.7\n17.7\n193\n3200\nfemale\n2009\n    Adelie\nBiscoe\n42.2\n19.5\n197\n4275\nmale\n2009\n    Adelie\nBiscoe\n39.6\n20.7\n191\n3900\nfemale\n2009\n    Adelie\nBiscoe\n42.7\n18.3\n196\n4075\nmale\n2009\n    Adelie\nTorgersen\n38.6\n17.0\n188\n2900\nfemale\n2009\n    Adelie\nTorgersen\n37.3\n20.5\n199\n3775\nmale\n2009\n    Adelie\nTorgersen\n35.7\n17.0\n189\n3350\nfemale\n2009\n    Adelie\nTorgersen\n41.1\n18.6\n189\n3325\nmale\n2009\n    Adelie\nTorgersen\n36.2\n17.2\n187\n3150\nfemale\n2009\n    Adelie\nTorgersen\n37.7\n19.8\n198\n3500\nmale\n2009\n    Adelie\nTorgersen\n40.2\n17.0\n176\n3450\nfemale\n2009\n    Adelie\nTorgersen\n41.4\n18.5\n202\n3875\nmale\n2009\n    Adelie\nTorgersen\n35.2\n15.9\n186\n3050\nfemale\n2009\n    Adelie\nTorgersen\n40.6\n19.0\n199\n4000\nmale\n2009\n    Adelie\nTorgersen\n38.8\n17.6\n191\n3275\nfemale\n2009\n    Adelie\nTorgersen\n41.5\n18.3\n195\n4300\nmale\n2009\n    Adelie\nTorgersen\n39.0\n17.1\n191\n3050\nfemale\n2009\n    Adelie\nTorgersen\n44.1\n18.0\n210\n4000\nmale\n2009\n    Adelie\nTorgersen\n38.5\n17.9\n190\n3325\nfemale\n2009\n    Adelie\nTorgersen\n43.1\n19.2\n197\n3500\nmale\n2009\n    Adelie\nDream\n36.8\n18.5\n193\n3500\nfemale\n2009\n    Adelie\nDream\n37.5\n18.5\n199\n4475\nmale\n2009\n    Adelie\nDream\n38.1\n17.6\n187\n3425\nfemale\n2009\n    Adelie\nDream\n41.1\n17.5\n190\n3900\nmale\n2009\n    Adelie\nDream\n35.6\n17.5\n191\n3175\nfemale\n2009\n    Adelie\nDream\n40.2\n20.1\n200\n3975\nmale\n2009\n    Adelie\nDream\n37.0\n16.5\n185\n3400\nfemale\n2009\n    Adelie\nDream\n39.7\n17.9\n193\n4250\nmale\n2009\n    Adelie\nDream\n40.2\n17.1\n193\n3400\nfemale\n2009\n    Adelie\nDream\n40.6\n17.2\n187\n3475\nmale\n2009\n    Adelie\nDream\n32.1\n15.5\n188\n3050\nfemale\n2009\n    Adelie\nDream\n40.7\n17.0\n190\n3725\nmale\n2009\n    Adelie\nDream\n37.3\n16.8\n192\n3000\nfemale\n2009\n    Adelie\nDream\n39.0\n18.7\n185\n3650\nmale\n2009\n    Adelie\nDream\n39.2\n18.6\n190\n4250\nmale\n2009\n    Adelie\nDream\n36.6\n18.4\n184\n3475\nfemale\n2009\n    Adelie\nDream\n36.0\n17.8\n195\n3450\nfemale\n2009\n    Adelie\nDream\n37.8\n18.1\n193\n3750\nmale\n2009\n    Adelie\nDream\n36.0\n17.1\n187\n3700\nfemale\n2009\n    Adelie\nDream\n41.5\n18.5\n201\n4000\nmale\n2009\n    Gentoo\nBiscoe\n46.1\n13.2\n211\n4500\nfemale\n2007\n    Gentoo\nBiscoe\n50.0\n16.3\n230\n5700\nmale\n2007\n    Gentoo\nBiscoe\n48.7\n14.1\n210\n4450\nfemale\n2007\n    Gentoo\nBiscoe\n50.0\n15.2\n218\n5700\nmale\n2007\n    Gentoo\nBiscoe\n47.6\n14.5\n215\n5400\nmale\n2007\n    Gentoo\nBiscoe\n46.5\n13.5\n210\n4550\nfemale\n2007\n    Gentoo\nBiscoe\n45.4\n14.6\n211\n4800\nfemale\n2007\n    Gentoo\nBiscoe\n46.7\n15.3\n219\n5200\nmale\n2007\n    Gentoo\nBiscoe\n43.3\n13.4\n209\n4400\nfemale\n2007\n    Gentoo\nBiscoe\n46.8\n15.4\n215\n5150\nmale\n2007\n    Gentoo\nBiscoe\n40.9\n13.7\n214\n4650\nfemale\n2007\n    Gentoo\nBiscoe\n49.0\n16.1\n216\n5550\nmale\n2007\n    Gentoo\nBiscoe\n45.5\n13.7\n214\n4650\nfemale\n2007\n    Gentoo\nBiscoe\n48.4\n14.6\n213\n5850\nmale\n2007\n    Gentoo\nBiscoe\n45.8\n14.6\n210\n4200\nfemale\n2007\n    Gentoo\nBiscoe\n49.3\n15.7\n217\n5850\nmale\n2007\n    Gentoo\nBiscoe\n42.0\n13.5\n210\n4150\nfemale\n2007\n    Gentoo\nBiscoe\n49.2\n15.2\n221\n6300\nmale\n2007\n    Gentoo\nBiscoe\n46.2\n14.5\n209\n4800\nfemale\n2007\n    Gentoo\nBiscoe\n48.7\n15.1\n222\n5350\nmale\n2007\n    Gentoo\nBiscoe\n50.2\n14.3\n218\n5700\nmale\n2007\n    Gentoo\nBiscoe\n45.1\n14.5\n215\n5000\nfemale\n2007\n    Gentoo\nBiscoe\n46.5\n14.5\n213\n4400\nfemale\n2007\n    Gentoo\nBiscoe\n46.3\n15.8\n215\n5050\nmale\n2007\n    Gentoo\nBiscoe\n42.9\n13.1\n215\n5000\nfemale\n2007\n    Gentoo\nBiscoe\n46.1\n15.1\n215\n5100\nmale\n2007\n    Gentoo\nBiscoe\n44.5\n14.3\n216\n4100\nNA\n2007\n    Gentoo\nBiscoe\n47.8\n15.0\n215\n5650\nmale\n2007\n    Gentoo\nBiscoe\n48.2\n14.3\n210\n4600\nfemale\n2007\n    Gentoo\nBiscoe\n50.0\n15.3\n220\n5550\nmale\n2007\n    Gentoo\nBiscoe\n47.3\n15.3\n222\n5250\nmale\n2007\n    Gentoo\nBiscoe\n42.8\n14.2\n209\n4700\nfemale\n2007\n    Gentoo\nBiscoe\n45.1\n14.5\n207\n5050\nfemale\n2007\n    Gentoo\nBiscoe\n59.6\n17.0\n230\n6050\nmale\n2007\n    Gentoo\nBiscoe\n49.1\n14.8\n220\n5150\nfemale\n2008\n    Gentoo\nBiscoe\n48.4\n16.3\n220\n5400\nmale\n2008\n    Gentoo\nBiscoe\n42.6\n13.7\n213\n4950\nfemale\n2008\n    Gentoo\nBiscoe\n44.4\n17.3\n219\n5250\nmale\n2008\n    Gentoo\nBiscoe\n44.0\n13.6\n208\n4350\nfemale\n2008\n    Gentoo\nBiscoe\n48.7\n15.7\n208\n5350\nmale\n2008\n    Gentoo\nBiscoe\n42.7\n13.7\n208\n3950\nfemale\n2008\n    Gentoo\nBiscoe\n49.6\n16.0\n225\n5700\nmale\n2008\n    Gentoo\nBiscoe\n45.3\n13.7\n210\n4300\nfemale\n2008\n    Gentoo\nBiscoe\n49.6\n15.0\n216\n4750\nmale\n2008\n    Gentoo\nBiscoe\n50.5\n15.9\n222\n5550\nmale\n2008\n    Gentoo\nBiscoe\n43.6\n13.9\n217\n4900\nfemale\n2008\n    Gentoo\nBiscoe\n45.5\n13.9\n210\n4200\nfemale\n2008\n    Gentoo\nBiscoe\n50.5\n15.9\n225\n5400\nmale\n2008\n    Gentoo\nBiscoe\n44.9\n13.3\n213\n5100\nfemale\n2008\n    Gentoo\nBiscoe\n45.2\n15.8\n215\n5300\nmale\n2008\n    Gentoo\nBiscoe\n46.6\n14.2\n210\n4850\nfemale\n2008\n    Gentoo\nBiscoe\n48.5\n14.1\n220\n5300\nmale\n2008\n    Gentoo\nBiscoe\n45.1\n14.4\n210\n4400\nfemale\n2008\n    Gentoo\nBiscoe\n50.1\n15.0\n225\n5000\nmale\n2008\n    Gentoo\nBiscoe\n46.5\n14.4\n217\n4900\nfemale\n2008\n    Gentoo\nBiscoe\n45.0\n15.4\n220\n5050\nmale\n2008\n    Gentoo\nBiscoe\n43.8\n13.9\n208\n4300\nfemale\n2008\n    Gentoo\nBiscoe\n45.5\n15.0\n220\n5000\nmale\n2008\n    Gentoo\nBiscoe\n43.2\n14.5\n208\n4450\nfemale\n2008\n    Gentoo\nBiscoe\n50.4\n15.3\n224\n5550\nmale\n2008\n    Gentoo\nBiscoe\n45.3\n13.8\n208\n4200\nfemale\n2008\n    Gentoo\nBiscoe\n46.2\n14.9\n221\n5300\nmale\n2008\n    Gentoo\nBiscoe\n45.7\n13.9\n214\n4400\nfemale\n2008\n    Gentoo\nBiscoe\n54.3\n15.7\n231\n5650\nmale\n2008\n    Gentoo\nBiscoe\n45.8\n14.2\n219\n4700\nfemale\n2008\n    Gentoo\nBiscoe\n49.8\n16.8\n230\n5700\nmale\n2008\n    Gentoo\nBiscoe\n46.2\n14.4\n214\n4650\nNA\n2008\n    Gentoo\nBiscoe\n49.5\n16.2\n229\n5800\nmale\n2008\n    Gentoo\nBiscoe\n43.5\n14.2\n220\n4700\nfemale\n2008\n    Gentoo\nBiscoe\n50.7\n15.0\n223\n5550\nmale\n2008\n    Gentoo\nBiscoe\n47.7\n15.0\n216\n4750\nfemale\n2008\n    Gentoo\nBiscoe\n46.4\n15.6\n221\n5000\nmale\n2008\n    Gentoo\nBiscoe\n48.2\n15.6\n221\n5100\nmale\n2008\n    Gentoo\nBiscoe\n46.5\n14.8\n217\n5200\nfemale\n2008\n    Gentoo\nBiscoe\n46.4\n15.0\n216\n4700\nfemale\n2008\n    Gentoo\nBiscoe\n48.6\n16.0\n230\n5800\nmale\n2008\n    Gentoo\nBiscoe\n47.5\n14.2\n209\n4600\nfemale\n2008\n    Gentoo\nBiscoe\n51.1\n16.3\n220\n6000\nmale\n2008\n    Gentoo\nBiscoe\n45.2\n13.8\n215\n4750\nfemale\n2008\n    Gentoo\nBiscoe\n45.2\n16.4\n223\n5950\nmale\n2008\n    Gentoo\nBiscoe\n49.1\n14.5\n212\n4625\nfemale\n2009\n    Gentoo\nBiscoe\n52.5\n15.6\n221\n5450\nmale\n2009\n    Gentoo\nBiscoe\n47.4\n14.6\n212\n4725\nfemale\n2009\n    Gentoo\nBiscoe\n50.0\n15.9\n224\n5350\nmale\n2009\n    Gentoo\nBiscoe\n44.9\n13.8\n212\n4750\nfemale\n2009\n    Gentoo\nBiscoe\n50.8\n17.3\n228\n5600\nmale\n2009\n    Gentoo\nBiscoe\n43.4\n14.4\n218\n4600\nfemale\n2009\n    Gentoo\nBiscoe\n51.3\n14.2\n218\n5300\nmale\n2009\n    Gentoo\nBiscoe\n47.5\n14.0\n212\n4875\nfemale\n2009\n    Gentoo\nBiscoe\n52.1\n17.0\n230\n5550\nmale\n2009\n    Gentoo\nBiscoe\n47.5\n15.0\n218\n4950\nfemale\n2009\n    Gentoo\nBiscoe\n52.2\n17.1\n228\n5400\nmale\n2009\n    Gentoo\nBiscoe\n45.5\n14.5\n212\n4750\nfemale\n2009\n    Gentoo\nBiscoe\n49.5\n16.1\n224\n5650\nmale\n2009\n    Gentoo\nBiscoe\n44.5\n14.7\n214\n4850\nfemale\n2009\n    Gentoo\nBiscoe\n50.8\n15.7\n226\n5200\nmale\n2009\n    Gentoo\nBiscoe\n49.4\n15.8\n216\n4925\nmale\n2009\n    Gentoo\nBiscoe\n46.9\n14.6\n222\n4875\nfemale\n2009\n    Gentoo\nBiscoe\n48.4\n14.4\n203\n4625\nfemale\n2009\n    Gentoo\nBiscoe\n51.1\n16.5\n225\n5250\nmale\n2009\n    Gentoo\nBiscoe\n48.5\n15.0\n219\n4850\nfemale\n2009\n    Gentoo\nBiscoe\n55.9\n17.0\n228\n5600\nmale\n2009\n    Gentoo\nBiscoe\n47.2\n15.5\n215\n4975\nfemale\n2009\n    Gentoo\nBiscoe\n49.1\n15.0\n228\n5500\nmale\n2009\n    Gentoo\nBiscoe\n47.3\n13.8\n216\n4725\nNA\n2009\n    Gentoo\nBiscoe\n46.8\n16.1\n215\n5500\nmale\n2009\n    Gentoo\nBiscoe\n41.7\n14.7\n210\n4700\nfemale\n2009\n    Gentoo\nBiscoe\n53.4\n15.8\n219\n5500\nmale\n2009\n    Gentoo\nBiscoe\n43.3\n14.0\n208\n4575\nfemale\n2009\n    Gentoo\nBiscoe\n48.1\n15.1\n209\n5500\nmale\n2009\n    Gentoo\nBiscoe\n50.5\n15.2\n216\n5000\nfemale\n2009\n    Gentoo\nBiscoe\n49.8\n15.9\n229\n5950\nmale\n2009\n    Gentoo\nBiscoe\n43.5\n15.2\n213\n4650\nfemale\n2009\n    Gentoo\nBiscoe\n51.5\n16.3\n230\n5500\nmale\n2009\n    Gentoo\nBiscoe\n46.2\n14.1\n217\n4375\nfemale\n2009\n    Gentoo\nBiscoe\n55.1\n16.0\n230\n5850\nmale\n2009\n    Gentoo\nBiscoe\n44.5\n15.7\n217\n4875\nNA\n2009\n    Gentoo\nBiscoe\n48.8\n16.2\n222\n6000\nmale\n2009\n    Gentoo\nBiscoe\n47.2\n13.7\n214\n4925\nfemale\n2009\n    Gentoo\nBiscoe\nNA\nNA\nNA\nNA\nNA\n2009\n    Gentoo\nBiscoe\n46.8\n14.3\n215\n4850\nfemale\n2009\n    Gentoo\nBiscoe\n50.4\n15.7\n222\n5750\nmale\n2009\n    Gentoo\nBiscoe\n45.2\n14.8\n212\n5200\nfemale\n2009\n    Gentoo\nBiscoe\n49.9\n16.1\n213\n5400\nmale\n2009\n    Chinstrap\nDream\n46.5\n17.9\n192\n3500\nfemale\n2007\n    Chinstrap\nDream\n50.0\n19.5\n196\n3900\nmale\n2007\n    Chinstrap\nDream\n51.3\n19.2\n193\n3650\nmale\n2007\n    Chinstrap\nDream\n45.4\n18.7\n188\n3525\nfemale\n2007\n    Chinstrap\nDream\n52.7\n19.8\n197\n3725\nmale\n2007\n    Chinstrap\nDream\n45.2\n17.8\n198\n3950\nfemale\n2007\n    Chinstrap\nDream\n46.1\n18.2\n178\n3250\nfemale\n2007\n    Chinstrap\nDream\n51.3\n18.2\n197\n3750\nmale\n2007\n    Chinstrap\nDream\n46.0\n18.9\n195\n4150\nfemale\n2007\n    Chinstrap\nDream\n51.3\n19.9\n198\n3700\nmale\n2007\n    Chinstrap\nDream\n46.6\n17.8\n193\n3800\nfemale\n2007\n    Chinstrap\nDream\n51.7\n20.3\n194\n3775\nmale\n2007\n    Chinstrap\nDream\n47.0\n17.3\n185\n3700\nfemale\n2007\n    Chinstrap\nDream\n52.0\n18.1\n201\n4050\nmale\n2007\n    Chinstrap\nDream\n45.9\n17.1\n190\n3575\nfemale\n2007\n    Chinstrap\nDream\n50.5\n19.6\n201\n4050\nmale\n2007\n    Chinstrap\nDream\n50.3\n20.0\n197\n3300\nmale\n2007\n    Chinstrap\nDream\n58.0\n17.8\n181\n3700\nfemale\n2007\n    Chinstrap\nDream\n46.4\n18.6\n190\n3450\nfemale\n2007\n    Chinstrap\nDream\n49.2\n18.2\n195\n4400\nmale\n2007\n    Chinstrap\nDream\n42.4\n17.3\n181\n3600\nfemale\n2007\n    Chinstrap\nDream\n48.5\n17.5\n191\n3400\nmale\n2007\n    Chinstrap\nDream\n43.2\n16.6\n187\n2900\nfemale\n2007\n    Chinstrap\nDream\n50.6\n19.4\n193\n3800\nmale\n2007\n    Chinstrap\nDream\n46.7\n17.9\n195\n3300\nfemale\n2007\n    Chinstrap\nDream\n52.0\n19.0\n197\n4150\nmale\n2007\n    Chinstrap\nDream\n50.5\n18.4\n200\n3400\nfemale\n2008\n    Chinstrap\nDream\n49.5\n19.0\n200\n3800\nmale\n2008\n    Chinstrap\nDream\n46.4\n17.8\n191\n3700\nfemale\n2008\n    Chinstrap\nDream\n52.8\n20.0\n205\n4550\nmale\n2008\n    Chinstrap\nDream\n40.9\n16.6\n187\n3200\nfemale\n2008\n    Chinstrap\nDream\n54.2\n20.8\n201\n4300\nmale\n2008\n    Chinstrap\nDream\n42.5\n16.7\n187\n3350\nfemale\n2008\n    Chinstrap\nDream\n51.0\n18.8\n203\n4100\nmale\n2008\n    Chinstrap\nDream\n49.7\n18.6\n195\n3600\nmale\n2008\n    Chinstrap\nDream\n47.5\n16.8\n199\n3900\nfemale\n2008\n    Chinstrap\nDream\n47.6\n18.3\n195\n3850\nfemale\n2008\n    Chinstrap\nDream\n52.0\n20.7\n210\n4800\nmale\n2008\n    Chinstrap\nDream\n46.9\n16.6\n192\n2700\nfemale\n2008\n    Chinstrap\nDream\n53.5\n19.9\n205\n4500\nmale\n2008\n    Chinstrap\nDream\n49.0\n19.5\n210\n3950\nmale\n2008\n    Chinstrap\nDream\n46.2\n17.5\n187\n3650\nfemale\n2008\n    Chinstrap\nDream\n50.9\n19.1\n196\n3550\nmale\n2008\n    Chinstrap\nDream\n45.5\n17.0\n196\n3500\nfemale\n2008\n    Chinstrap\nDream\n50.9\n17.9\n196\n3675\nfemale\n2009\n    Chinstrap\nDream\n50.8\n18.5\n201\n4450\nmale\n2009\n    Chinstrap\nDream\n50.1\n17.9\n190\n3400\nfemale\n2009\n    Chinstrap\nDream\n49.0\n19.6\n212\n4300\nmale\n2009\n    Chinstrap\nDream\n51.5\n18.7\n187\n3250\nmale\n2009\n    Chinstrap\nDream\n49.8\n17.3\n198\n3675\nfemale\n2009\n    Chinstrap\nDream\n48.1\n16.4\n199\n3325\nfemale\n2009\n    Chinstrap\nDream\n51.4\n19.0\n201\n3950\nmale\n2009\n    Chinstrap\nDream\n45.7\n17.3\n193\n3600\nfemale\n2009\n    Chinstrap\nDream\n50.7\n19.7\n203\n4050\nmale\n2009\n    Chinstrap\nDream\n42.5\n17.3\n187\n3350\nfemale\n2009\n    Chinstrap\nDream\n52.2\n18.8\n197\n3450\nmale\n2009\n    Chinstrap\nDream\n45.2\n16.6\n191\n3250\nfemale\n2009\n    Chinstrap\nDream\n49.3\n19.9\n203\n4050\nmale\n2009\n    Chinstrap\nDream\n50.2\n18.8\n202\n3800\nmale\n2009\n    Chinstrap\nDream\n45.6\n19.4\n194\n3525\nfemale\n2009\n    Chinstrap\nDream\n51.9\n19.5\n206\n3950\nmale\n2009\n    Chinstrap\nDream\n46.8\n16.5\n189\n3650\nfemale\n2009\n    Chinstrap\nDream\n45.7\n17.0\n195\n3650\nfemale\n2009\n    Chinstrap\nDream\n55.8\n19.8\n207\n4000\nmale\n2009\n    Chinstrap\nDream\n43.5\n18.1\n202\n3400\nfemale\n2009\n    Chinstrap\nDream\n49.6\n18.2\n193\n3775\nmale\n2009\n    Chinstrap\nDream\n50.8\n19.0\n210\n4100\nmale\n2009\n    Chinstrap\nDream\n50.2\n18.7\n198\n3775\nfemale\n2009\n  \n  \n  \n\n\n\n\n\nsummary(penguins)\n\n      species          island    bill_length_mm  bill_depth_mm  \n Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  \n Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  \n Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  \n                                 Mean   :43.92   Mean   :17.15  \n                                 3rd Qu.:48.50   3rd Qu.:18.70  \n                                 Max.   :59.60   Max.   :21.50  \n                                 NA's   :2       NA's   :2      \n flipper_length_mm  body_mass_g       sex           year     \n Min.   :172.0     Min.   :2700   female:165   Min.   :2007  \n 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  \n Median :197.0     Median :4050   NA's  : 11   Median :2008  \n Mean   :200.9     Mean   :4202                Mean   :2008  \n 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  \n Max.   :231.0     Max.   :6300                Max.   :2009  \n NA's   :2         NA's   :2"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#columns",
-    "href": "part2_presentations_beamer.html#columns",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Columns",
-    "text": "Columns\nYou can arrange content in columns using Pandoc’s fenced div blocks.\n::: {.columns}\n                                        \n::: {.column width=\"50%\"}\nThis is the left column. You can put text, images, or code here.\n:::\n                                          \n::: {.column width=\"50%\"}\nThis is the right column.\n:::\n                                          \n:::"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#columns-an-example",
-    "href": "part2_presentations_beamer.html#columns-an-example",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Columns, an Example",
-    "text": "Columns, an Example\nHere is a 30/70 split:\n\n\nHere we have the first four rows of the Palmer Penguins Data set.\n\n\npenguins %&gt;% head(4) %&gt;% gt()\n\n\n\n\n\n  \n    \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    Adelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n    Adelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n    Adelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n    Adelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#displaying-code-and-output",
-    "href": "part2_presentations_beamer.html#displaying-code-and-output",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Displaying Code and Output",
-    "text": "Displaying Code and Output\n```{r}\n#| echo: true\n#| eval: true\nlibrary(palmerpenguins)\nsummary(penguins)\n```\n\n#| echo: true shows the code.\n#| eval: true runs the code and shows the output."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#code-output-layout",
-    "href": "part2_presentations_beamer.html#code-output-layout",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Code Output Layout",
-    "text": "Code Output Layout\nYou can control where the output of a code block appears.\n\n#| output-location: beside places output next to the code.\n#| output-location: slide places output on a new slide following the code slide.\n#| output-location: column places output in a column adjacent to the code."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#revealing-code-stepwise",
-    "href": "part2_presentations_beamer.html#revealing-code-stepwise",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Revealing Code Stepwise",
-    "text": "Revealing Code Stepwise\nYou can reveal code and its output incrementally.\n\n#| output-location: fragment delays showing output until advancing with a click.\n#| output-location: column-fragment places output in a column adjacent to the code and delays showing until advancing with a click.\n\n\n\n```{r}\n#| echo: true\n#| output-location: \"fragment\"\nx &lt;- 3\ny &lt;- 2\nx + y\nx*y\n```\n\nEach line will appear on a subsequent click.\n\nx &lt;- 3\ny &lt;- 2\nx + y\n\n[1] 5\n\nx*y\n\n[1] 6"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#highlighting-code",
-    "href": "part2_presentations_beamer.html#highlighting-code",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Highlighting Code",
-    "text": "Highlighting Code\nUse code-line-numbers to highlight specific lines.\n\n\n```{r}\n#| code-line-numbers: \"3,5-6\"\nx &lt;- 1\ny &lt;- 2\nz &lt;- x + y\n\na &lt;- \"hello\"\nb &lt;- \"world\"\npaste(a, b)\n```\n\n\nx &lt;- 1\ny &lt;- 2\nz &lt;- x + y\n\na &lt;- \"hello\"\nb &lt;- \"world\"\npaste(a, b)\n\n[1] \"hello world\""
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#collapsing-code",
-    "href": "part2_presentations_beamer.html#collapsing-code",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Collapsing Code",
-    "text": "Collapsing Code\nUse code-fold: true to make code blocks expandable.\n```{r}\n#| code-fold: true\n#| echo: true\nprint(\"This code is hidden by default.\")\n```\n\n\nCode\nprint(\"This code is hidden by default.\")\n\n\n[1] \"This code is hidden by default.\""
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#incremental-lists",
-    "href": "part2_presentations_beamer.html#incremental-lists",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Incremental Lists",
-    "text": "Incremental Lists\nLists can optionally be displayed incrementally:\n\n\nFirst item\nSecond item\nThird item\n\n\n. . .\n Insert pauses to make other types of content display incrementally with &lt;br/&gt;.\n\nLearn more: Incremental Lists"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#incremental-reveals",
-    "href": "part2_presentations_beamer.html#incremental-reveals",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Incremental Reveals",
-    "text": "Incremental Reveals\nMore customization to show parts of a slide step-by-step can be made with the .fragment class. This works on lists, text, images, and more.\n::: {.fragment}\nFade in\n:::\n\n::: {.fragment .fade-out}\nFade out\n:::\n\n::: {.fragment .highlight-red}\nHighlight red\n:::\n\nFade in\n\n\nFade out\n\n\nHighlight red\n\n\nLearn more: Fragments"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#tabsets",
-    "href": "part2_presentations_beamer.html#tabsets",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tabsets",
-    "text": "Tabsets\nYou can add tabbed content to slides using the standard Quarto syntax for tabsets. For example:\n::: {.panel-tabset}\n\n### Tab A\n\nContent for `Tab A`\n\n### Tab B\n\nContent for `Tab B`\n\n:::"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#tabsets---rendered",
-    "href": "part2_presentations_beamer.html#tabsets---rendered",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tabsets - Rendered",
-    "text": "Tabsets - Rendered\nYou can add tabbed content to slides using the standard Quarto syntax for tabsets. For example:\n\nTab ATab BTab C\n\n\nContent for Tab A\n\n\nContent for Tab B\n\n\nContent for Tab C"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#themes",
-    "href": "part2_presentations_beamer.html#themes",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Themes",
-    "text": "Themes\nYou can change the entire look of your presentation with themes.\n---\ntitle: \"My Presentation\"\nformat:\n  revealjs:\n    theme: dark\n---\nAvailable themes include: default, dark, simple, solarized, blood, moon."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#custom-styles-with-scss",
-    "href": "part2_presentations_beamer.html#custom-styles-with-scss",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Custom Styles with SCSS",
-    "text": "Custom Styles with SCSS\nFor more control, you can use a .scss file to customize your theme.\n\nCreate a file named custom.scss.\nIn this file, you can define variables and CSS rules, including changing font color:\n\n/*-- scss:defaults --*/\n$presentation-heading-font: \"Montserrat\", sans-serif;\n$theme-green: #40ab16;\n\n/*-- scss:rules --*/\n.reveal .slide-background-content {\nbackground-color: #F0F0F0;\n}\n\nLink it in your YAML:\n\n---\nformat:\n  revealjs:\n    theme: [default, custom.scss]\n---"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#lists",
-    "href": "part2_presentations_beamer.html#lists",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Lists",
-    "text": "Lists\nYou make lists in markdown using - or * such as:\n- Item 1\n- Item 2\n- Item 3\n\nItem 1\nItem 2\nItem 3"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#tables",
-    "href": "part2_presentations_beamer.html#tables",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Tables",
-    "text": "Tables\nOne benefit of using or switching over to the Visual editor is that it is much easier to add tables.\n\n\n| Name    | Date     | Measure |\n|---------|----------|---------|\n| Jessica | 02/04/25 | 9.3     |\n| Meike   | 01/03/25 | 10.1    |\n| WNAR    |          | 10.5    |\n\n\n\n\nName\nDate\nMeasure\n\n\n\n\nJessica\n02/04/25\n9.3\n\n\nMeike\n01/03/25\n10.1\n\n\nWNAR\n\n10.5\n\n\n\n\n\n\nMore at Quarto Docs: Tables"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#images",
-    "href": "part2_presentations_beamer.html#images",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Images",
-    "text": "Images\nAdd an image with a simple ![](filepath.png)\n![](images/web/cat_laptop.gif)\n\n\n\n\nYou can add html image options, such as a smaller width or size:\n![](images/web/cat_laptop.gif){width=\"100\"}"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#image-ctd",
-    "href": "part2_presentations_beamer.html#image-ctd",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Image, ctd",
-    "text": "Image, ctd\nThese are attributes easily added in the visual editor Insert Image option, including a url link:\n[![OHSU Logo](images/web/ohsu_logo.jpg){width=\"100\" fig-alt=\"OHSU Logo\" fig-align=\"center\"}](https://www.ohsu.edu)\n\n\n\nOHSU Logo"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#controlling-font-size",
-    "href": "part2_presentations_beamer.html#controlling-font-size",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Controlling Font Size",
-    "text": "Controlling Font Size\nYou can adjust font size at different levels.\n\nWhole Document: Use the font-size option in your YAML header.\n\nformat:\n  revealjs:\n    font-size: 24px\n\nPart of a Slide: Wrap text in brackets and use a class like .smaller or .larger.\n\nThis is [small text]{.smaller} and this is [large text]{.larger}.\nThis is small text and this is large text.\n(Note: If this doesn’t work, make sure your theme or .scss file defines these classes)\n\nWhole Slide: Use the r-fit-text class to make text fill the slide.\n\n::: {.r-fit-text}\nBig Text\n:::"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#slide-with-big-text",
-    "href": "part2_presentations_beamer.html#slide-with-big-text",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Slide with BIG TEXT",
-    "text": "Slide with BIG TEXT\n\nBig Text"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#customizing-text-styles",
-    "href": "part2_presentations_beamer.html#customizing-text-styles",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Customizing Text Styles",
-    "text": "Customizing Text Styles\nFor more specific control over fonts for headers or code, you can use a custom .scss file.\n\nSlide Headers Font Size: Change heading sizes in custom.scss:\n\n$presentation-h1-font-size: 2.5em;\n$presentation-h2-font-size: 1.6em;\n\nCode vs. Output Font Size: Adjust code block and output font sizes in custom.scss.\n\n$code-block-font-size: 0.55em;"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#callout-blocks",
-    "href": "part2_presentations_beamer.html#callout-blocks",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Callout Blocks ⚠️",
-    "text": "Callout Blocks ⚠️\nCallouts are an excellent way to draw attention to specific pieces of information. They are especially useful for notes, warnings, or tips.\nYou create them using fenced divs with a special class.\n\n\nNote\n::: {.callout-note}\nThis is a note. Use it for helpful but not critical information.\n:::\n\nImportant\n::: {.callout-important}\nThis is important. Use it for key information the audience must know.\n:::\n\nNote\n\n\n\n\n\n\nNote\n\n\n\nThis is a note. Use it for helpful but not critical information.\n\n\nImportant\n\n\n\n\n\n\nImportant\n\n\n\nThis is important. Use it for key information the audience must know."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#callout-blocks-ctd",
-    "href": "part2_presentations_beamer.html#callout-blocks-ctd",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Callout Blocks, ctd",
-    "text": "Callout Blocks, ctd\n\n\n::: {.callout-note}\nNote that there are five types of callouts, including:\n`note`, `warning`, `important`, `tip`, and `caution`.\n:::\n\n::: {.callout-tip}\n## Tip with Title\n\nThis is an example of a callout with a title.\n:::\n\n::: {.callout-caution collapse=\"true\"}\n## Expand To Learn About Collapse\n\nThis is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse=\"true\"` to collapse it by default or `collapse=\"false\"` to make a collapsible callout that is expanded by default.\n:::\n\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default.\n\n\n\n\n\nFrom https://quarto.org/docs/authoring/callouts.html"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#customizing-the-title-slide",
-    "href": "part2_presentations_beamer.html#customizing-the-title-slide",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Customizing the Title Slide",
-    "text": "Customizing the Title Slide\nYou can add more information to your title slide directly in the YAML header. This is useful for adding affiliations, subtitles, and logos.\n---\ntitle: \"Workshop Title\"\nsubtitle: \"An In-depth Look at Quarto\"\nauthor: \"Your Name\"\ninstitute: \"Department of Biostatistics, OHSU\"\ndate: \"today\"\ntitle-slide-attributes:\n  data-background-image: \"your-logo.png\"\n  data-background-size: \"15%\"\n  data-background-position: \"top right\"\nformat: revealjs\n---"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#animation-to-add",
-    "href": "part2_presentations_beamer.html#animation-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Animation [TO ADD]",
-    "text": "Animation [TO ADD]"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#speaker-notes",
-    "href": "part2_presentations_beamer.html#speaker-notes",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Speaker Notes",
-    "text": "Speaker Notes\nPress s to open the speaker view, which shows your notes and a preview of the next slide. Add notes to a slide like this:\n## My Slide\n    \nThis is the content everyone sees.\n    \n::: {.notes}\nThese are my speaker notes. Only I can see them.\n:::"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#annotations-chalkboard",
-    "href": "part2_presentations_beamer.html#annotations-chalkboard",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Annotations & Chalkboard ✍️",
-    "text": "Annotations & Chalkboard ✍️\nRevealjs includes a “chalkboard” that you can use for live drawings and a “notes canvas” for more permanent annotations.\n\nChalkboard: Press b to toggle the chalkboard. You can draw directly on the slide. Press b again to hide it.\nNotes Canvas: Press c to toggle the notes canvas. This is like drawing on a transparent overlay that stays with the slide.\n\nAdd the chalkboard option in the YAML header to include both the chalkboard and canvas options in your slides, :\n---\nformat: \n  revealjs:\n      chalkboard: true\n---"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#saving-loading-annotations",
-    "href": "part2_presentations_beamer.html#saving-loading-annotations",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Saving & Loading Annotations:",
-    "text": "Saving & Loading Annotations:\nYour drawings are not saved by default. To save them:\n\nWhile in presentation mode, press d to download your drawings as a drawing.json file.\nTo load these annotations back the next time you present, add the chalkboard-src: option to your YAML header:\n\n---\nformat:\n  revealjs:\n    chalkboard-src: \"drawing.json\"\n---\n\n\nLearn more at Quarto’s Presenting Slides &gt; Chalkboard"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#outlines",
-    "href": "part2_presentations_beamer.html#outlines",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Outlines",
-    "text": "Outlines\nPress o to see an outline of your presentation."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#adding-a-countdown-timer",
-    "href": "part2_presentations_beamer.html#adding-a-countdown-timer",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Adding a Countdown Timer ⏳",
-    "text": "Adding a Countdown Timer ⏳\nA great way to manage time for in-class exercises or breaks is to add a countdown timer directly into your slides. We can use the countdown package, which we installed earlier.\nLet’s set a 5-minute timer for a quick break.\n\ncountdown::countdown(minutes = 5, play_sound = TRUE)\n\n\n−+\n05:00\n\n\n\nThis will embed a timer on the slide. You can customize the duration, text, colors, and whether it plays a sound when finished."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#html-slides",
-    "href": "part2_presentations_beamer.html#html-slides",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "HTML Slides",
-    "text": "HTML Slides\n\nFrom Quarto Docs: Presentations: There are pros and cons to each of these formats. The most capable format by far is revealjs, so it is highly recommended unless you have specific Office or LaTeX output requirements. Note that revealjs presentations can be presented as HTML slides or can be printed to PDF for easier distribution."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#setting-up-bibliography",
-    "href": "part2_presentations_beamer.html#setting-up-bibliography",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Setting Up Bibliography",
-    "text": "Setting Up Bibliography\nStep 1: Add to YAML header\n---\ntitle: \"My Presentation\"\nformat: revealjs\nbibliography: references.bib\ncsl: apa.csl\n---\n(Use csl only if you have a custom csl file, see Citations)\nStep 2: Create references.bib\n@article{smith2023,\n  title={Important Research},\n  author={Smith, John},\n  journal={Journal of Science},\n  year={2023}\n}"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#citation-syntax",
-    "href": "part2_presentations_beamer.html#citation-syntax",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Citation Syntax",
-    "text": "Citation Syntax\nIn-text citations:\nResearch shows [@smith2023] that...\nMultiple sources [@smith2023; @jones2022]\nPage numbers [@smith2023, p. 15]\nCitation styles: - [@smith2023] → (Smith, 2023) - @smith2023 → Smith (2023) - [-@smith2023] → (2023)\nHere we reference (Smith 2023)."
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#references-slide",
-    "href": "part2_presentations_beamer.html#references-slide",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "References Slide",
-    "text": "References Slide\nAutomatic references:\n## References\n\n::: {#refs}\n:::\nManual placement:\n---\nsuppress-bibliography: true\n---\n\n# Last slide\n## References {.smaller}\n\n::: {#refs}\n:::"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#references",
-    "href": "part2_presentations_beamer.html#references",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "References",
-    "text": "References\n\n\nSmith, John. 2023. “Important Research.” Journal of Science.\n\n\n\nLearn more at Quarto Citations"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#publishing-meike-can-you-add",
-    "href": "part2_presentations_beamer.html#publishing-meike-can-you-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Publishing [MEIKE CAN YOU ADD?]",
-    "text": "Publishing [MEIKE CAN YOU ADD?]\nhttps://quarto.org/docs/publishing/"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#self-contained-html",
-    "href": "part2_presentations_beamer.html#self-contained-html",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Self Contained (HTML)",
-    "text": "Self Contained (HTML)\nHTML documents typically have a number of external dependencies (e.g. images, CSS style sheets, JavaScript, etc.). By default these dependencies are placed in a _files directory alongside your document. For example, if you render report.qmd to HTML:\nThen the following output is produced:\npres.html\npres_files/\nYou might alternatively want to create an entirely self-contained HTML document (with images, CSS style sheets, JavaScript, etc. embedded into the HTML file). You can do this by specifying the embed-resources option:\nformat:\n  revealjs:\n    embed-resources: true\nThis will produce a standalone HTML file with no external dependencies, using data: URIs to incorporate the contents of linked scripts, style sheets, images, and videos. The resulting file should be self contained, in the sense that it needs no external files and no net access to be displayed properly by a browser.\n\nFrom Quarto docs"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#method-1-using-chromechromium",
-    "href": "part2_presentations_beamer.html#method-1-using-chromechromium",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Method 1: Using Chrome/Chromium",
-    "text": "Method 1: Using Chrome/Chromium\n# Install chromium if needed\nquarto install chromium\n\n# Render to PDF\nquarto render presentation.qmd --to revealjs\n# Then use browser print function\n# Or use decktape (next slide)"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#method-2-using-decktape",
-    "href": "part2_presentations_beamer.html#method-2-using-decktape",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Method 2: Using Decktape",
-    "text": "Method 2: Using Decktape\n# Install decktape\nnpm install -g decktape\n\n# Convert HTML to PDF\ndecktape reveal presentation.html presentation.pdf\n\n# With custom options\ndecktape reveal presentation.html presentation.pdf \\\n  --size 1920x1080 --load-pause 2000"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#method-3-direct-pdf-format",
-    "href": "part2_presentations_beamer.html#method-3-direct-pdf-format",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Method 3: Direct PDF Format",
-    "text": "Method 3: Direct PDF Format\n---\ntitle: \"My Presentation\"\nformat:\n  revealjs: default\n  pdf: default\n---\n# Render both formats\nquarto render presentation.qmd"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#from-document-to-presentation",
-    "href": "part2_presentations_beamer.html#from-document-to-presentation",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "From Document to Presentation",
-    "text": "From Document to Presentation\nStep 1: Change the YAML header\n# From this:\nformat: html\n\n# To this:\nformat: revealjs\nStep 2: Adjust heading levels - # becomes section dividers - ## becomes slide titles - ### becomes slide subtitles"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#content-adaptation-tips",
-    "href": "part2_presentations_beamer.html#content-adaptation-tips",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Content Adaptation Tips",
-    "text": "Content Adaptation Tips\n\nBreak long paragraphs into bullet points\nSplit dense content across multiple slides\nAdd slide breaks with --- if needed\nUse incremental reveals with {.incremental}\n\n::: {.incremental}\n- First point\n- Second point\n- Third point\n:::"
-  },
-  {
-    "objectID": "part2_presentations_beamer.html#example-conversion",
-    "href": "part2_presentations_beamer.html#example-conversion",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Example Conversion",
-    "text": "Example Conversion\nBefore (Report):\n# Analysis Results\nOur analysis shows significant findings...\n\n## Data Summary\nThe dataset contains 1000 observations...\nAfter (Slides):\n# Analysis Results\n\n## Key Findings\n- Significant results discovered\n- Strong correlations identified\n\n## Data Summary\n- 1000 observations\n- 15 variables analyzed"
-  },
-  {
-    "objectID": "part1_overview.html",
-    "href": "part1_overview.html",
-    "title": "Part 1: Workshop Overview",
-    "section": "",
-    "text": "This workshop will teach you how to create professional presentations and websites using Quarto, an open-source scientific and technical publishing system that builds on R Markdown.\nWorkshop Goals:\n\nUnderstand the power of Quarto for reproducible reporting.\nLearn to create dynamic HTML presentations.\nBuild and customize a personal or project website.\nGain confidence in using Quarto for your own projects."
-  },
-  {
-    "objectID": "part3_webpages.html#template-default-website",
-    "href": "part3_webpages.html#template-default-website",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Template (default) website",
-    "text": "Template (default) website\n\nBefore renderingAfter rendering\n\n\n\nFiles_quarto.ymlindex.qmdabout.qmdstyles.css\n\n\n\n\n\n\n\n\n\nThis is the config file that specifies the general structure of the website\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can render the website by clicking on the Render button, similar to rendering a quarto file.\n\n\nFiles_site folder 🕸️"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#sample-website-workshop-website",
-    "href": "slides/part3_webpages.html#sample-website-workshop-website",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Sample website (workshop website)",
-    "text": "Sample website (workshop website)\nDownload from Github"
+    "section": "Create Quarto website project",
+    "text": "Create Quarto website project\n\nQuarto Website projectNew Project Wizard windowVoila!\n\n\n\nFrom the R menu, select File -&gt; New Project...\n\n\n\n\nSelect New Directory option\n(NOT Existing Directory)\n\n\n\n\n\n\n\n\nSelect Quarto Website from the Project Types\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDirectory name: Enter the name for your website project folder\nBrowse to the folder that the website project folder will be saved in\nMake sure the Engine is set to Knitr\nOptional:\n\nSelect Create a git repository if you plan on syncing your website to GitHub\nSelect Open in a new session if you want to keep your current R project open\n\n\n\n\n\n\n\n\n\n\n\nClick on Create Project\n\n\n\n\n\n\nYour new Quarto website project should now open up in RStudio"
   },
   {
     "objectID": "slides/part3_webpages.html#template-default-website",
     "href": "slides/part3_webpages.html#template-default-website",
     "title": "Part 3: Creating Websites with Quarto",
     "section": "Template (default) website",
-    "text": "Template (default) website\n\nBefore renderingAfter rendering\n\n\n\nFiles_quarto.ymlindex.qmdabout.qmdstyles.css\n\n\n\n\n\n\n\n\n\nThis is the config file that specifies the general structure of the website\n\n\n\n\n\n\n\nThis is the home page of the website\n\n\n\n\n\n\n\nThis is an extra (optional) webpage where information about the website can be provided\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can render the website by clicking on the Render button, similar to rendering a quarto file.\n\n\nFiles_site folder 🕸️\n\n\n\n\n\n\n\n\n\n\n\nThe _site folder is created when rendering the website\nIt contains the html files that make up the website"
+    "text": "Template (default) website\n\nBefore renderingAfter rendering\n\n\n\nFiles_quarto.ymlindex.qmdabout.qmdstyles.css\n\n\n\n\n\n\n\nNote: If you do not have GitHub set up, then you will not have the .gitignore file.\n\n\nThis is the config file that specifies the general structure of the website\n\n\n\n\n\n\n\nThis is the home page of the website\n\n\n\n\n\n\n\nThis is an extra (optional) webpage where information about the website can be provided\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can render the website by clicking on the Render button, similar to rendering a quarto file.\n\n\nFiles_site folder 🕸️\n\n\n\n\n\n\n\n\n\n\n\nThe _site folder is created when rendering the website\nIt contains the html files that make up the website"
   },
   {
-    "objectID": "slides/part3_webpages.html#top-vs-side-navigation",
-    "href": "slides/part3_webpages.html#top-vs-side-navigation",
+    "objectID": "slides/part3_webpages.html#top-vs.-side-navigation",
+    "href": "slides/part3_webpages.html#top-vs.-side-navigation",
     "title": "Part 3: Creating Websites with Quarto",
-    "section": "Top vs Side Navigation",
-    "text": "Top vs Side Navigation\n\nExampleTopSideHybrid\n\n\n\n\n\n\n\nThe navigation bar at the top of the page is customized with the navbar options in the YAML\n\n\n\n\nUse left: and right: to specify which side of the top navigation bar you want the links to appear\nOther options:\n\nbackground and foreground colors,\nadding a website search option and logo\nspecifying when the navigation bar is collapsed to a “hamburger” menu\n\n\n\n\nYAML excerpt:\n\nwebsite:\n  title: \"Quarto WNAR 2025\"\n  navbar:\n    background: primary\n    foreground: \"#fff\"\n    logo: \"/images/web/cat_laptop.gif\"\n    search: true\n    collapse-below: sm\n    left:\n      - href: index.qmd\n        text: Home\n    right:\n      - href: about.qmd\n        text: About\n\n\n\nLearn more: Top Navigation"
+    "section": "Top vs. Side Navigation",
+    "text": "Top vs. Side Navigation\n\nExampleTopSideHybrid\n\n\n\n\n\n\n\nThe navigation bar at the top of the page is customized with the navbar options in _quarto.yml\n\n\n\n\n\nUse left: and right: to specify which side of the top navigation bar you want the links to appear\nOther options:\n\nbackground and foreground colors,\nadding a website search option and logo\nspecifying when the navigation bar is collapsed to a “hamburger” menu\n\n\n\n\n\n_quarto.yml excerpt:\n\nwebsite:\n  title: \"Quarto WNAR 2025\"\n  navbar:\n    background: primary\n    foreground: \"#fff\"\n    logo: \"/images/web/cat_laptop.gif\"\n    search: true\n    collapse-below: sm\n    left:\n      - href: index.qmd\n        text: Home\n    right:\n      - href: about.qmd\n        text: About\n\n\n\nLearn more: Top Navigation\n\n\n\n\nOptionsSections\n\n\n\nThe navigation bar at the left side of the page is customized with the sidebar options in _quarto.yml\n\n\n\n\n\nUse contents: to specify which pages to link to\nOther options:\n\nstyle: options are \"docked\" and \"floating\"\nadding a website search option on the sidebar (won’t appear if navigation bar already has one)\nhow many navigation levels to display (collapse-level:)\n\n\n\n\n\n_quarto.yml excerpt:\n\n  sidebar:\n    style: \"docked\"\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: slides.qmd\n        text: Workshop slides as \"blog\"\n      - section: \"Section for slides\"\n        contents: \n          - href: slides/part1_overview.qmd\n            text: 1 Overview\n          - href: slides/part2_presentations.qmd\n            text: 2 Presentations\n          - href: slides/part3_webpages.qmd\n            text: 3 Websites\n\n\n\nLearn more: Side Navigation\n\n\n\n\nWithin the contents: list, sections of related pages can be grouped together with section:\nFor each section:, list the contents:\nExampl 1: See the _quarto.yml excerpt in the Options\nExample 2: Sections for weekly pages and homework-related pages from class website; YAML\n\n\n\n\n\n\n\n\n\nThis option was not implemented in the workshop webpage\nHybrid navigation allows for each top navigation bar item to have its own contents in the sidebar.\n\nLearn more: Hybrid Navigation"
   },
   {
-    "objectID": "slides/part3_webpages.html#next-page-navigation",
-    "href": "slides/part3_webpages.html#next-page-navigation",
+    "objectID": "slides/part3_webpages.html#blog-style-webpage",
+    "href": "slides/part3_webpages.html#blog-style-webpage",
     "title": "Part 3: Creating Websites with Quarto",
-    "section": "Next Page Navigation",
-    "text": "Next Page Navigation"
+    "section": "Blog-style webpage",
+    "text": "Blog-style webpage\n\nExampleYAMLfields options\n\n\nThe Workshop Slides link on the left navigation bar of the workshop website is an example of a blog-style webpage\n\n\n\n\n---\ntitle: \"Workshop Slides\"\nformat: \n  html:\n    listing: \n      contents: slides\n      type: table\n      table-hover: true\n      fields: [date, title]\n      sort: \"title asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\n\n\n[date, title][description][categories]\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Workshop Slides\"\nformat: \n  html:\n    listing: \n      contents: slides\n      type: table\n      table-hover: true\n      fields: [date, title]\n      sort: \"title asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nThe Example’s table of files included the date and title specified in each of the individual .qmd files’ YAMLs\nExcerpt of YAML:\n\n---\ntitle: \"Part 3: Creating Websites with Quarto\"\ndate: \"6/15/25\"\nformat: \n  revealjs\n---\n\n\n\n\n\nExampleYAMLs\n\n\n\n\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Weekly Pages\"\nformat: \n  html:\n    listing: \n      contents: weeks\n      type: table\n      table-hover: true\n      fields: [date, title, description]\n      sort: \"date asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nExcerpt of YAML with description::\n\n---\ntitle: \"Week 1\"\ndescription: \"Intro to R/RStudio, Functions, Vectors, Data Types\"\ndate: \"1/09/2025\"\ndate-modified: \"today\"\nformat: \n  html\n---\n\n\n\n\n\n\n\n\nExampleYAMLs\n\n\n\n\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Class Slides\"\nformat:\n  html:\n    listing: \n      contents: slides\n      type: table\n      fields: [date, title, categories]\n      table-hover: true\n      sort: \"date asc\"\n      date-format: \"short\"\n      categories: true\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nExcerpt of YAML with categories::\n\n---\ntitle: \"Day 1: Intro to R & Rstudio\"\nsubtitle: \"BSTA 511/611 Fall 2023, OHSU\"\nauthor: \"Meike Niederhausen, PhD\"\ndate: \"09/27/2023\"\ncategories: [\"Week 1\"]\nformat: \n  revealjs\n---"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#change-the-look-of-your-website-with-themes",
+    "href": "slides/part3_webpages.html#change-the-look-of-your-website-with-themes",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Change the look of your website with themes",
+    "text": "Change the look of your website with themes\n\nHow to change?Bootswatch themesExample: workshop website\n\n\n\nTheme is specified in _quarto.yml\nEasy way:\n\nUse a built in Quarto theme from Bootswatch\n\nMedium difficulty:\n\nModify a Bootswatch theme.\nTheme scss files can be downloaded from GitHub\n\nChallenge:\n\nWrite your own theme!\n\n\n\n\n\nBuilt in themes are from Bootswatch\n\n\n\n\n\n\nThe website theme is specified in _quarto.yml\n\n\n\n\n\nSee excerpt on right\nThe cosmo theme was originally chosen\nAny changes made in cosmo_modified.scss overwrite the cosmo theme since it is listed last.\n\n\n\nformat:\n  html:\n    theme: \n      - cosmo\n      - cosmo_modified.scss\n    css: styles.css\n    toc: true\n\n\n\n\nChanges made to cosmo.scss\n\nHexadecimal color for green changed:\n\n$green:   #08875d !default;\n\nPrimary color changed from blue to green:\n\n$primary:       $green !default;\n\nSuccess color change from green to blue:\n\n$success:       $blue !default;"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#hosting-options",
+    "href": "slides/part3_webpages.html#hosting-options",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Hosting options",
+    "text": "Hosting options\n\nQuarto PubGitHuband more!\n\n\n\nFree & files are publicly visible\nRequires setting up a Quarto Pub account\nEasy to set up\nSee gallery of Quarto Pub pages\nExample: Meike’s Quarto pubs site\n\n\n\nIn the Terminal window (not the Console!) of RStudio,\n\ntype quarto publish quarto-pub\nfollow the instructions\n\nwill be prompted to give Quarto Pub account info if not already done so\n\n\n\nLearn more about Quarto Pub\n\n\n\nFree & files are publicly visible\nRequires a GitHub account that is synced with your computer (personal access token)\nA little more involved to set up\n\n\n\nI recommend using Joshua French’s instructions and YouTube videos.\nScroll down to Changing the output directory of a Quarto website to get started.\nOne additional new step is adding a .nojekyll file as described in the Quarto help pages\n\n\n\nSee more options (including Netlify) at Quarto’s Publishing Basics page."
   },
   {
     "objectID": "slides/part2_presentations.html#outline",
     "href": "slides/part2_presentations.html#outline",
     "title": "Part 2: Creating Presentations with Quarto",
     "section": "Outline",
-    "text": "Outline"
+    "text": "Outline\n\n\n\nCreate Quarto presentation file\nYAML header\nHow to add new slides\nContent Layout (scrolling, columns)\nR code & output\nIncremental reveals\nTabsets\nThemes\n\n\n\nImages\nFonts\nCallout boxes\nTitle slide\nPresentation tools\nSlide file formats\nCitations\nConverting to pdf"
   },
   {
     "objectID": "slides/part2_presentations.html#create-a-new-rstudio-project-or-quarto-project",
@@ -1005,7 +116,7 @@
     "href": "slides/part2_presentations.html#revealjs",
     "title": "Part 2: Creating Presentations with Quarto",
     "section": "Revealjs",
-    "text": "Revealjs\nrevealjs uses the open source HTML presentation framework reveal.js. Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.\nMore about revealjs can be found on the Quarto.org docs website (embedded below):"
+    "text": "Revealjs\n\nrevealjs uses the open source HTML presentation framework reveal.js.\nStyles are set with CSS and come with built in markdown and LaTeX support as well as code syntax highlighting.\n\nMore about revealjs can be found on the Quarto.org docs website (embedded below):"
   },
   {
     "objectID": "slides/part2_presentations.html#creating-slides",
@@ -1047,14 +158,14 @@
     "href": "slides/part2_presentations.html#displaying-code-and-output",
     "title": "Part 2: Creating Presentations with Quarto",
     "section": "Displaying Code and Output",
-    "text": "Displaying Code and Output\n```{r}\n#| echo: true\n#| eval: true\nlibrary(palmerpenguins)\nsummary(penguins)\n```\n\n#| echo: true shows the code.\n#| eval: true runs the code and shows the output."
+    "text": "Displaying Code and Output\n```{r}\n#| echo: true\n#| eval: true\nlibrary(palmerpenguins)\nsummary(penguins)\n```\n\n#| echo: true shows the code.\n#| eval: true runs the code and shows the output.\n\n\nlibrary(palmerpenguins)\nsummary(penguins)\n\n      species          island    bill_length_mm  bill_depth_mm  \n Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  \n Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  \n Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  \n                                 Mean   :43.92   Mean   :17.15  \n                                 3rd Qu.:48.50   3rd Qu.:18.70  \n                                 Max.   :59.60   Max.   :21.50  \n                                 NA's   :2       NA's   :2      \n flipper_length_mm  body_mass_g       sex           year     \n Min.   :172.0     Min.   :2700   female:165   Min.   :2007  \n 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  \n Median :197.0     Median :4050   NA's  : 11   Median :2008  \n Mean   :200.9     Mean   :4202                Mean   :2008  \n 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  \n Max.   :231.0     Max.   :6300                Max.   :2009  \n NA's   :2         NA's   :2"
   },
   {
     "objectID": "slides/part2_presentations.html#code-output-layout",
     "href": "slides/part2_presentations.html#code-output-layout",
     "title": "Part 2: Creating Presentations with Quarto",
     "section": "Code Output Layout",
-    "text": "Code Output Layout\nYou can control where the output of a code block appears.\n\n#| output-location: beside places output next to the code.\n#| output-location: slide places output on a new slide following the code slide.\n#| output-location: column places output in a column adjacent to the code."
+    "text": "Code Output Layout\nYou can control where the output of a code block appears.\n\n#| output-location: slide places output on a new slide following the code slide.\n#| output-location: column places output in a column adjacent to the code (50/50 column split)\n\n\n\nlibrary(palmerpenguins)\nglimpse(penguins)\n\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
   },
   {
     "objectID": "slides/part2_presentations.html#revealing-code-stepwise",
@@ -1145,7 +256,7 @@
     "href": "slides/part2_presentations.html#image-ctd",
     "title": "Part 2: Creating Presentations with Quarto",
     "section": "Image, ctd",
-    "text": "Image, ctd\nThese are attributes easily added in the visual editor Insert Image option, including a url link:\n[![OHSU Logo](/images/web/ohsu_logo.jpg){width=\"100\" fig-alt=\"OHSU Logo\" fig-align=\"center\"}](https://www.ohsu.edu)\n\nOHSU Logo"
+    "text": "Image, ctd\nThese are attributes easily added in the visual editor Insert Image option, including a url link:\n![![OHSU Logo](/images/web/ohsu_logo.jpg){width=\"100\" fig-alt=\"OHSU Logo\" fig-align=\"center\"}](https://www.ohsu.edu)\n\nOHSU Logo"
   },
   {
     "objectID": "slides/part2_presentations.html#controlling-font-size",
@@ -1188,13 +299,6 @@
     "title": "Part 2: Creating Presentations with Quarto",
     "section": "Customizing the Title Slide",
     "text": "Customizing the Title Slide\nYou can add more information to your title slide directly in the YAML header. This is useful for adding affiliations, subtitles, and logos.\n---\ntitle: \"Workshop Title\"\nsubtitle: \"An In-depth Look at Quarto\"\nauthor: \"Your Name\"\ninstitute: \"Department of Biostatistics, OHSU\"\ndate: \"today\"\ntitle-slide-attributes:\n  data-background-image: \"your-logo.png\"\n  data-background-size: \"15%\"\n  data-background-position: \"top right\"\nformat: revealjs\n---"
-  },
-  {
-    "objectID": "slides/part2_presentations.html#animation-to-add",
-    "href": "slides/part2_presentations.html#animation-to-add",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Animation [TO ADD]",
-    "text": "Animation [TO ADD]"
   },
   {
     "objectID": "slides/part2_presentations.html#speaker-notes",
@@ -1267,11 +371,11 @@
     "text": "References\n\n\nSmith, John. 2023. “Important Research.” Journal of Science.\n\n\n\nLearn more at Quarto Citations"
   },
   {
-    "objectID": "slides/part2_presentations.html#publishing-meike-can-you-add",
-    "href": "slides/part2_presentations.html#publishing-meike-can-you-add",
+    "objectID": "slides/part2_presentations.html#publishing",
+    "href": "slides/part2_presentations.html#publishing",
     "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Publishing [MEIKE CAN YOU ADD?]",
-    "text": "Publishing [MEIKE CAN YOU ADD?]\nhttps://quarto.org/docs/publishing/"
+    "section": "Publishing",
+    "text": "Publishing\nWe will briefly cover publishing webpages to Quarto Pubs and GitHub in Part 3 of the slides."
   },
   {
     "objectID": "slides/part2_presentations.html#self-contained-html",
@@ -1323,11 +427,37 @@
     "text": "Example Conversion\nBefore (Report):\n# Analysis Results\nOur analysis shows significant findings...\n\n## Data Summary\nThe dataset contains 1000 observations...\nAfter (Slides):\n# Analysis Results\n\n## Key Findings\n- Significant results discovered\n- Strong correlations identified\n\n## Data Summary\n- 1000 observations\n- 15 variables analyzed"
   },
   {
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Workshop Slides",
+    "section": "",
+    "text": "This page is an example of a blog-style webpage\n\nThe table below has links to all of the files in a folder specified in the YAML (contents: slides)\n\nIn this case, the links are to the workshop slides, which are the same files linked to from the homepage.\n\n\n\nThe titles and dates shown are the ones specified in the individual .qmd files\nNote that one can sort the files and also search for (filter) files\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n6/15/25\n\n\nPart 0: Installation Instructions\n\n\n\n\n6/15/25\n\n\nPart 1: Workshop Overview\n\n\n\n\n6/15/25\n\n\nPart 2: Creating Presentations with Quarto\n\n\n\n\n6/15/25\n\n\nPart 3: Creating Websites with Quarto\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Creating Professional Presentations and Websites using R/Quarto",
+    "section": "",
+    "text": "Quick link to website: https://bit.ly/wnar2025_quarto\nWelcome!\n\nBelow are links to the WNAR workshop on Creating Professional Presentations and Websites using R/Quarto.\n\n\n\nPart 0\nInstallation Instructions\n\n\nPart 1\nWorkshop Overview\n\n\nPart 2\nCreating Presentations\n\n\nPart 3\nCreating Websites\n\n\n\n You can access the source code for the website and slides on GitHub"
+  },
+  {
+    "objectID": "slides/part0_installation.html",
+    "href": "slides/part0_installation.html",
+    "title": "Part 0: Installation Instructions",
+    "section": "",
+    "text": "Before we begin, please ensure you have the following installed:\n\nR: A recent version of R is required. You can download it from the Comprehensive R Archive Network (CRAN).\nRStudio: Download the latest version from the RStudio website. Quarto is built right into RStudio, making it the easiest way to get started.\n\nYou will also need to install a few R packages. Open RStudio and run the following code in the console:\ninstall.packages(c(\"palmerpenguins\", \"tidyverse\", \"gt\", \"remotes\"))\nremotes::install_github(\"gadenbuie/countdown\")\n\npalmerpenguins: For example datasets.\ntidyverse: A collection of R packages for data science.\ngt: For creating beautiful tables.\ncountdown: To add timers to your slides.\n\nIf you do not already have rmarkdown installed, please install that as well.",
+    "crumbs": [
+      "Home",
+      "Section for slides",
+      "0 Installation"
+    ]
+  },
+  {
     "objectID": "slides/part1_overview.html#welcome",
     "href": "slides/part1_overview.html#welcome",
     "title": "Part 1: Workshop Overview",
     "section": "Welcome! 👋",
-    "text": "Welcome! 👋\nThis workshop will teach you how to create professional presentations and websites using Quarto, an open-source scientific and technical publishing system that builds on R Markdown.\nWorkshop Goals:\n\nUnderstand the power of Quarto for reproducible reporting.\nLearn to create dynamic HTML presentations.\nBuild and customize a personal or project website.\nGain confidence in using Quarto for your own projects."
+    "text": "Welcome! 👋\n\nThis workshop will teach you how to create professional presentations and websites using Quarto, an open-source scientific and technical publishing system that builds on R Markdown.\n\nWorkshop Goals:\n\nUnderstand the power of Quarto for reproducible reporting.\nLearn to create dynamic HTML presentations.\nBuild and customize a personal or project website.\nGain confidence in using Quarto for your own projects."
   },
   {
     "objectID": "slides/part1_overview.html#who-we-are",
@@ -1341,7 +471,7 @@
     "href": "slides/part1_overview.html#part-0-installation",
     "title": "Part 1: Workshop Overview",
     "section": "Part 0: Installation",
-    "text": "Part 0: Installation\nBefore we begin, please ensure you have the following installed:\n\nR: A recent version of R is required. You can download it from the Comprehensive R Archive Network (CRAN).\nRStudio: Download the latest version from the RStudio website. Quarto is built right into RStudio, making it the easiest way to get started.\n\nYou will also need to install a few R packages. Open RStudio and run the following code in the console:\ninstall.packages(c(\"palmerpenguins\", \"tidyverse\", \"gt\", \"remotes\"))\nremotes::install_github(\"gadenbuie/countdown\")\n\npalmerpenguins: For example datasets.\ntidyverse: A collection of R packages for data science.\ngt: For creating beautiful tables.\ncountdown: To add timers to your slides."
+    "text": "Part 0: Installation\nBefore we begin, please ensure you have the following installed:\n\nR: A recent version of R is required. You can download it from the Comprehensive R Archive Network (CRAN).\nRStudio: Download the latest version from the RStudio website. Quarto is built right into RStudio, making it the easiest way to get started.\n\nYou will also need to install a few R packages. Open RStudio and run the following code in the console:\ninstall.packages(c(\"palmerpenguins\", \"tidyverse\", \"gt\", \"remotes\"))\nremotes::install_github(\"gadenbuie/countdown\")\n\npalmerpenguins: For example datasets.\ntidyverse: A collection of R packages for data science.\ngt: For creating beautiful tables.\ncountdown: To add timers to your slides.\n\nIf you do not already have rmarkdown installed, please install that as well."
   },
   {
     "objectID": "slides/part1_overview.html#what-is-quarto",
@@ -1358,129 +488,31 @@
     "text": "Why Quarto for Biostatisticians?\nFor biostatisticians, reproducibility and clear communication important. Quarto allows us to do both well.\n\nReproducible Research: Seamlessly integrate your R code, statistical analyses, and visualizations directly into your reports and presentations.\nProfessional Outputs: Create polished articles, presentations for conferences, and websites for your lab or personal portfolio.\nCollaboration: Quarto projects are easy to share and collaborate on using version control systems like Git."
   },
   {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Workshop Slides",
-    "section": "",
-    "text": "This page is an example of a blog-style webpage\n\nThe table below has links to all of the files in a folder specified in the YAML (contents: slides)\n\nIn this case, the links are to the workshop slides, which are the same files linked to from the homepage.\n\n\n\nThe titles and dates shown are the ones specified in the individual .qmd files\nNote that one can sort the files and also search for (filter) files\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n6/15/25\n\n\nPart 0: Installation Instructions\n\n\n\n\n6/15/25\n\n\nPart 1: Workshop Overview\n\n\n\n\n6/15/25\n\n\nPart 2: Creating Presentations with Quarto\n\n\n\n\n6/15/25\n\n\nPart 3: Creating Websites with Quarto\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#blog-style-webpage",
-    "href": "slides/part3_webpages.html#blog-style-webpage",
+    "objectID": "slides/part3_webpages.html#exercise-1-navigation-practice",
+    "href": "slides/part3_webpages.html#exercise-1-navigation-practice",
     "title": "Part 3: Creating Websites with Quarto",
-    "section": "Blog-style webpage",
-    "text": "Blog-style webpage\n\nExampleYAMLfields options\n\n\nThe Workshop Slides link on the left navigation bar of the workshop website is an example of a blog-style webpage\n\n\n\n\n---\ntitle: \"Workshop Slides\"\nformat: \n  html:\n    listing: \n      contents: slides\n      type: table\n      table-hover: true\n      fields: [date, title]\n      sort: \"title asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\n\n\n[date, title][description][categories]\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Workshop Slides\"\nformat: \n  html:\n    listing: \n      contents: slides\n      type: table\n      table-hover: true\n      fields: [date, title]\n      sort: \"title asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nThe Example’s table of files included the date and title specified in each of the individual .qmd files’ YAMLs\nExcerpt of YAML:\n\n---\ntitle: \"Part 3: Creating Websites with Quarto\"\ndate: \"6/15/25\"\nformat: \n  revealjs\n---\n\n\n\n\n\nExampleYAMLs\n\n\n\n\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Weekly Pages\"\nformat: \n  html:\n    listing: \n      contents: weeks\n      type: table\n      table-hover: true\n      fields: [date, title, description]\n      sort: \"date asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nExcerpt of YAML with description::\n\n---\ntitle: \"Week 1\"\ndescription: \"Intro to R/RStudio, Functions, Vectors, Data Types\"\ndate: \"1/09/2025\"\ndate-modified: \"today\"\nformat: \n  html\n---\n\n\n\n\n\n\n\n\nExampleYAMLs\n\n\n\n\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Class Slides\"\nformat:\n  html:\n    listing: \n      contents: slides\n      type: table\n      fields: [date, title, categories]\n      table-hover: true\n      sort: \"date asc\"\n      date-format: \"short\"\n      categories: true\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nExcerpt of YAML with categories::\n\n---\ntitle: \"Day 1: Intro to R & Rstudio\"\nsubtitle: \"BSTA 511/611 Fall 2023, OHSU\"\nauthor: \"Meike Niederhausen, PhD\"\ndate: \"09/27/2023\"\ncategories: [\"Week 1\"]\nformat: \n  revealjs\n---"
+    "section": "Exercise 1: navigation practice",
+    "text": "Exercise 1: navigation practice\n\nAdd a link to a quarto page to the top navigation bar.\n\nYou can create a new qmd file to link to, or link to a slide file you created in part 2.\n\n\n\n\nAdd a link to a quarto page to the side bar.\n\nYou can link to the same page as the top bar if you like."
   },
   {
-    "objectID": "slides/part3_webpages.html",
-    "href": "slides/part3_webpages.html",
+    "objectID": "slides/part3_webpages.html#exercise-2-time-for-a-new-theme",
+    "href": "slides/part3_webpages.html#exercise-2-time-for-a-new-theme",
     "title": "Part 3: Creating Websites with Quarto",
-    "section": "",
-    "text": "Workshop websiteBSTA 511 Fall 2024BSTA 526 Winter 2025\n\n\nhttps://ohsu-octri-berd.github.io/Quarto_WNAR_2025/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_511_F24/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_526_W25/"
+    "section": "Exercise 2: time for a new theme!",
+    "text": "Exercise 2: time for a new theme!\n\nChange the theme for your website.\n\nCheck out options at Bootswatch."
   },
   {
-    "objectID": "slides/part3_webpages.html#top-vs.-side-navigation",
-    "href": "slides/part3_webpages.html#top-vs.-side-navigation",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Top vs. Side Navigation",
-    "text": "Top vs. Side Navigation\n\nExampleTopSideHybrid\n\n\n\n\n\n\n\nThe navigation bar at the top of the page is customized with the navbar options in _quarto.yml\n\n\n\n\n\nUse left: and right: to specify which side of the top navigation bar you want the links to appear\nOther options:\n\nbackground and foreground colors,\nadding a website search option and logo\nspecifying when the navigation bar is collapsed to a “hamburger” menu\n\n\n\n\n\n_quarto.yml excerpt:\n\nwebsite:\n  title: \"Quarto WNAR 2025\"\n  navbar:\n    background: primary\n    foreground: \"#fff\"\n    logo: \"/images/web/cat_laptop.gif\"\n    search: true\n    collapse-below: sm\n    left:\n      - href: index.qmd\n        text: Home\n    right:\n      - href: about.qmd\n        text: About\n\n\n\nLearn more: Top Navigation\n\n\n\n\nOptionsSections\n\n\n\nThe navigation bar at the left side of the page is customized with the sidebar options in _quarto.yml\n\n\n\n\n\nUse contents: to specify which pages to link to\nOther options:\n\nstyle: options are \"docked\" and \"floating\"\nadding a website search option on the sidebar (won’t appear if navigation bar already has one)\nhow many navigation levels to display (collapse-level:)\n\n\n\n\n\n_quarto.yml excerpt:\n\n  sidebar:\n    style: \"docked\"\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: slides.qmd\n        text: Workshop slides as \"blog\"\n      - section: \"Section for slides\"\n        contents: \n          - href: slides/part1_overview.qmd\n            text: 1 Overview\n          - href: slides/part2_presentations.qmd\n            text: 2 Presentations\n          - href: slides/part3_webpages.qmd\n            text: 3 Websites\n\n\n\nLearn more: Side Navigation\n\n\n\n\nWithin the contents: list, sections of related pages can be grouped together with section:\nFor each section:, list the contents:\nExampl 1: See the _quarto.yml excerpt in the Options\nExample 2: Sections for weekly pages and homework-related pages from class website; YAML\n\n\n\n\n\n\n\n\n\nThis option was not implemented in the workshop webpage\nHybrid navigation allows for each top navigation bar item to have its own contents in the sidebar.\n\nLearn more: Hybrid Navigation"
+    "objectID": "slides/part1_overview.html#introductions",
+    "href": "slides/part1_overview.html#introductions",
+    "title": "Part 1: Workshop Overview",
+    "section": "Introductions",
+    "text": "Introductions\n\n\nPlease introduce yourself\n\n\n\nWhat level of experience do you have with R? RMarkdown? Quarto?"
   },
   {
-    "objectID": "about.html#workshop-presenters",
-    "href": "about.html#workshop-presenters",
-    "title": "About",
-    "section": "Workshop Presenters",
-    "text": "Workshop Presenters\n\n\n\n\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu"
-  },
-  {
-    "objectID": "about.html#workshop-abstract",
-    "href": "about.html#workshop-abstract",
-    "title": "About",
-    "section": "Workshop Abstract",
-    "text": "Workshop Abstract\nThis course aims to teach statisticians and data scientists across all sectors of academia and industry to create professional style presentations and websites in R and RStudio using the recently developed Quarto package. This package is an extension of RMarkdown and most often used for literate programming reports that incorporate code from R and other programming languages with text, graphs, and results. However, this powerful package can create much more than just an analysis report. This workshop will teach R users who may be novices in Quarto about the other useful applications of Quarto, specifically how to build websites for their professional profiles as well as courses, and how to make presentations for talks and teaching. Quarto presentations can include code and results within slides as well as harness useful presentation tools such as annotations, outlines, notes, etc. Presentations can be formatted as html (Reveal JS), PowerPoint, or LaTeX Beamer slides. Participants will need to bring laptops with R and RStudio installed, and will receive instructions prior to the course to install required R packages. Example website and presentations can be found at https://niederhausen.github.io/BSTA_511_F24/"
-  },
-  {
-    "objectID": "about.html#presenters",
-    "href": "about.html#presenters",
-    "title": "About",
-    "section": "Presenters",
-    "text": "Presenters\n\n\n\n\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu"
-  },
-  {
-    "objectID": "about.html#instructors",
-    "href": "about.html#instructors",
-    "title": "About",
-    "section": "Instructors",
-    "text": "Instructors\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu\n\n\n\n\n\n\nOHSU-PSU School of Public Health\nOregon Clinical and Translational Research Institute (OCTRI) BERD"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#sample-websites",
-    "href": "slides/part3_webpages.html#sample-websites",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Sample websites",
-    "text": "Sample websites\n\nWorkshop websiteBSTA 511 Fall 2024BSTA 526 Winter 2025\n\n\nhttps://ohsu-octri-berd.github.io/Quarto_WNAR_2025/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_511_F24/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_526_W25/"
-  },
-  {
-    "objectID": "about.html#acknowledgements",
-    "href": "about.html#acknowledgements",
-    "title": "About",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nThank you to Andrew Bray for presenting the From R Markdown to Quarto ASA Travelling Workshop to the Oregon Chapter of the ASA in June 2023. This workshop was a great starting point in making the switch from RMarkdown to Quarto and also creating Quarto webpages."
-  },
-  {
-    "objectID": "slides/part3_webpages.html#change-the-look-of-your-website",
-    "href": "slides/part3_webpages.html#change-the-look-of-your-website",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Change the look of your website",
-    "text": "Change the look of your website\n\nQuarto themesBootswatch themesExample: workshop website\n\n\n\nWebsite themes are specified similarly to other Quarto html files\nUse Bootswatch themes for Bootstrap\n\n\n\n\n\n\n\nThe website theme is specified in _quarto.yml\nBelow is an excerpt:\n\nformat:\n  html:\n    theme: \n      - cosmo\n      - cosmo_modified.scss\n    css: styles.css\n    toc: true"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#change-the-look-of-your-website-with-themes",
-    "href": "slides/part3_webpages.html#change-the-look-of-your-website-with-themes",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Change the look of your website with themes",
-    "text": "Change the look of your website with themes\n\nHow to change?Bootswatch themesExample: workshop website\n\n\n\nTheme is specified in _quarto.yml\nEasy way:\n\nUse a built in Quarto theme from Bootswatch\n\nMedium difficulty:\n\nModify a Bootswatch theme.\nTheme scss files can be downloaded from GitHub\n\nChallenge:\n\nWrite your own theme!\n\n\n\n\n\nBuilt in themes are from Bootswatch\n\n\n\n\n\n\nThe website theme is specified in _quarto.yml\n\n\n\n\n\nSee excerpt on right\nThe cosmo theme was originally chosen\nAny changes made in cosmo_modified.scss overwrite the cosmo theme since it is listed last.\n\n\n\nformat:\n  html:\n    theme: \n      - cosmo\n      - cosmo_modified.scss\n    css: styles.css\n    toc: true\n\n\n\n\nChanges made to cosmo.scss\n\nHexadecimal color for green changed:\n\n$green:   #08875d !default;\n\nPrimary color changed from blue to green:\n\n$primary:       $green !default;\n\nSuccess color change from green to blue:\n\n$success:       $blue !default;"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#create-quarto-website-project",
-    "href": "slides/part3_webpages.html#create-quarto-website-project",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Create Quarto website project",
-    "text": "Create Quarto website project\n\nQuarto Website projectNew Project Wizard windowVoila!\n\n\n\nFrom the R menu, select File -&gt; New Project...\n\n\n\n\nSelect New Directory option\n(NOT Existing Directory)\n\n\n\n\n\n\n\n\nSelect Quarto Website from the Project Types\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDirectory name: Enter the name for your website project folder\nBrowse to the folder that the website project folder will be saved in\nMake sure the Engine is set to Knitr\nOptional:\n\nSelect Create a git repository if you plan on syncing your website to GitHub\nSelect Open in a new session if you want to keep your current R project open\n\n\n\n\n\n\n\n\n\n\n\nClick on Create Project\n\n\n\n\n\n\nYour new Quarto website project should now open up in RStudio"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#outline",
-    "href": "slides/part3_webpages.html#outline",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Outline",
-    "text": "Outline\n\nSample websites\nCreate Quarto website project\nFile structure of a website\nNavigation options\nBlog-style webpage\nThemes\nHosting"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#example-workshop-websites-files",
-    "href": "slides/part3_webpages.html#example-workshop-websites-files",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Example: Workshop website’s files",
-    "text": "Example: Workshop website’s files"
-  },
-  {
-    "objectID": "slides/part3_webpages.html#hosting-options",
-    "href": "slides/part3_webpages.html#hosting-options",
-    "title": "Part 3: Creating Websites with Quarto",
-    "section": "Hosting options",
-    "text": "Hosting options\n\nQuarto PubGitHuband more!\n\n\n\nFree & files are publicly visible\nRequires setting up a Quarto Pub account\nEasy to set up\nSee gallery of Quarto Pub pages\nExample: Meike’s Quarto pubs site\n\n\n\nIn the Terminal window (not the Console!) of RStudio,\n\ntype quarto publish quarto-pub\nfollow the instructions\n\nwill be prompted to give Quarto Pub account info if not already done so\n\n\n\nLearn more about Quarto Pub\n\n\n\nFree & files are publicly visible\nRequires a GitHub account that is synced with your computer (personal access token)\nA little more involved to set up\n\n\n\nI recommend using Joshua French’s instructions and YouTube videos.\nScroll down to Changing the output directory of a Quarto website to get started.\nOne additional new step is adding a .nojekyll file as described in the Quarto help pages\n\n\n\nSee more options (including Netlify) at Quarto’s Publishing Basics page."
-  },
-  {
-    "objectID": "slides/part2_presentations.html#publishing",
-    "href": "slides/part2_presentations.html#publishing",
-    "title": "Part 2: Creating Presentations with Quarto",
-    "section": "Publishing",
-    "text": "Publishing\nWe will briefly cover publishing webpages to Quarto Pubs and GitHub in Part 3 of the slides."
-  },
-  {
-    "objectID": "slides/part0_installation.html",
-    "href": "slides/part0_installation.html",
-    "title": "Part 0: Installation Instructions",
-    "section": "",
-    "text": "Before we begin, please ensure you have the following installed:\n\nR: A recent version of R is required. You can download it from the Comprehensive R Archive Network (CRAN).\nRStudio: Download the latest version from the RStudio website. Quarto is built right into RStudio, making it the easiest way to get started.\n\nYou will also need to install a few R packages. Open RStudio and run the following code in the console:\ninstall.packages(c(\"palmerpenguins\", \"tidyverse\", \"gt\", \"remotes\"))\nremotes::install_github(\"gadenbuie/countdown\")\n\npalmerpenguins: For example datasets.\ntidyverse: A collection of R packages for data science.\ngt: For creating beautiful tables.\ncountdown: To add timers to your slides."
+    "objectID": "slides/part1_overview.html#logistics",
+    "href": "slides/part1_overview.html#logistics",
+    "title": "Part 1: Workshop Overview",
+    "section": "Logistics",
+    "text": "Logistics\n\n\nWorkshop is from 1:00 pm - 5:00 pm\n\nBreak at 3:00-3:15 pm\n\n\n\n\nPlease ask questions!!"
   }
 ]
