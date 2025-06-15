@@ -1,0 +1,46 @@
+---
+title: "Part 0: Installation Instructions"
+pagetitle: "Part 0: Installation Instructions"
+subtitle: "WNAR Workshop 2025"
+author: "Jessica Minnier, PhD, Meike Niederhausen, PhD"
+institute: "OHSU-PSU School of Public Health"
+date: "6/15/25"
+# format: 
+#   revealjs:
+#       incremental: false
+#       scrollable: true
+#       chalkboard: true
+#       theme: [../sky_modified_smaller_font.scss]
+#       width:  1050 #default 1050
+#       height: 700 #default 700
+#       slide-number: true
+#       html-math-method: mathjax
+html:
+    link-external-newwindow: true
+    toc: true
+    embed-resources: true
+execute:
+  echo: true
+  freeze: auto  # re-render only when source changes
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+
+Before we begin, please ensure you have the following installed:
+
+1.  **R:** A recent version of R is required. You can download it from the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/).
+2.  **RStudio:** Download the latest version from the [RStudio website](https://posit.co/download/rstudio-desktop/). Quarto is built right into RStudio, making it the easiest way to get started.
+
+You will also need to install a few R packages. Open RStudio and run the following code in the console:
+
+```r
+install.packages(c("palmerpenguins", "tidyverse", "gt", "remotes"))
+remotes::install_github("gadenbuie/countdown")
+```
+
+- **palmerpenguins**: For example datasets.
+- **tidyverse**: A collection of R packages for data science.
+- **gt**: For creating beautiful tables.
+- **countdown**: To add timers to your slides.

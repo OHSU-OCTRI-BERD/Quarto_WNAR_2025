@@ -886,9 +886,10 @@ Learn more at [Quarto Citations](https://quarto.org/docs/authoring/citations.htm
 
 # Exporting
 
-## Publishing \[MEIKE CAN YOU ADD?\]
+## Publishing 
 
-https://quarto.org/docs/publishing/
+We will briefly cover publishing webpages to Quarto Pubs and GitHub in Part 3 of the slides.
+
 
 ## Self Contained (HTML)
 

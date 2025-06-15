@@ -1362,7 +1362,7 @@
     "href": "slides.html",
     "title": "Workshop Slides",
     "section": "",
-    "text": "This page is an example of a blog-style webpage\n\nThe table below has links to all of the files in a folder specified in the YAML (contents: slides)\n\nIn this case, the links are to the workshop slides, which are the same files linked to from the homepage.\n\n\n\nThe titles and dates shown are the ones specified in the individual .qmd files\nNote that one can sort the files and also search for (filter) files\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n6/15/25\n\n\nPart 1: Workshop Overview\n\n\n\n\n6/15/25\n\n\nPart 2: Creating Presentations with Quarto\n\n\n\n\n6/15/25\n\n\nPart 3: Creating Websites with Quarto\n\n\n\n\n\n\nNo matching items"
+    "text": "This page is an example of a blog-style webpage\n\nThe table below has links to all of the files in a folder specified in the YAML (contents: slides)\n\nIn this case, the links are to the workshop slides, which are the same files linked to from the homepage.\n\n\n\nThe titles and dates shown are the ones specified in the individual .qmd files\nNote that one can sort the files and also search for (filter) files\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n6/15/25\n\n\nPart 0: Installation Instructions\n\n\n\n\n6/15/25\n\n\nPart 1: Workshop Overview\n\n\n\n\n6/15/25\n\n\nPart 2: Creating Presentations with Quarto\n\n\n\n\n6/15/25\n\n\nPart 3: Creating Websites with Quarto\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/part3_webpages.html#blog-style-webpage",
@@ -1417,8 +1417,8 @@
     "objectID": "slides/part3_webpages.html#sample-websites",
     "href": "slides/part3_webpages.html#sample-websites",
     "title": "Part 3: Creating Websites with Quarto",
-    "section": "",
-    "text": "Workshop websiteBSTA 511 Fall 2024BSTA 526 Winter 2025\n\n\nhttps://ohsu-octri-berd.github.io/Quarto_WNAR_2025/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_511_F24/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_526_W25/"
+    "section": "Sample websites",
+    "text": "Sample websites\n\nWorkshop websiteBSTA 511 Fall 2024BSTA 526 Winter 2025\n\n\nhttps://ohsu-octri-berd.github.io/Quarto_WNAR_2025/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_511_F24/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_526_W25/"
   },
   {
     "objectID": "about.html#acknowledgements",
@@ -1426,5 +1426,61 @@
     "title": "About",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nThank you to Andrew Bray for presenting the From R Markdown to Quarto ASA Travelling Workshop to the Oregon Chapter of the ASA in June 2023. This workshop was a great starting point in making the switch from RMarkdown to Quarto and also creating Quarto webpages."
+  },
+  {
+    "objectID": "slides/part3_webpages.html#change-the-look-of-your-website",
+    "href": "slides/part3_webpages.html#change-the-look-of-your-website",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Change the look of your website",
+    "text": "Change the look of your website\n\nQuarto themesBootswatch themesExample: workshop website\n\n\n\nWebsite themes are specified similarly to other Quarto html files\nUse Bootswatch themes for Bootstrap\n\n\n\n\n\n\n\nThe website theme is specified in _quarto.yml\nBelow is an excerpt:\n\nformat:\n  html:\n    theme: \n      - cosmo\n      - cosmo_modified.scss\n    css: styles.css\n    toc: true"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#change-the-look-of-your-website-with-themes",
+    "href": "slides/part3_webpages.html#change-the-look-of-your-website-with-themes",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Change the look of your website with themes",
+    "text": "Change the look of your website with themes\n\nHow to change?Bootswatch themesExample: workshop website\n\n\n\nTheme is specified in _quarto.yml\nEasy way:\n\nUse a built in Quarto theme from Bootswatch\n\nMedium difficulty:\n\nModify a Bootswatch theme.\nTheme scss files can be downloaded from GitHub\n\nChallenge:\n\nWrite your own theme!\n\n\n\n\n\nBuilt in themes are from Bootswatch\n\n\n\n\n\n\nThe website theme is specified in _quarto.yml\n\n\n\n\n\nSee excerpt on right\nThe cosmo theme was originally chosen\nAny changes made in cosmo_modified.scss overwrite the cosmo theme since it is listed last.\n\n\n\nformat:\n  html:\n    theme: \n      - cosmo\n      - cosmo_modified.scss\n    css: styles.css\n    toc: true\n\n\n\n\nChanges made to cosmo.scss\n\nHexadecimal color for green changed:\n\n$green:   #08875d !default;\n\nPrimary color changed from blue to green:\n\n$primary:       $green !default;\n\nSuccess color change from green to blue:\n\n$success:       $blue !default;"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#create-quarto-website-project",
+    "href": "slides/part3_webpages.html#create-quarto-website-project",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Create Quarto website project",
+    "text": "Create Quarto website project\n\nQuarto Website projectNew Project Wizard windowVoila!\n\n\n\nFrom the R menu, select File -&gt; New Project...\n\n\n\n\nSelect New Directory option\n(NOT Existing Directory)\n\n\n\n\n\n\n\n\nSelect Quarto Website from the Project Types\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDirectory name: Enter the name for your website project folder\nBrowse to the folder that the website project folder will be saved in\nMake sure the Engine is set to Knitr\nOptional:\n\nSelect Create a git repository if you plan on syncing your website to GitHub\nSelect Open in a new session if you want to keep your current R project open\n\n\n\n\n\n\n\n\n\n\n\nClick on Create Project\n\n\n\n\n\n\nYour new Quarto website project should now open up in RStudio"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#outline",
+    "href": "slides/part3_webpages.html#outline",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Outline",
+    "text": "Outline\n\nSample websites\nCreate Quarto website project\nFile structure of a website\nNavigation options\nBlog-style webpage\nThemes\nHosting"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#example-workshop-websites-files",
+    "href": "slides/part3_webpages.html#example-workshop-websites-files",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Example: Workshop website’s files",
+    "text": "Example: Workshop website’s files"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#hosting-options",
+    "href": "slides/part3_webpages.html#hosting-options",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Hosting options",
+    "text": "Hosting options\n\nQuarto PubGitHuband more!\n\n\n\nFree & files are publicly visible\nRequires setting up a Quarto Pub account\nEasy to set up\nSee gallery of Quarto Pub pages\nExample: Meike’s Quarto pubs site\n\n\n\nIn the Terminal window (not the Console!) of RStudio,\n\ntype quarto publish quarto-pub\nfollow the instructions\n\nwill be prompted to give Quarto Pub account info if not already done so\n\n\n\nLearn more about Quarto Pub\n\n\n\nFree & files are publicly visible\nRequires a GitHub account that is synced with your computer (personal access token)\nA little more involved to set up\n\n\n\nI recommend using Joshua French’s instructions and YouTube videos.\nScroll down to Changing the output directory of a Quarto website to get started.\nOne additional new step is adding a .nojekyll file as described in the Quarto help pages\n\n\n\nSee more options (including Netlify) at Quarto’s Publishing Basics page."
+  },
+  {
+    "objectID": "slides/part2_presentations.html#publishing",
+    "href": "slides/part2_presentations.html#publishing",
+    "title": "Part 2: Creating Presentations with Quarto",
+    "section": "Publishing",
+    "text": "Publishing\nWe will briefly cover publishing webpages to Quarto Pubs and GitHub in Part 3 of the slides."
+  },
+  {
+    "objectID": "slides/part0_installation.html",
+    "href": "slides/part0_installation.html",
+    "title": "Part 0: Installation Instructions",
+    "section": "",
+    "text": "Before we begin, please ensure you have the following installed:\n\nR: A recent version of R is required. You can download it from the Comprehensive R Archive Network (CRAN).\nRStudio: Download the latest version from the RStudio website. Quarto is built right into RStudio, making it the easiest way to get started.\n\nYou will also need to install a few R packages. Open RStudio and run the following code in the console:\ninstall.packages(c(\"palmerpenguins\", \"tidyverse\", \"gt\", \"remotes\"))\nremotes::install_github(\"gadenbuie/countdown\")\n\npalmerpenguins: For example datasets.\ntidyverse: A collection of R packages for data science.\ngt: For creating beautiful tables.\ncountdown: To add timers to your slides."
   }
 ]

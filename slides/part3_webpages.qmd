@@ -54,6 +54,16 @@ theme_set(theme_bw(base_size = 22))
 ```
 
 
+## Outline 
+
+* Sample websites
+* Create Quarto website project
+* File structure of a website
+* Navigation options 
+* Blog-style webpage
+* Themes
+* Hosting
+
 ## Sample websites 
 
 ::: {.panel-tabset}
@@ -85,7 +95,7 @@ theme_set(theme_bw(base_size = 22))
 
 
 
-# Create Quarto website project
+## Create Quarto website project
 
 ::: {.panel-tabset}
 
@@ -152,6 +162,8 @@ Your new Quarto website project should now open up in RStudio
 
 # Website file structure
 
+What files are needed to create a Quarto website?
+
 ## Template (default) website
 
 ::: {.panel-tabset}
@@ -212,8 +224,10 @@ This is an extra (optional) webpage where information about the website can be p
 :::
 
 
+
 # Navigation
 
+How to navigate the website?
 
 ## Top vs. Side Navigation
 
@@ -555,12 +569,133 @@ format:
 
 # Themes
 
+A website's theme specifies colors, fonts, and much more!
+
+## Change the look of your website with themes
+
+::: {.panel-tabset}
+### How to change?
+
+* Theme is specified in `_quarto.yml`
+
+* Easy way: 
+    * Use a built in Quarto theme from [Bootswatch](https://bootswatch.com/){target="_blank"}
+* Medium difficulty: 
+    * Modify a Bootswatch theme. 
+    * Theme [`scss` files](`cosmo_modified.scss`){target="_blank"} can be downloaded from GitHub
+* Challenge: 
+    * Write your own theme!
 
 
+### Bootswatch themes
 
-# Hosting 
+* Built in themes are from  [Bootswatch](https://bootswatch.com/){target="_blank"}
 
-* on github or netlify
-* quarto pub (requires quarto pub account)
 
+<iframe width="1100" height="500" src="https://bootswatch.com/" title="Bootswatch">
+</iframe>
+
+### Example: workshop website
+
+* The website theme is specified in [_quarto.yml](https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml){target="_blank"}
+
+::: {.columns}
+                                        
+::: {.column width="50%"}
+
+::: {style="font-size: 90%;"}
+* See excerpt on right
+* The `cosmo` theme was originally chosen
+* Any changes made in `cosmo_modified.scss` overwrite the `cosmo` theme since it is listed last.
+
+:::
+
+:::
+                                          
+::: {.column width="40%"}
+``` yaml
+format:
+  html:
+    theme: 
+      - cosmo
+      - cosmo_modified.scss
+    css: styles.css
+    toc: true
+
+```
+:::
+                                          
+:::
+
+::: {style="font-size: 90%;"}
+* Changes made to `cosmo.scss`
+    * Hexadecimal color for green changed: 
+        - `$green:   #08875d !default;`
+    * Primary color changed from blue to green: 
+        - `$primary:       $green !default;`
+    * Success color change from green to blue: 
+        - `$success:       $blue !default;`
+
+:::
+
+:::
+
+# Publish your website (or webpage)
+
+## Hosting options
+
+::: {.panel-tabset}
+
+### Quarto Pub
+
+* Free & files are publicly visible
+* Requires setting up a [Quarto Pub account](https://quartopub.com/){target="_blank"}
+* Easy to set up
+* See [gallery](https://quarto.org/docs/gallery/){target="_blank"} of Quarto Pub pages
+* Example: [Meike's Quarto pubs site](https://meike.quarto.pub/){target="_blank"}
+---
+
+* In the Terminal window (not the Console!) of RStudio, 
+    * type `quarto publish quarto-pub`
+    * follow the instructions
+        * will be prompted to give Quarto Pub account info if not already done so
+
+Learn more about [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html){target="_blank"}
+
+### GitHub
+
+* Free & files are publicly visible
+* Requires a [GitHub](https://github.com/){target="_blank"} account that is synced with your computer (personal access token)
+* A little more involved to set up
+
+---
+
+* I recommend using [Joshua French's instructions](https://colab.research.google.com/github/jfrench/DataWrangleViz/blob/master/github-website-creation.ipynb){target="_blank"} and YouTube videos. 
+* Scroll down to _Changing the output directory of a Quarto website_ to get started. 
+* One additional new step is adding a `.nojekyll` file as described in the [Quarto help pages](https://quarto.org/docs/publishing/github-pages.html#render-to-docs){target="_blank"}
+
+
+### and more!
+
+See more options (including Netlify) at Quarto's [Publishing Basics](https://quarto.org/docs/publishing/){target="_blank"} page.
+
+:::
+
+# Thank you!!!
+
+Contact:
+
+::: {.columns}
+                                        
+::: {.column width="50%"}
+Jessica Minnier  
+_minnier@ohsu.edu_
+:::
+                                          
+::: {.column width="50%"}
+Meike Niederhausen  
+_niederha@ohsu.edu_
+:::
+                                          
+:::
 
