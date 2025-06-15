@@ -14,7 +14,7 @@ Below are links to the WNAR workshop on *Creating Professional Presentations and
 
 |        |                                                                    |
 |---------------|---------------------------------------------------------|
-| Part 0 | Installation instructions                                          |
+| Part 0 | [Installation instructions](slides/part0_installation.qmd){target="_blank"}                                         |
 | Part 1 | [Workshop Overview](slides/part1_overview.qmd){target="_blank"}           |
 | Part 2 | [Creating Presentations](slides/part2_presentations.qmd){target="_blank"} |
 | Part 3 | [Creating Webpages](slides/part3_webpages.qmd){target="_blank"}           |
