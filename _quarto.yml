@@ -6,17 +6,14 @@ website:
   title: "Quarto WNAR 2025"
   navbar:
     background: primary
-    search: true
-    # logo: "images/IMG_8165sq_med.png"
     foreground: "#fff"
+    logo: "/images/web/cat_laptop.gif"
+    search: true
     collapse-below: sm
-    right:
+    left:
       - href: index.qmd
         text: Home
-      - href: slides.qmd
-        text: Workshop slides
-      # - href: webpages.qmd
-      #   text: Webpages
+    right:
       - href: about.qmd
         text: About
   

@@ -100,9 +100,9 @@ format: revealjs
 
 ## Revealjs
 
-`revealjs` uses the open source HTML presentation framework [`reveal.js`](https://revealjs.com/). Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.
+`revealjs` uses the open source HTML presentation framework [`reveal.js`](https://revealjs.com/){target="_blank"}. Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.
 
-More about revealjs can be found on the [Quarto.org docs website](https://quarto.org/docs/presentations/revealjs/) (embedded below):
+More about revealjs can be found on the [Quarto.org docs website](https://quarto.org/docs/presentations/revealjs/){target="_blank"} (embedded below):
 
 <iframe width="780" height="500" src="https://quarto.org/docs/presentations/revealjs/" title="Quarto revealjs">
 
@@ -335,7 +335,7 @@ Lists can optionally be displayed incrementally:
 <br/> Insert pauses to make other types of content display incrementally with `<br/>`.
 
 ::: footer
-Learn more: [Incremental Lists](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
+Learn more: [Incremental Lists](https://quarto.org/docs/presentations/revealjs/#incremental-lists){target="_blank"}
 :::
 
 ## Incremental Reveals
@@ -369,12 +369,12 @@ Highlight red
 :::
 
 ::: footer
-Learn more: [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
+Learn more: [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments){target="_blank"}
 :::
 
 ## Tabsets
 
-You can add tabbed content to slides using the standard Quarto syntax for [tabsets.](https://quarto.org/docs/output-formats/html-basics.html#tabsets) For example:
+You can add tabbed content to slides using the standard Quarto syntax for [tabsets.](https://quarto.org/docs/output-formats/html-basics.html#tabsets){target="_blank"} For example:
 
 ``` qmd
 ::: {.panel-tabset}
@@ -392,7 +392,7 @@ Content for `Tab B`
 
 ## Tabsets - Rendered
 
-You can add tabbed content to slides using the standard Quarto syntax for [tabsets.](https://quarto.org/docs/output-formats/html-basics.html#tabsets) For example:
+You can add tabbed content to slides using the standard Quarto syntax for [tabsets.](https://quarto.org/docs/output-formats/html-basics.html#tabsets){target="_blank"} For example:
 
 ::: panel-tabset
 ### Tab A
@@ -494,7 +494,7 @@ One benefit of using or switching over to the Visual editor is that it is much e
 :::::
 
 ::: footer
-More at [Quarto Docs: Tables](https://quarto.org/docs/authoring/tables.html)
+More at [Quarto Docs: Tables](https://quarto.org/docs/authoring/tables.html){target="_blank"}
 :::
 
 ## Images
@@ -695,7 +695,7 @@ format: revealjs
 
 # More Advanced
 
-There are many, many advanced tools and options shown in the [Quarto presentation, advanced](https://quarto.org/docs/presentations/revealjs/advanced.html) documentation.
+There are many, many advanced tools and options shown in the [Quarto presentation, advanced](https://quarto.org/docs/presentations/revealjs/advanced.html){target="_blank"} documentation.
 
 # Exercise 2: Code and Customization
 
@@ -709,7 +709,7 @@ There are many, many advanced tools and options shown in the [Quarto presentatio
 
 `revealjs` comes with powerful tools to enhance your presentations.
 
-More about presenter tools can be found on the [Quarto.org docs website](https://quarto.org/docs/presentations/revealjs/presenting.html)
+More about presenter tools can be found on the [Quarto.org docs website](https://quarto.org/docs/presentations/revealjs/presenting.html){target="_blank"}
 
 <iframe width="780" height="500" src="https://quarto.org/docs/presentations/revealjs/presenting.html" title="Quarto revealjs">
 
@@ -764,7 +764,7 @@ format:
 ![](/images/web/quartopres_chalkboard.png)
 
 ::: {.footnote}
-Learn more at [Quarto's Presenting Slides > Chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard)
+Learn more at [Quarto's Presenting Slides > Chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard){target="_blank"}
 :::
 
 
@@ -790,9 +790,9 @@ This will embed a timer on the slide. You can customize the duration, text, colo
 
 Quarto supports a variety of formats for creating presentations, including:
 
--   `revealjs` — [reveal.js](https://quarto.org/docs/presentations/revealjs/) (HTML)
--   `pptx` — [PowerPoint](https://quarto.org/docs/presentations/powerpoint.html) (MS Office)
--   `beamer` — [Beamer](https://quarto.org/docs/presentations/beamer.html) (LaTeX/PDF)
+-   `revealjs` — [reveal.js](https://quarto.org/docs/presentations/revealjs/){target="_blank"} (HTML)
+-   `pptx` — [PowerPoint](https://quarto.org/docs/presentations/powerpoint.html){target="_blank"} (MS Office)
+-   `beamer` — [Beamer](https://quarto.org/docs/presentations/beamer.html){target="_blank"} (LaTeX/PDF)
 
 To choose these, merely need to change the yaml `format:` to the type of talk you wish to produce, for example:
 
@@ -806,7 +806,7 @@ format: beamer
 
 ## HTML Slides
 
-> From [Quarto Docs: Presentations](https://quarto.org/docs/presentations/): There are pros and cons to each of these formats. The most capable format by far is revealjs, so it is highly recommended unless you have specific Office or LaTeX output requirements. Note that revealjs presentations can be presented as HTML slides or can be printed to PDF for easier distribution.
+> From [Quarto Docs: Presentations](https://quarto.org/docs/presentations/){target="_blank"}: There are pros and cons to each of these formats. The most capable format by far is revealjs, so it is highly recommended unless you have specific Office or LaTeX output requirements. Note that revealjs presentations can be presented as HTML slides or can be printed to PDF for easier distribution.
 
 # Citations and References
 
@@ -822,7 +822,7 @@ bibliography: references.bib
 csl: apa.csl
 ---
 ```
-(Use csl only if you have a custom csl file, see [Citations](https://quarto.org/docs/authoring/citations.html))
+(Use csl only if you have a custom csl file, see [Citations](https://quarto.org/docs/authoring/citations.html){target="_blank"})
 
 **Step 2:** Create `references.bib`
 
@@ -880,7 +880,7 @@ suppress-bibliography: true
 :::
 
 ::: {.footnote}
-Learn more at [Quarto Citations](https://quarto.org/docs/authoring/citations.html)
+Learn more at [Quarto Citations](https://quarto.org/docs/authoring/citations.html){target="_blank"}
 :::
 
 
@@ -912,7 +912,7 @@ format:
 This will produce a standalone HTML file with no external dependencies, using data: URIs to incorporate the contents of linked scripts, style sheets, images, and videos. The resulting file should be self contained, in the sense that it needs no external files and no net access to be displayed properly by a browser.
 
 ::: footer
-From [Quarto docs](https://quarto.org/docs/output-formats/html-basics.html#self-contained)
+From [Quarto docs](https://quarto.org/docs/output-formats/html-basics.html#self-contained){target="_blank"}
 :::
 
 

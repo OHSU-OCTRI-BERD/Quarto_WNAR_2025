@@ -963,7 +963,7 @@
     "href": "slides/part3_webpages.html#top-vs-side-navigation",
     "title": "Part 3: Creating Websites with Quarto",
     "section": "Top vs Side Navigation",
-    "text": "Top vs Side Navigation\n\nTopSideHybrid"
+    "text": "Top vs Side Navigation\n\nExampleTopSideHybrid\n\n\n\n\n\n\n\nThe navigation bar at the top of the page is customized with the navbar options in the YAML\n\n\n\n\nUse left: and right: to specify which side of the top navigation bar you want the links to appear\nOther options:\n\nbackground and foreground colors,\nadding a website search option and logo\nspecifying when the navigation bar is collapsed to a “hamburger” menu\n\n\n\n\nYAML excerpt:\n\nwebsite:\n  title: \"Quarto WNAR 2025\"\n  navbar:\n    background: primary\n    foreground: \"#fff\"\n    logo: \"/images/web/cat_laptop.gif\"\n    search: true\n    collapse-below: sm\n    left:\n      - href: index.qmd\n        text: Home\n    right:\n      - href: about.qmd\n        text: About\n\n\n\nLearn more: Top Navigation"
   },
   {
     "objectID": "slides/part3_webpages.html#next-page-navigation",
@@ -1369,6 +1369,13 @@
     "href": "slides/part3_webpages.html#blog-style-webpage",
     "title": "Part 3: Creating Websites with Quarto",
     "section": "Blog-style webpage",
-    "text": "Blog-style webpage\nThe Workshop Slides link on the left navigation bar of the workshop website is an example of a blog-style webpage\n\nExampleYAMLfields\n\n\n\nThe table has links to all of the files in a folder specified in the YAML (contents: slides)\n\nIn this case, the links are to the workshop slides, which are the same files linked to from the homepage.\n\n\nThe titles and dates shown are the ones specified in the individual .qmd files\nNote that one can sort the files and also search for (filter) files\n\n\n\n---\ntitle: \"Workshop Slides\"\nformat: \n  html:\n    listing: \n      contents: slides\n      type: table\n      table-hover: true\n      fields: [date, title]\n      sort: \"title asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\n\n\ndescriptioncategories"
+    "text": "Blog-style webpage\n\nExampleYAMLfields options\n\n\nThe Workshop Slides link on the left navigation bar of the workshop website is an example of a blog-style webpage\n\n\n\n\n---\ntitle: \"Workshop Slides\"\nformat: \n  html:\n    listing: \n      contents: slides\n      type: table\n      table-hover: true\n      fields: [date, title]\n      sort: \"title asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\n\n\n[date, title][description][categories]\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Workshop Slides\"\nformat: \n  html:\n    listing: \n      contents: slides\n      type: table\n      table-hover: true\n      fields: [date, title]\n      sort: \"title asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nThe Example’s table of files included the date and title specified in each of the individual .qmd files’ YAMLs\nExcerpt of YAML:\n\n---\ntitle: \"Part 3: Creating Websites with Quarto\"\ndate: \"6/15/25\"\nformat: \n  revealjs\n---\n\n\n\n\n\nExampleYAMLs\n\n\n\n\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Weekly Pages\"\nformat: \n  html:\n    listing: \n      contents: weeks\n      type: table\n      table-hover: true\n      fields: [date, title, description]\n      sort: \"date asc\"\n      date-format: \"short\"\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nExcerpt of YAML with description::\n\n---\ntitle: \"Week 1\"\ndescription: \"Intro to R/RStudio, Functions, Vectors, Data Types\"\ndate: \"1/09/2025\"\ndate-modified: \"today\"\nformat: \n  html\n---\n\n\n\n\n\n\n\n\nExampleYAMLs\n\n\n\n\n\n\n\n\nBlog-style qmd YAML\n---\ntitle: \"Class Slides\"\nformat:\n  html:\n    listing: \n      contents: slides\n      type: table\n      fields: [date, title, categories]\n      table-hover: true\n      sort: \"date asc\"\n      date-format: \"short\"\n      categories: true\n    link-external-newwindow: true\n---\n\nIndividual qmd YAML\n\nExcerpt of YAML with categories::\n\n---\ntitle: \"Day 1: Intro to R & Rstudio\"\nsubtitle: \"BSTA 511/611 Fall 2023, OHSU\"\nauthor: \"Meike Niederhausen, PhD\"\ndate: \"09/27/2023\"\ncategories: [\"Week 1\"]\nformat: \n  revealjs\n---"
+  },
+  {
+    "objectID": "slides/part3_webpages.html",
+    "href": "slides/part3_webpages.html",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "",
+    "text": "Download from Github"
   }
 ]

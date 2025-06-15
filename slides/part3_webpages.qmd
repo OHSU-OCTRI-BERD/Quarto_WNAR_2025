@@ -184,11 +184,62 @@ This is an extra (optional) webpage where information about the website can be p
 # Navigation
 
 
-## Top vs Side Navigation
+## Top vs. Side Navigation
 
 ::: {.panel-tabset}
 
+### Example
+
+
+<iframe width="1100" height="500" src="https://ohsu-octri-berd.github.io/Quarto_WNAR_2025/" title="workshop website">
+</iframe>
+
 ### Top
+
+* The navigation bar at the top of the page is customized with the `navbar` options in the YAML
+
+::: {.columns}
+                                        
+::: {.column width="50%"}
+
+* Use  `left:` and `right:` to specify which side of the top navigation bar you want the links to appear
+* Other options: 
+    * `background` and `foreground` colors, 
+    * adding a website `search` option and `logo`
+    * specifying when the navigation bar is collapsed to a "hamburger" menu
+
+:::
+                                          
+::: {.column width="50%"}
+
+* [YAML](https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml){target="_blank"} excerpt:
+
+``` yaml
+website:
+  title: "Quarto WNAR 2025"
+  navbar:
+    background: primary
+    foreground: "#fff"
+    logo: "/images/web/cat_laptop.gif"
+    search: true
+    collapse-below: sm
+    left:
+      - href: index.qmd
+        text: Home
+    right:
+      - href: about.qmd
+        text: About
+
+```
+:::
+                                          
+:::
+
+::: {.footnote}
+Learn more: [Top Navigation](https://quarto.org/docs/websites/website-navigation.html#top-navigation){target="_blank"}
+:::
+
+
 
 
 ### Side
@@ -202,16 +253,16 @@ This is an extra (optional) webpage where information about the website can be p
 
 ## Blog-style webpage
 
-The __[Workshop Slides](/slides.html){target="_blank"}__ link on the left navigation bar of the workshop website is an example of a blog-style webpage
+
 
 ::: {.panel-tabset}
 ### Example
 
+The __[Workshop Slides](/slides.html){target="_blank"}__ link on the left navigation bar of the workshop website is an example of a blog-style webpage
 
-* The table has links to all of the files in a folder specified in the YAML (`contents: slides`)
-    * In this case, the links are to the workshop slides, which are the same files linked to from the homepage.  
-* The titles and dates shown are the ones specified in the individual .qmd files
-* Note that one can sort the files and also search for (filter) files
+<iframe width="1100" height="500" src="https://ohsu-octri-berd.github.io/Quarto_WNAR_2025/slides.html" title="workshop slides">
+</iframe>
+
 
 
 
@@ -233,25 +284,177 @@ format:
 ---
 ```
 
-### fields
-
+### `fields` options
 
 ::: {.panel-tabset}
 
-#### description
+#### `[date, title]`
+
+::: {.columns}
+                                        
+::: {.column width="50%"}
+__Blog-style qmd YAML__
+
+``` yaml
+---
+title: "Workshop Slides"
+format: 
+  html:
+    listing: 
+      contents: slides
+      type: table
+      table-hover: true
+      fields: [date, title]
+      sort: "title asc"
+      date-format: "short"
+    link-external-newwindow: true
+---
+```
+
+:::
+                                          
+::: {.column width="50%"}
+__Individual qmd YAML__
+
+* The Example's table of files included the `date` and `title` specified in each of the individual .qmd files' YAMLs 
+* Excerpt of YAML:
+
+``` yaml
+---
+title: "Part 3: Creating Websites with Quarto"
+date: "6/15/25"
+format: 
+  revealjs
+---
+```
+:::
+                                          
+:::
+
+
+#### `[description]`
+
+::: {.panel-tabset}
+
+##### Example
 
 <iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_526_W25/weeks.html" title="fields description">
 </iframe>
 
+##### YAMLs
 
-#### categories
 
-<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_511_F23/class_slides.html" title="fields categories">
-</iframe>
+::: {.columns}
+                                        
+::: {.column width="50%"}
+__Blog-style qmd [YAML](https://github.com/niederhausen/BSTA_526_W25/blob/main/weeks.qmd){target="_blank"}__
+
+``` yaml
+---
+title: "Weekly Pages"
+format: 
+  html:
+    listing: 
+      contents: weeks
+      type: table
+      table-hover: true
+      fields: [date, title, description]
+      sort: "date asc"
+      date-format: "short"
+    link-external-newwindow: true
+---
+```
+
+:::
+                                          
+::: {.column width="50%"}
+__Individual qmd YAML__
+
+
+* Excerpt of [YAML](https://github.com/niederhausen/BSTA_526_W25/blob/main/weeks/week_01.qmd){target="_blank"} with `description:`:
+
+``` yaml
+---
+title: "Week 1"
+description: "Intro to R/RStudio, Functions, Vectors, Data Types"
+date: "1/09/2025"
+date-modified: "today"
+format: 
+  html
+---
+```
+:::
+                                          
+:::
 
 :::
 
 
+#### `[categories]`
+
+::: {.panel-tabset}
+
+##### Example
+
+<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_511_F23/class_slides.html" title="fields categories">
+</iframe>
+
+##### YAMLs
+
+::: {.columns}
+                                        
+::: {.column width="50%"}
+
+__Blog-style qmd [YAML](https://github.com/niederhausen/BSTA_511_F23/blob/main/class_slides.qmd){target="_blank"}__
+
+``` yaml
+---
+title: "Class Slides"
+format:
+  html:
+    listing: 
+      contents: slides
+      type: table
+      fields: [date, title, categories]
+      table-hover: true
+      sort: "date asc"
+      date-format: "short"
+      categories: true
+    link-external-newwindow: true
+---
+```
+
+:::
+                                          
+::: {.column width="50%"}
+__Individual qmd YAML__
+
+
+* Excerpt of [YAML](https://github.com/niederhausen/BSTA_511_F23/blob/main/slides/Day01_bsta511.qmd){target="_blank"} with `categories:`:
+
+``` yaml
+---
+title: "Day 1: Intro to R & Rstudio"
+subtitle: "BSTA 511/611 Fall 2023, OHSU"
+author: "Meike Niederhausen, PhD"
+date: "09/27/2023"
+categories: ["Week 1"]
+format: 
+  revealjs
+---
+```
+:::
+                                          
+:::
+
+:::
+
+
+
+
+
+
+:::
 
 :::
 
