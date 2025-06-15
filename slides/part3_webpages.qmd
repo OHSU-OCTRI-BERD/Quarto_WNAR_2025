@@ -1,0 +1,272 @@
+---
+title: "Part 3: Creating Websites with Quarto"
+pagetitle: "Part 3: Creating Websites with Quarto"
+subtitle: "WNAR Workshop 2025"
+author: "Jessica Minnier, PhD, Meike Niederhausen, PhD"
+institute: "OHSU-PSU School of Public Health"
+date: "6/15/25"
+format: 
+  revealjs:
+      incremental: false
+      scrollable: true
+      chalkboard: true
+      theme: [../sky_modified.scss]
+      width:  1050 #default 1050
+      height: 700 #default 700
+      slide-number: true
+      html-math-method: mathjax
+  # html:
+  #   link-external-newwindow: true
+  #   toc: true
+execute:
+  echo: true
+  freeze: auto  # re-render only when source changes
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)    
+library(oibiostat)
+library(janitor)
+library(rstatix)
+library(knitr)
+library(gtsummary)
+library(moderndive)
+library(gt)
+library(broom) 
+library(here) 
+library(pwr) 
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(theme_bw(base_size = 22))
+# theme_update(text = element_text(size=16))  # set global text size for ggplots
+
+```
+
+
+## Sample website (workshop website) 
+
+Download from Github
+
+# Create Quarto website project
+
+::: {.panel-tabset}
+
+### __Quarto Website__ project
+
+1. From the R menu, select `File` -> `New Project...`
+
+
+
+::: columns
+::: {.column width="50%"}
+2. Select New Directory option  
+(_NOT_ Existing Directory)
+
+![](/images/web/project1.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+3. Select __Quarto Website__ from the Project Types
+
+![](/images/web/project2.png){fig-align="center"}
+:::
+:::
+
+### __New Project Wizard__ window
+
+  
+::: columns
+::: {.column width="50%"}
+
+::: {style="font-size: 90%;"}
+
+4. __[Directory name:]{style="color:purple"}__ Enter the name for your website project folder
+5. __[Browse]{style="color:green"}__ to the folder that the website project folder will be saved in
+6. Make sure the __[Engine]{style="color:blue"}__ is set to `Knitr`
+7. Optional:
+    * Select _Create a git repository_ if you plan on syncing your website to GitHub
+    * Select _Open in a new session_ if you want to keep your current R project open
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![](/images/web/project4_annotated.png){fig-align="center"}
+
+::: {style="font-size: 90%;"}
+8. Click on __[Create Project]{style="color:darkorange"}__
+:::
+
+:::
+:::
+
+
+
+### Voila!
+
+Your new Quarto website project should now open up in RStudio
+
+![](/images/web/project5.png){fig-align="center"}
+
+:::
+
+# Website file structure
+
+## Template (default) website
+
+::: {.panel-tabset}
+
+### Before rendering
+
+::: {.panel-tabset}
+
+#### Files
+
+![](/images/web/files1.png){fig-align="center"}
+
+#### `_quarto.yml`
+
+This is the config file that specifies the general structure of the website
+
+![](/images/web/files_quarto_yml.png){width="60%" fig-align="center"}
+
+
+#### `index.qmd`
+
+This is the home page of the website
+
+![](/images/web/files_index_qmd.png){fig-align="center"}
+
+#### `about.qmd`
+
+This is an extra (optional) webpage where information about the website can be provided
+
+![](/images/web/files_about_qmd.png){fig-align="center"}
+
+#### `styles.css`
+
+![](/images/web/files_style_css.png){fig-align="center"}
+
+:::
+
+### After rendering
+
+* You can render the website by clicking on the Render button, similar to rendering a quarto file.
+
+::: {.panel-tabset}
+
+#### Files
+
+![](/images/web/files2.png){fig-align="center"}
+
+#### `_site` folder 🕸️
+
+![](/images/web/files_site1.png){fig-align="center"}
+:::
+
+:::
+
+# Workshop website
+
+# Navigation
+
+
+## Top vs Side Navigation
+
+::: {.panel-tabset}
+
+### Top
+
+
+### Side
+
+
+### Hybrid
+
+:::
+
+## Next Page Navigation
+
+## Blog-style webpage
+
+The __[Workshop Slides](/slides.html){target="_blank"}__ link on the left navigation bar of the workshop website is an example of a blog-style webpage
+
+::: {.panel-tabset}
+### Example
+
+
+* The table has links to all of the files in a folder specified in the YAML (`contents: slides`)
+    * In this case, the links are to the workshop slides, which are the same files linked to from the homepage.  
+* The titles and dates shown are the ones specified in the individual .qmd files
+* Note that one can sort the files and also search for (filter) files
+
+
+
+### YAML
+
+``` yaml
+---
+title: "Workshop Slides"
+format: 
+  html:
+    listing: 
+      contents: slides
+      type: table
+      table-hover: true
+      fields: [date, title]
+      sort: "title asc"
+      date-format: "short"
+    link-external-newwindow: true
+---
+```
+
+### fields
+
+
+::: {.panel-tabset}
+
+#### description
+
+<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_526_W25/weeks.html" title="fields description">
+</iframe>
+
+
+#### categories
+
+<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_511_F23/class_slides.html" title="fields categories">
+</iframe>
+
+:::
+
+
+
+:::
+
+
+
+
+
+
+
+
+# Themes
+
+# Hosting 
+
+* on github or netlify
+* quarto pub (requires quarto pub account)
+
+

@@ -1,0 +1,19 @@
+---
+title: "Workshop Slides"
+format: 
+  html:
+    listing: 
+      contents: slides
+      type: table
+      table-hover: true
+      fields: [date, title]
+      sort: "title asc"
+      date-format: "short"
+    link-external-newwindow: true
+---
+
+* This page is an example of a blog-style webpage
+  * The table below has links to all of the files in a folder specified in the YAML (`contents: slides`)
+      * In this case, the links are to the workshop slides, which are the same files linked to from the homepage.  
+* The titles and dates shown are the ones specified in the individual .qmd files
+* Note that one can sort the files and also search for (filter) files

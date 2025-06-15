@@ -1,0 +1,155 @@
+---
+title: "Part 1: Workshop Overview"
+pagetitle: "Part 1: Workshop Overview"
+subtitle: "WNAR Workshop 2025"
+author: "Jessica Minnier, PhD, Meike Niederhausen, PhD"
+institute: "OHSU-PSU School of Public Health"
+date: "6/15/25"
+format: 
+  revealjs:
+      incremental: false
+      scrollable: true
+      chalkboard: true
+      theme: [../sky_modified_smaller_font.scss]
+      width:  1050 #default 1050
+      height: 700 #default 700
+      slide-number: true
+      html-math-method: mathjax
+  # html:
+  #   link-external-newwindow: true
+  #   toc: true
+execute:
+  echo: true
+  freeze: auto  # re-render only when source changes
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)    # do we need all these?
+# library(oibiostat)
+library(janitor)
+library(rstatix)
+library(knitr)
+library(gtsummary)
+library(moderndive)
+library(gt)
+library(broom) 
+library(here) 
+library(pwr) 
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(theme_bw(base_size = 22))
+# theme_update(text = element_text(size=16))  # set global text size for ggplots
+
+```
+
+
+
+## Welcome! 👋
+
+This workshop will teach you how to create professional presentations and websites using Quarto, an open-source scientific and technical publishing system that builds on R Markdown.
+
+**Workshop Goals:**
+
+-   Understand the power of Quarto for reproducible reporting.
+-   Learn to create dynamic HTML presentations.
+-   Build and customize a personal or project website.
+-   Gain confidence in using Quarto for your own projects.
+
+
+## Who we are
+
+<h5></h5>
+
+::: columns
+::: {.column width="10%"}
+
+  <img src="/images/web/ohsu_logo.jpg" width="60px"/>
+:::
+::: {.column width="45%"}
+  <img class="circle" src="https://github.com/jminnier.png" height="200px"/> 
+  
+  Jessica Minnier
+  
+  <small>Associate Professor of Biostatistics</small>
+
+
+
+  [{{< fa brands github >}} @jminnier](https://github.com/jminnier)  
+  [{{< fa link >}} jessicaminnier.com](https:/jessicaminnier.com)  
+  [{{< fa paper-plane >}} `minnier [at] ohsu [dot] edu`](mailto:minnier@ohsu.edu)
+]
+:::
+::: {.column width="45%"}
+
+
+  <img class="circle" src="/images/web/Niederhausen_Meike_bw.jpg" height="200px"/> 
+  
+  Meike Niederhausen
+  
+  <small>Assistant Professor of Biostatistics</small>
+  
+
+ [{{< fa brands linkedin >}} @meike-niederhausen](https://www.linkedin.com/in/meike-niederhausen/)<br>
+  [{{< fa brands github >}} @niederhausen](https://github.com/niederhausen) <br> 
+  [{{< fa link >}} ohsu-psu-sph.org](https://ohsu-psu-sph.org/faculty-directory/name/meike-niederhausen/)<br>
+  [{{< fa paper-plane >}} `niederha [at] ohsu [dot] edu`](mailto:niederh@ohsu.edu)
+
+
+:::
+:::
+
+## Part 0: Installation
+
+Before we begin, please ensure you have the following installed:
+
+1.  **R:** A recent version of R is required. You can download it from the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/).
+2.  **RStudio:** Download the latest version from the [RStudio website](https://posit.co/download/rstudio-desktop/). Quarto is built right into RStudio, making it the easiest way to get started.
+
+You will also need to install a few R packages. Open RStudio and run the following code in the console:
+
+```r
+install.packages(c("palmerpenguins", "tidyverse", "gt", "remotes"))
+remotes::install_github("gadenbuie/countdown")
+```
+
+- **palmerpenguins**: For example datasets.
+- **tidyverse**: A collection of R packages for data science.
+- **gt**: For creating beautiful tables.
+- **countdown**: To add timers to your slides.
+
+
+# Quarto Overview
+  
+## What is Quarto?
+  
+  Quarto is a next-generation version of R Markdown from Posit. It is a powerful tool that allows you to create dynamic documents, presentations, and websites from a single source file.
+
+**Key Features:**
+  
+-   **Multi-language Support:** Use R, Python, Julia, and Observable JS in the same document.
+-   **Literate Programming:** Combine narrative text with code to create reproducible reports.
+-   **Multiple Outputs:** Generate high-quality output in various formats including HTML, PDF, MS Word, e-books, and more.
+
+## Why Quarto for Biostatisticians?
+
+For biostatisticians, reproducibility and clear communication important. Quarto allows us to do both well.
+
+-   **Reproducible Research:** Seamlessly integrate your R code, statistical analyses, and visualizations directly into your reports and presentations.
+-   **Professional Outputs:** Create polished articles, presentations for conferences, and websites for your lab or personal portfolio.
+-   **Collaboration:** Quarto projects are easy to share and collaborate on using version control systems like Git.
+
+
+
+
+

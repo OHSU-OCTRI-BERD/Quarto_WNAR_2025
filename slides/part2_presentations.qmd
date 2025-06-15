@@ -1,0 +1,1030 @@
+---
+title: "Part 2: Creating Presentations with Quarto"
+pagetitle: "Part 2: Creating Presentations with Quarto"
+subtitle: "WNAR Workshop 2025"
+author: "Jessica Minnier, PhD, Meike Niederhausen, PhD"
+institute: "OHSU-PSU School of Public Health"
+date: "6/15/25"
+format: 
+  revealjs:
+      incremental: false
+      scrollable: true
+      chalkboard: true
+      theme: [../sky_modified.scss]
+      width:  1050 #default 1050
+      height: 700 #default 700
+      slide-number: true
+      html-math-method: mathjax
+  # html:
+  #   link-external-newwindow: true
+  #   toc: true
+bibliography: ../references.bib
+execute:
+  echo: true
+  freeze: auto  # re-render only when source changes
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)    
+library(gt)
+library(palmerpenguins)
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(theme_bw(base_size = 22))
+# theme_update(text = element_text(size=16))  # set global text size for ggplots
+
+```
+
+## Outline
+
+# Getting Started: Your First Presentation
+
+Let's first dive into creating presentations with Quarto. We'll be focusing on `revealjs` for HTML slides, which are very interactive and allow for many types of customizations.
+
+We will talk about how to convert to pdf or use other formats later.
+
+## Create a new Rstudio Project (or Quarto Project)
+
+::: {.panel-tabset}
+
+### Directions
+
+1.  In RStudio, go to `File > New Project... > New Directory > New Project`.
+
+-   You may choose `New Project` OR `Quarto Project`
+-   If you choose Quarto Project, a `.qmd` file will already be present in your folder. You would still follow the next steps.
+-   A Quarto Project has an extra file to define settings in .qmd files. This is not necessary for our purposes, but it is an option if you will be using lots of .qmd files for various tasks.
+
+2.  Give your project a name (i.e. QuartoPres) and choose a location (i.e. Desktop). Check the box "Open in new session"
+
+### Screenshots
+
+![](/images/web/quartopres1.png) ![](/images/web/quartopres2.png) ![](/images/web/quartopres3.png)
+
+:::
+
+
+## Create a new Quarto Presentation file
+
+3.  Now go to `File > New File > Quarto Presentation`. Uncheck the box "Use visual markdown editor". Click "create"
+4.  This will create a new file with a `.qmd` extension. This is your presentation file!
+
+![](/images/web/quartopres4.png)
+
+## The YAML Header
+
+Every `.qmd` file starts with a YAML (YAML Ain't Markup Language) header. This is where you control the main settings for your document.
+
+By default, these basic options are filled in, and you can edit them or add additional options (more later):
+
+``` yaml
+---
+title: "My Presentation"
+author: "Your Name"
+format: revealjs
+---
+```
+
+# Basics
+
+## Revealjs
+
+`revealjs` uses the open source HTML presentation framework [`reveal.js`](https://revealjs.com/). Styles are set with CSS and it comes with built in markdown and LaTeX support as well as code syntax highlighting.
+
+More about revealjs can be found on the [Quarto.org docs website](https://quarto.org/docs/presentations/revealjs/) (embedded below):
+
+<iframe width="780" height="500" src="https://quarto.org/docs/presentations/revealjs/" title="Quarto revealjs">
+
+</iframe>
+
+## Creating Slides
+
+You create new slides using markdown headers (`#` or `##`).
+
+``` qmd
+# This is a Title Slide
+
+This is the content of my first slide.
+
+## This is a New Slide
+
+Each `##` starts a new slide.
+```
+
+-   `##` creates a standard slide with a heading.
+-   A slide with only a title and no body text becomes a title/section slide.
+
+# Content Layout
+
+## Scrolling Slides 📜
+
+For slides with a lot of content, you can make them scrollable.
+
+``` qmd
+## A Long Slide {.scrollable}
+
+This slide has a lot of content that might not fit on one screen. By adding `{.scrollable}`, you allow the user to scroll down to see the rest of the content.
+...
+```
+
+You can also include this in the YAML header to make this a global setting so all slides are scrollable.
+
+``` yaml
+format: 
+  revealjs:
+      scrollable: true
+```
+
+## A Long Slide {.scrollable}
+
+This slide has a lot of content that might not fit on one screen.
+
+```{r}
+library(palmerpenguins)
+gt(penguins)
+```
+
+```{r}
+summary(penguins)
+```
+
+## Columns
+
+You can arrange content in columns using Pandoc's fenced `div` blocks.
+
+``` qmd
+::: {.columns}
+                                        
+::: {.column width="50%"}
+This is the left column. You can put text, images, or code here.
+:::
+                                          
+::: {.column width="50%"}
+This is the right column.
+:::
+                                          
+:::
+```
+
+## Columns, an Example
+
+Here is a 30/70 split:
+
+::::: columns
+::: {.column width="30%"}
+Here we have the first four rows of the Palmer Penguins Data set.
+:::
+
+::: {.column width="70%"}
+```{r}
+penguins %>% head(4) %>% gt()
+```
+:::
+:::::
+
+# Code and Output
+
+One of Quarto's best features is its ability to seamlessly include code and its output.
+
+## Displaying Code and Output
+
+```` qmd
+```{{r}}
+#| echo: true
+#| eval: true
+library(palmerpenguins)
+summary(penguins)
+```
+````
+
+-   `#| echo: true` shows the code.
+-   `#| eval: true` runs the code and shows the output.
+
+## Code Output Layout
+
+You can control where the output of a code block appears.
+
+-   `#| output-location: beside` places output next to the code.
+-   `#| output-location: slide` places output on a new slide following the code slide.
+-   `#| output-location: column` places output in a column adjacent to the code.
+
+## Revealing Code Stepwise
+
+You can reveal code and its output incrementally.
+
+-   `#| output-location: fragment` delays showing output until advancing with a click.
+-   `#| output-location: column-fragment` places output in a column adjacent to the code and delays showing until advancing with a click.
+
+::::: columns
+::: column
+```` qmd
+```{{r}}
+#| echo: true
+#| output-location: "fragment"
+x <- 3
+y <- 2
+x + y
+x*y
+```
+````
+:::
+
+::: column
+Each line will appear on a subsequent click.
+
+```{r}
+#| echo: true
+#| output-location: "fragment"
+x <- 3
+y <- 2
+x + y
+x*y
+```
+:::
+:::::
+
+# Exercise 1a: Your First Presentation
+
+-   Create a new Quarto Presentation project.
+-   Customize the title slide with your name, a subtitle, and your institution.
+    - Hint: there are subtitle, author, institute options in YAML
+-   Create 3 new slides, with some R code and output.
+-   Create at least one main title slide with no text and observe the behavior of the resulting outline.
+
+# Advanced Code Display
+
+You can control how code is presented.
+
+## Highlighting Code
+
+Use `code-line-numbers` to highlight specific lines.
+
+::::: columns
+::: column
+```` qmd
+```{{r}}
+#| code-line-numbers: "3,5-6"
+x <- 1
+y <- 2
+z <- x + y
+
+a <- "hello"
+b <- "world"
+paste(a, b)
+```
+````
+:::
+
+::: column
+```{r}
+#| code-line-numbers: "3,5-6"
+x <- 1
+y <- 2
+z <- x + y
+
+a <- "hello"
+b <- "world"
+paste(a, b)
+```
+:::
+:::::
+
+## Collapsing Code
+
+Use `code-fold: true` to make code blocks expandable.
+
+```` qmd
+```{{r}}
+#| code-fold: true
+#| echo: true
+print("This code is hidden by default.")
+```
+````
+
+```{r}
+#| code-fold: true
+#| echo: true
+print("This code is hidden by default.")
+```
+
+# More Content Layout
+
+## Incremental Lists
+
+Lists can optionally be displayed incrementally:
+
+::: incremental
+-   First item
+-   Second item
+-   Third item
+:::
+
+. . .
+
+<br/> Insert pauses to make other types of content display incrementally with `<br/>`.
+
+::: footer
+Learn more: [Incremental Lists](https://quarto.org/docs/presentations/revealjs/#incremental-lists)
+:::
+
+## Incremental Reveals
+
+More customization to show parts of a slide step-by-step can be made with the `.fragment` class. This works on lists, text, images, and more.
+
+``` qmd
+::: {.fragment}
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+```
+
+::: fragment
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: footer
+Learn more: [Fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments)
+:::
+
+## Tabsets
+
+You can add tabbed content to slides using the standard Quarto syntax for [tabsets.](https://quarto.org/docs/output-formats/html-basics.html#tabsets) For example:
+
+``` qmd
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+```
+
+## Tabsets - Rendered
+
+You can add tabbed content to slides using the standard Quarto syntax for [tabsets.](https://quarto.org/docs/output-formats/html-basics.html#tabsets) For example:
+
+::: panel-tabset
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+### Tab C
+
+Content for `Tab C`
+:::
+
+# Styling Your Presentation
+
+## Themes
+
+You can change the entire look of your presentation with themes.
+
+``` yaml
+---
+title: "My Presentation"
+format:
+  revealjs:
+    theme: dark
+---
+```
+
+Available themes include: `default`, `dark`, `simple`, `solarized`, `blood`, `moon`.
+
+## Custom Styles with SCSS
+
+For more control, you can use a `.scss` file to customize your theme.
+
+1.  Create a file named `custom.scss`.
+2.  In this file, you can define variables and CSS rules, including changing font color:
+
+``` scss
+/*-- scss:defaults --*/
+$presentation-heading-font: "Montserrat", sans-serif;
+$theme-green: #40ab16;
+
+/*-- scss:rules --*/
+.reveal .slide-background-content {
+background-color: #F0F0F0;
+}
+```
+
+3.  Link it in your YAML:
+
+``` yaml
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+---
+```
+
+# Markup & Fine-Tuning
+
+## Lists
+
+You make lists in markdown using `-` or `*` such as:
+
+``` qmd
+- Item 1
+- Item 2
+- Item 3
+```
+
+-   Item 1
+-   Item 2
+-   Item 3
+
+## Tables
+
+One benefit of using or switching over to the Visual editor is that it is much easier to add tables.
+
+::::: columns
+::: {.column width="50%"}
+``` qmd
+| Name    | Date     | Measure |
+|---------|----------|---------|
+| Jessica | 02/04/25 | 9.3     |
+| Meike   | 01/03/25 | 10.1    |
+| WNAR    |          | 10.5    |
+```
+:::
+
+::: {.column width="50%"}
+| Name    | Date     | Measure |
+|---------|----------|---------|
+| Jessica | 02/04/25 | 9.3     |
+| Meike   | 01/03/25 | 10.1    |
+| WNAR    |          | 10.5    |
+:::
+:::::
+
+::: footer
+More at [Quarto Docs: Tables](https://quarto.org/docs/authoring/tables.html)
+:::
+
+## Images
+
+Add an image with a simple `![](filepath.png)`
+
+``` qmd
+![](/images/web/cat_laptop.gif)
+```
+
+::::: columns
+::: {.column width="40%"}
+
+
+![](/images/web/cat_laptop.gif)
+:::
+
+::: {.column width="60%"}
+You can add html image options, such as a smaller width or size:
+
+``` qmd
+![](/images/web/cat_laptop.gif){width="100"}
+```
+
+![](/images/web/cat_laptop.gif){width="100"}
+:::
+:::::
+
+## Image, ctd
+
+These are attributes easily added in the visual editor Insert Image option, including a url link:
+
+``` qmd
+[![OHSU Logo](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}](https://www.ohsu.edu)
+```
+
+[![OHSU Logo](/images/web/ohsu_logo.jpg){width="100" fig-alt="OHSU Logo" fig-align="center"}](https://www.ohsu.edu)
+
+# Exercise 1b: Your First Presentation
+
+-   On one slide, add a bulleted list where each item is revealed incrementally.
+-   On another slide, use columns to display text on the left and an image on the right. (Hint: Use `![Caption](image.png)` to add an image).
+
+## Controlling Font Size
+
+You can adjust font size at different levels.
+
+-   **Whole Document:** Use the font-size option in your YAML header.
+
+``` yaml
+format:
+  revealjs:
+    font-size: 24px
+```
+
+-   **Part of a Slide:** Wrap text in brackets and use a class like `.smaller` or `.larger.`
+
+```qmd
+This is [small text]{.smaller} and this is [large text]{.larger}.
+```
+This is [small text]{.smaller} and this is [large text]{.larger}.
+
+(Note: If this doesn't work, make sure your theme or `.scss` file defines these classes)
+
+
+-   **Whole Slide:** Use the `r-fit-text` class to make text fill the slide.
+
+``` qmd
+::: {.r-fit-text}
+Big Text
+:::
+```
+
+## Slide with BIG TEXT
+
+::: r-fit-text
+Big Text
+:::
+
+## Customizing Text Styles
+
+For more specific control over fonts for headers or code, you can use a custom `.scss` file.
+
+-   **Slide Headers Font Size:** Change heading sizes in `custom.scss`:
+
+``` scss
+$presentation-h1-font-size: 2.5em;
+$presentation-h2-font-size: 1.6em;
+```
+
+-   **Code vs. Output Font Size:** Adjust code block and output font sizes in `custom.scss`.
+
+``` scss
+$code-block-font-size: 0.55em;
+```
+
+## Callout Blocks ⚠️
+
+Callouts are an excellent way to draw attention to specific pieces of information. They are especially useful for notes, warnings, or tips.
+
+You create them using fenced divs with a special class.
+
+::::::: columns
+::: {.column width="50%"}
+``` qmd
+Note
+::: {.callout-note}
+This is a note. Use it for helpful but not critical information.
+:::
+
+Important
+::: {.callout-important}
+This is important. Use it for key information the audience must know.
+:::
+```
+:::
+
+::::: {.column width="50%"}
+Note
+
+::: callout-note
+This is a note. Use it for helpful but not critical information.
+:::
+
+Important
+
+::: callout-important
+This is important. Use it for key information the audience must know.
+:::
+:::::
+:::::::
+
+## Callout Blocks, ctd
+
+:::::::: columns
+::: {.column width="50%"}
+``` qmd
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+```
+:::
+
+:::::: {.column width="50%"}
+::: callout-note
+Note that there are five types of callouts, including: `note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: callout-tip
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+::::::
+::::::::
+
+From <https://quarto.org/docs/authoring/callouts.html>{target="_blank"}
+
+## Customizing the Title Slide
+
+You can add more information to your title slide directly in the YAML header. This is useful for adding affiliations, subtitles, and logos.
+
+``` yaml
+---
+title: "Workshop Title"
+subtitle: "An In-depth Look at Quarto"
+author: "Your Name"
+institute: "Department of Biostatistics, OHSU"
+date: "today"
+title-slide-attributes:
+  data-background-image: "your-logo.png"
+  data-background-size: "15%"
+  data-background-position: "top right"
+format: revealjs
+---
+```
+
+## Animation \[TO ADD\]
+
+# More Advanced
+
+There are many, many advanced tools and options shown in the [Quarto presentation, advanced](https://quarto.org/docs/presentations/revealjs/advanced.html) documentation.
+
+# Exercise 2: Code and Customization
+
+-   On a new slide, add an R code chunk that loads the `palmerpenguins` dataset and creates a `gt` table.
+-   Make the code chunk collapsible (`code-fold: true`).
+-   Highlight the line of code that creates the `gt` table.
+-   Change the presentation theme to `solarized.`
+-   Create a `custom.scss` file and use it to change the color of the H2 slide titles to a color of your choice.
+
+# Presentation Tools
+
+`revealjs` comes with powerful tools to enhance your presentations.
+
+More about presenter tools can be found on the [Quarto.org docs website](https://quarto.org/docs/presentations/revealjs/presenting.html)
+
+<iframe width="780" height="500" src="https://quarto.org/docs/presentations/revealjs/presenting.html" title="Quarto revealjs">
+
+</iframe>
+
+## Speaker Notes
+
+Press `s` to open the speaker view, which shows your notes and a preview of the next slide. Add notes to a slide like this:
+
+``` qmd
+## My Slide
+    
+This is the content everyone sees.
+    
+::: {.notes}
+These are my speaker notes. Only I can see them.
+:::
+```
+
+## Annotations & Chalkboard ✍️
+
+Revealjs includes a "chalkboard" that you can use for live drawings and a "notes canvas" for more permanent annotations.
+
+-   Chalkboard: Press `b` to toggle the chalkboard. You can draw directly on the slide. Press b again to hide it.
+-   Notes Canvas: Press `c` to toggle the notes canvas. This is like drawing on a transparent overlay that stays with the slide.
+
+Add the `chalkboard` option in the YAML header to include both the chalkboard and canvas options in your slides, :
+
+``` yaml
+---
+format: 
+  revealjs:
+      chalkboard: true
+---
+```
+
+## Saving & Loading Annotations:
+
+Your drawings are not saved by default. To save them:
+
+-   While in presentation mode, press `d` to download your drawings as a `drawing.json` file.
+-   To load these annotations back the next time you present, add the `chalkboard-src:` option to your YAML header:
+
+``` yaml
+---
+format:
+  revealjs:
+    chalkboard-src: "drawing.json"
+---
+```
+
+![](/images/web/quartopres_chalkboard.png)
+
+::: {.footnote}
+Learn more at [Quarto's Presenting Slides > Chalkboard](https://quarto.org/docs/presentations/revealjs/presenting.html#chalkboard)
+:::
+
+
+## Outlines
+
+Press `o` to see an outline of your presentation.
+
+![](/images/web/quartopres_outline.png)
+
+## Adding a Countdown Timer ⏳
+
+A great way to manage time for in-class exercises or breaks is to add a countdown timer directly into your slides. We can use the countdown package, which we installed earlier.
+
+Let's set a 5-minute timer for a quick break.
+
+```{r, R-countdown, echo=TRUE}
+countdown::countdown(minutes = 5, play_sound = TRUE)
+```
+
+This will embed a timer on the slide. You can customize the duration, text, colors, and whether it plays a sound when finished.
+
+# Slide File Formats
+
+Quarto supports a variety of formats for creating presentations, including:
+
+-   `revealjs` — [reveal.js](https://quarto.org/docs/presentations/revealjs/) (HTML)
+-   `pptx` — [PowerPoint](https://quarto.org/docs/presentations/powerpoint.html) (MS Office)
+-   `beamer` — [Beamer](https://quarto.org/docs/presentations/beamer.html) (LaTeX/PDF)
+
+To choose these, merely need to change the yaml `format:` to the type of talk you wish to produce, for example:
+
+``` yaml
+---
+title: "Mathy Talk"
+author: "Jane Doe"
+format: beamer
+---
+```
+
+## HTML Slides
+
+> From [Quarto Docs: Presentations](https://quarto.org/docs/presentations/): There are pros and cons to each of these formats. The most capable format by far is revealjs, so it is highly recommended unless you have specific Office or LaTeX output requirements. Note that revealjs presentations can be presented as HTML slides or can be printed to PDF for easier distribution.
+
+# Citations and References
+
+## Setting Up Bibliography
+
+**Step 1:** Add to YAML header
+
+```yaml
+---
+title: "My Presentation"
+format: revealjs
+bibliography: references.bib
+csl: apa.csl
+---
+```
+(Use csl only if you have a custom csl file, see [Citations](https://quarto.org/docs/authoring/citations.html))
+
+**Step 2:** Create `references.bib`
+
+```bibtex
+@article{smith2023,
+  title={Important Research},
+  author={Smith, John},
+  journal={Journal of Science},
+  year={2023}
+}
+```
+
+## Citation Syntax
+
+**In-text citations:**
+```markdown
+Research shows [@smith2023] that...
+Multiple sources [@smith2023; @jones2022]
+Page numbers [@smith2023, p. 15]
+```
+
+**Citation styles:**
+- `[@smith2023]` → (Smith, 2023)
+- `@smith2023` → Smith (2023)
+- `[-@smith2023]` → (2023)
+
+Here we reference [@smith2023].
+
+## References Slide
+
+**Automatic references:**
+```markdown
+## References
+
+::: {#refs}
+:::
+```
+
+**Manual placement:**
+```yaml
+---
+suppress-bibliography: true
+---
+
+# Last slide
+## References {.smaller}
+
+::: {#refs}
+:::
+```
+
+## References
+
+::: {#refs}
+:::
+
+::: {.footnote}
+Learn more at [Quarto Citations](https://quarto.org/docs/authoring/citations.html)
+:::
+
+
+# Exporting
+
+## Publishing \[MEIKE CAN YOU ADD?\]
+
+https://quarto.org/docs/publishing/
+
+## Self Contained (HTML)
+
+HTML documents typically have a number of external dependencies (e.g. images, CSS style sheets, JavaScript, etc.). By default these dependencies are placed in a \_files directory alongside your document. For example, if you render report.qmd to HTML:
+
+Then the following output is produced:
+
+```         
+pres.html
+pres_files/
+```
+
+You might alternatively want to create an entirely self-contained HTML document (with images, CSS style sheets, JavaScript, etc. embedded into the HTML file). You can do this by specifying the embed-resources option:
+
+``` yaml
+format:
+  revealjs:
+    embed-resources: true
+```
+
+This will produce a standalone HTML file with no external dependencies, using data: URIs to incorporate the contents of linked scripts, style sheets, images, and videos. The resulting file should be self contained, in the sense that it needs no external files and no net access to be displayed properly by a browser.
+
+::: footer
+From [Quarto docs](https://quarto.org/docs/output-formats/html-basics.html#self-contained)
+:::
+
+
+
+
+
+# Converting HTML to PDF
+
+## Method 1: Using Chrome/Chromium
+
+```bash
+# Install chromium if needed
+quarto install chromium
+
+# Render to PDF
+quarto render presentation.qmd --to revealjs
+# Then use browser print function
+# Or use decktape (next slide)
+```
+
+## Method 2: Using Decktape
+
+```bash
+# Install decktape
+npm install -g decktape
+
+# Convert HTML to PDF
+decktape reveal presentation.html presentation.pdf
+
+# With custom options
+decktape reveal presentation.html presentation.pdf \
+  --size 1920x1080 --load-pause 2000
+```
+
+## Method 3: Direct PDF Format
+
+```yaml
+---
+title: "My Presentation"
+format:
+  revealjs: default
+  pdf: default
+---
+```
+
+```bash
+# Render both formats
+quarto render presentation.qmd
+```
+
+# Converting Qmd Reports to Slides
+
+## From Document to Presentation
+
+**Step 1:** Change the YAML header
+
+```yaml
+# From this:
+format: html
+
+# To this:
+format: revealjs
+```
+
+**Step 2:** Adjust heading levels
+- `#` becomes section dividers
+- `##` becomes slide titles
+- `###` becomes slide subtitles
+
+## Content Adaptation Tips
+
+- **Break long paragraphs** into bullet points
+- **Split dense content** across multiple slides
+- **Add slide breaks** with `---` if needed
+- **Use incremental reveals** with `{.incremental}`
+
+```markdown
+::: {.incremental}
+- First point
+- Second point
+- Third point
+:::
+```
+
+## Example Conversion
+
+**Before (Report):**
+```markdown
+# Analysis Results
+Our analysis shows significant findings...
+
+## Data Summary
+The dataset contains 1000 observations...
+```
+
+**After (Slides):**
+```markdown
+# Analysis Results
+
+## Key Findings
+- Significant results discovered
+- Strong correlations identified
+
+## Data Summary
+- 1000 observations
+- 15 variables analyzed
+```
+
+# Extra? \[TO ADD\]
+
+-   Convert jsreveal slides to code file (Meike: look at notes)
+-   Convert to PDF (and when you can’t)
+-   Icons
+-   Hosting on github or netlify; quarto pub (requires quarto pub account)
+-   External links/urls

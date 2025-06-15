@@ -13,10 +13,10 @@ website:
     right:
       - href: index.qmd
         text: Home
-      # - href: presentations.qmd
-        # text: Presentations
+      - href: slides.qmd
+        text: Workshop slides
       # - href: webpages.qmd
-        # text: Webpages
+      #   text: Webpages
       - href: about.qmd
         text: About
   
@@ -27,8 +27,8 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      # - href: presentations.qmd
-        # text: Presentations
+      - href: slides.qmd
+        text: Workshop slides
       # - href: webpages.qmd
         # text: Webpages        
 

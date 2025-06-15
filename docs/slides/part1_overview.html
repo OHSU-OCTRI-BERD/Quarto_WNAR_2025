@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.361">
 
   <meta name="author" content="Jessica Minnier, PhD, Meike Niederhausen, PhD">
   <meta name="dcterms.date" content="2025-06-15">
-  <title>Part 2: Creating Presentations with Quarto</title>
+  <title>Part 1: Workshop Overview</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,14 +32,79 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
-  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -329,7 +396,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Part 2: Creating Presentations with Quarto</h1>
+  <h1 class="title">Part 1: Workshop Overview</h1>
   <p class="subtitle">WNAR Workshop 2025</p>
 
 <div class="quarto-title-authors">
@@ -345,152 +412,102 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 
   <p class="date">2025-06-15</p>
 </section>
-<section id="outline" class="slide level2">
-<h2>Outline</h2>
-</section>
-<section id="create-project" class="slide level2">
-<h2>Create project</h2>
-<p>regular R project Mention difference with Quarto project</p>
-</section>
-<section id="yaml" class="slide level2">
-<h2>YAML</h2>
-</section>
-<section>
-<section id="basics" class="title-slide slide level1 center">
-<h1>Basics</h1>
-
-</section>
-<section id="html-jsreveal-slides" class="slide level2">
-<h2>Html jsreveal slides</h2>
-</section>
-<section id="how-to-create-a-new-slide" class="slide level2">
-<h2>How to create a new slide</h2>
-</section>
-<section id="headertitle-slide-vs-regular-slide" class="slide level2">
-<h2>Header/title slide vs regular slide</h2>
-</section>
-<section id="scrolling-slide-vs-not" class="slide level2">
-<h2>“Scrolling” slide vs not</h2>
-</section>
-<section id="lists" class="slide level2">
-<h2>Lists</h2>
-</section>
-<section id="tables" class="slide level2">
-<h2>Tables</h2>
-</section>
-<section id="columns" class="slide level2">
-<h2>Columns</h2>
-</section>
-<section id="tabs" class="slide level2">
-<h2>Tabs</h2>
-</section>
-<section id="adding-images-resizing" class="slide level2">
-<h2>Adding images; resizing</h2>
-</section>
-<section id="code-output" class="slide level2">
-<h2>Code &amp; output</h2>
-<h3 id="output-in-next-column-or-next-slide">Output in next column or next slide</h3>
-<h3 id="revealing-code">Revealing code</h3>
-<h3 id="highlighting-out-code">Highlighting out code</h3>
-<h3 id="collapsing-code">Collapsing code</h3>
-</section>
-<section id="callout-blocks" class="slide level2">
-<h2>Callout blocks</h2>
-</section>
-<section id="revealing-stepwise" class="slide level2">
-<h2>Revealing stepwise</h2>
-</section></section>
-<section>
-<section id="markup" class="title-slide slide level1 center">
-<h1>Markup</h1>
-
-</section>
-<section id="font-size" class="slide level2">
-<h2>Font size</h2>
-<h3 id="whole-document-vs.-whole-slide-vs.-part-of-slide">Whole document vs.&nbsp;Whole slide vs.&nbsp;part of slide</h3>
-<h3 id="code-font-size-vs.-output-font-size">Code font size vs.&nbsp;output font size</h3>
-<h3 id="slide-headers-font-size">Slide headers font size</h3>
-</section>
-<section id="font-color-within-document" class="slide level2">
-<h2>Font color within document: <span style="color:green"></span></h2>
+<section id="welcome" class="slide level2">
+<h2>Welcome! 👋</h2>
+<p>This workshop will teach you how to create professional presentations and websites using Quarto, an open-source scientific and technical publishing system that builds on R Markdown.</p>
+<p><strong>Workshop Goals:</strong></p>
 <ul>
-<li>Personalize in a scss file??
-<ul>
-<li><code>$theme-green: #40ab16;</code></li>
-</ul></li>
+<li>Understand the power of Quarto for reproducible reporting.</li>
+<li>Learn to create dynamic HTML presentations.</li>
+<li>Build and customize a personal or project website.</li>
+<li>Gain confidence in using Quarto for your own projects.</li>
 </ul>
 </section>
-<section id="themes-and-title-slide-material-yaml" class="slide level2">
-<h2>Themes and title slide material (YAML)</h2>
-<h3 id="scss-file---how-to-modify---later-on">Scss file - how to modify - later on??</h3>
-</section></section>
+<section id="who-we-are" class="slide level2">
+<h2>Who we are</h2>
+<h5>
+</h5>
+<div class="columns">
+<div class="column" style="width:10%;">
+<p><img src="../images/web/ohsu_logo.jpg" width="60px"></p>
+</div><div class="column" style="width:45%;">
+<p><img class="circle" src="https://github.com/jminnier.png" height="200px"></p>
+<p>Jessica Minnier</p>
+<p><small>Associate Professor of Biostatistics</small></p>
+<p><a href="https://github.com/jminnier"><i class="fa-brands fa-github" aria-label="github"></i> <span class="citation" data-cites="jminnier">@jminnier</span></a><br>
+<a href="https:/jessicaminnier.com"><i class="fa-solid fa-link" aria-label="link"></i> jessicaminnier.com</a><br>
+<a href="mailto:minnier@ohsu.edu"><i class="fa-solid fa-paper-plane" aria-label="paper-plane"></i> <code>minnier [at] ohsu [dot] edu</code></a> ]</p>
+</div><div class="column" style="width:45%;">
+<p><img class="circle" src="../images/web/Niederhausen_Meike_bw.jpg" height="200px"></p>
+<p>Meike Niederhausen</p>
+<p><small>Assistant Professor of Biostatistics</small></p>
+<p><a href="https://www.linkedin.com/in/meike-niederhausen/"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i> <span class="citation" data-cites="meike-niederhausen">@meike-niederhausen</span></a><br> <a href="https://github.com/niederhausen"><i class="fa-brands fa-github" aria-label="github"></i> <span class="citation" data-cites="niederhausen">@niederhausen</span></a> <br> <a href="https://ohsu-psu-sph.org/faculty-directory/name/meike-niederhausen/"><i class="fa-solid fa-link" aria-label="link"></i> ohsu-psu-sph.org</a><br> <a href="mailto:niederh@ohsu.edu"><i class="fa-solid fa-paper-plane" aria-label="paper-plane"></i> <code>niederha [at] ohsu [dot] edu</code></a></p>
+</div>
+</div>
+</section>
+<section id="part-0-installation" class="slide level2">
+<h2>Part 0: Installation</h2>
+<p>Before we begin, please ensure you have the following installed:</p>
+<ol type="1">
+<li><strong>R:</strong> A recent version of R is required. You can download it from the <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a>.</li>
+<li><strong>RStudio:</strong> Download the latest version from the <a href="https://posit.co/download/rstudio-desktop/">RStudio website</a>. Quarto is built right into RStudio, making it the easiest way to get started.</li>
+</ol>
+<p>You will also need to install a few R packages. Open RStudio and run the following code in the console:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"palmerpenguins"</span>, <span class="st">"tidyverse"</span>, <span class="st">"gt"</span>, <span class="st">"remotes"</span>))</span>
+<span id="cb1-2"><a href="#cb1-2"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"gadenbuie/countdown"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>palmerpenguins</strong>: For example datasets.</li>
+<li><strong>tidyverse</strong>: A collection of R packages for data science.</li>
+<li><strong>gt</strong>: For creating beautiful tables.</li>
+<li><strong>countdown</strong>: To add timers to your slides.</li>
+</ul>
+</section>
 <section>
-<section id="presentation-tools" class="title-slide slide level1 center">
-<h1>Presentation tools</h1>
-<p>https://quarto.org/docs/presentations/revealjs/presenting.html</p>
-</section>
-<section id="annotations" class="slide level2">
-<h2>Annotations</h2>
-<p>saving json &amp; adding annotations back in</p>
-</section>
-<section id="chalkboard" class="slide level2">
-<h2>Chalkboard</h2>
-</section>
-<section id="outlines" class="slide level2">
-<h2>Outlines</h2>
-</section>
-<section id="speaker-notes" class="slide level2">
-<h2>Speaker notes</h2>
-<p>(like PPT notes; how to do this?)</p>
-</section></section>
-<section>
-<section id="formats" class="title-slide slide level1 center">
-<h1>Formats</h1>
+<section id="quarto-overview" class="title-slide slide level1 center">
+<h1>Quarto Overview</h1>
 
 </section>
-<section id="html-reveal-js" class="slide level2">
-<h2>html (Reveal JS)</h2>
-<h3 id="existing-quarto-report-to-slides">Existing quarto report to slides</h3>
-</section>
-<section id="powerpoint" class="slide level2">
-<h2>PowerPoint</h2>
-</section>
-<section id="latex-beamer-slides" class="slide level2">
-<h2>LaTeX Beamer slides</h2>
-</section></section>
-<section id="extra" class="title-slide slide level1 center">
-<h1>Extra?</h1>
+<section id="what-is-quarto" class="slide level2">
+<h2>What is Quarto?</h2>
+<p>Quarto is a next-generation version of R Markdown from Posit. It is a powerful tool that allows you to create dynamic documents, presentations, and websites from a single source file.</p>
+<p><strong>Key Features:</strong></p>
 <ul>
-<li>Tips on converting Rmd to Quarto</li>
-<li>Convert jsreveal slides to code file (Meike: look at notes)</li>
-<li>Convert to PDF (and when you can’t)</li>
-<li>Icons</li>
-<li>Hosting on github or netlify; quarto pub (requires quarto pub account)</li>
-<li>Citations/references</li>
+<li><strong>Multi-language Support:</strong> Use R, Python, Julia, and Observable JS in the same document.</li>
+<li><strong>Literate Programming:</strong> Combine narrative text with code to create reproducible reports.</li>
+<li><strong>Multiple Outputs:</strong> Generate high-quality output in various formats including HTML, PDF, MS Word, e-books, and more.</li>
+</ul>
+</section>
+<section id="why-quarto-for-biostatisticians" class="slide level2">
+<h2>Why Quarto for Biostatisticians?</h2>
+<p>For biostatisticians, reproducibility and clear communication important. Quarto allows us to do both well.</p>
+<ul>
+<li><strong>Reproducible Research:</strong> Seamlessly integrate your R code, statistical analyses, and visualizations directly into your reports and presentations.</li>
+<li><strong>Professional Outputs:</strong> Create polished articles, presentations for conferences, and websites for your lab or personal portfolio.</li>
+<li><strong>Collaboration:</strong> Quarto projects are easy to share and collaborate on using version control systems like Git.</li>
 </ul>
 
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
