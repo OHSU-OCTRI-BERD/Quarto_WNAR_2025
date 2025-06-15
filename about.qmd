@@ -2,8 +2,49 @@
 title: "About"
 ---
 
-About this site
 
-```{r}
-1 + 1
-```
+This website and slides were created for the  __[Creating Professional Presentations and Websites using R/Quarto](https://whova.com/embedded/session/hRqar%40ceM1oCRxx8SaTASu%40-ruGH1z6nVU55djYhzR8%3D/4627683/?widget=primary)__ workshop presented at the [2025 WNAR/IMS Annual Meeting](https://wnarofibs.wildapricot.org/wnar2025){target="_blank"} on June 15, 2025.
+
+The website structure was set up to be used as an example for demonstrating options when creating websites using Quarto in RStudio. See [Part 3 slides](slides/part3_webpages.qmd) for more information.
+
+## Workshop Presenters
+
+<h5></h5>
+
+::: columns
+::: {.column width="10%"}
+
+  <img src="/images/web/ohsu_logo.jpg" width="60px"/>
+:::
+::: {.column width="45%"}
+  <img class="circle" src="https://github.com/jminnier.png" height="200px"/> 
+  
+  Jessica Minnier
+  
+  <small>Associate Professor of Biostatistics</small>
+
+
+
+  [{{< fa brands github >}} @jminnier](https://github.com/jminnier)  
+  [{{< fa link >}} jessicaminnier.com](https:/jessicaminnier.com)  
+  [{{< fa paper-plane >}} `minnier [at] ohsu [dot] edu`](mailto:minnier@ohsu.edu)
+]
+:::
+::: {.column width="45%"}
+
+
+  <img class="circle" src="/images/web/Niederhausen_Meike_bw.jpg" height="200px"/> 
+  
+  Meike Niederhausen
+  
+  <small>Assistant Professor of Biostatistics</small>
+  
+
+ [{{< fa brands linkedin >}} @meike-niederhausen](https://www.linkedin.com/in/meike-niederhausen/)<br>
+  [{{< fa brands github >}} @niederhausen](https://github.com/niederhausen) <br> 
+  [{{< fa link >}} ohsu-psu-sph.org](https://ohsu-psu-sph.org/faculty-directory/name/meike-niederhausen/)<br>
+  [{{< fa paper-plane >}} `niederha [at] ohsu [dot] edu`](mailto:niederh@ohsu.edu)
+
+
+:::
+:::

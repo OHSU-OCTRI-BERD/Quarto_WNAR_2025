@@ -174,12 +174,16 @@ This is an extra (optional) webpage where information about the website can be p
 
 #### `_site` folder 🕸️
 
+::: {style="font-size: 90%;"}
+* The `_site` folder is created when rendering the website
+* It contains the html files that make up the website
+:::
+
 ![](/images/web/files_site1.png){fig-align="center"}
 :::
 
 :::
 
-# Workshop website
 
 # Navigation
 
@@ -196,23 +200,23 @@ This is an extra (optional) webpage where information about the website can be p
 
 ### Top
 
-* The navigation bar at the top of the page is customized with the `navbar` options in the YAML
+* The navigation bar at the top of the page is customized with the `navbar` options in `_quarto.yml`
 
 ::: {.columns}
                                         
 ::: {.column width="50%"}
-
+::: {style="font-size: 90%;"}
 * Use  `left:` and `right:` to specify which side of the top navigation bar you want the links to appear
 * Other options: 
     * `background` and `foreground` colors, 
     * adding a website `search` option and `logo`
     * specifying when the navigation bar is collapsed to a "hamburger" menu
-
+:::
 :::
                                           
 ::: {.column width="50%"}
 
-* [YAML](https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml){target="_blank"} excerpt:
+* [_quarto.yml](https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml){target="_blank"} excerpt:
 
 ``` yaml
 website:
@@ -244,16 +248,84 @@ Learn more: [Top Navigation](https://quarto.org/docs/websites/website-navigation
 
 ### Side
 
+::: {.panel-tabset}
 
-### Hybrid
+#### Options
+
+* The navigation bar at the left side of the page is customized with the `sidebar` options in `_quarto.yml`
+
+::: {.columns}
+                                        
+::: {.column width="50%"}
+::: {style="font-size: 90%;"}
+* Use  `contents:` to specify which pages to link to
+* Other options: 
+    * `style:` options are `"docked"` and `"floating"`
+    * adding a website `search` option on the sidebar (won't appear if navigation bar already has one)
+    * how many navigation levels to display (`collapse-level:`)
+:::
+:::
+                                          
+::: {.column width="50%"}
+
+* [_quarto.yml](https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml){target="_blank"} excerpt:
+
+``` yaml
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: slides.qmd
+        text: Workshop slides as "blog"
+      - section: "Section for slides"
+        contents: 
+          - href: slides/part1_overview.qmd
+            text: 1 Overview
+          - href: slides/part2_presentations.qmd
+            text: 2 Presentations
+          - href: slides/part3_webpages.qmd
+            text: 3 Websites
+
+```
+:::
+                                          
+:::
+
+::: {.footnote}
+Learn more: [Side Navigation](https://quarto.org/docs/websites/website-navigation.html#side-navigation){target="_blank"}
+:::
+
+#### Sections
+
+* Within the `contents:` list, sections of related pages can be grouped together with `section:`
+* For each `section:`, list the `contents:`
+* Exampl 1: See the [_quarto.yml](https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml){target="_blank"} excerpt in the Options 
+* Example 2: Sections for weekly pages and homework-related pages from class [website](https://niederhausen.github.io/BSTA_511_F24/){target="_blank"}; [YAML](https://github.com/niederhausen/BSTA_511_F24/blob/main/_quarto.yml){target="_blank"}
+
+<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_511_F24/" title="workshop website">
+</iframe>
 
 :::
 
-## Next Page Navigation
+
+### Hybrid
+
+* This option was not implemented in the workshop webpage
+* Hybrid navigation allows for each top navigation bar item to have its own contents in the sidebar.
+
+Learn more: [Hybrid Navigation](https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation){target="_blank"}
+
+<iframe width="1100" height="500" src="https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation" title="Hybrid navigation">
+</iframe>
+
+
+:::
+
 
 ## Blog-style webpage
-
-
 
 ::: {.panel-tabset}
 ### Example
@@ -449,19 +521,9 @@ format:
 
 :::
 
-
-
-
-
-
 :::
 
 :::
-
-
-
-
-
 
 
 

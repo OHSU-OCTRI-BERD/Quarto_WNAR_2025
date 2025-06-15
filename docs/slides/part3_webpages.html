@@ -557,6 +557,12 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 </div>
 </div>
 <div id="tabset-3-2">
+<div style="font-size: 90%;">
+<ul>
+<li>The <code>_site</code> folder is created when rendering the website</li>
+<li>It contains the html files that make up the website</li>
+</ul>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="../images/web/files_site1.png"></p>
@@ -569,31 +575,27 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 </div>
 </div>
 </section></section>
-<section id="workshop-website" class="title-slide slide level1 center">
-<h1>Workshop website</h1>
-
-</section>
-
 <section>
 <section id="navigation" class="title-slide slide level1 center">
 <h1>Navigation</h1>
 
 </section>
-<section id="top-vs-side-navigation" class="slide level2">
-<h2>Top vs Side Navigation</h2>
+<section id="top-vs.-side-navigation" class="slide level2">
+<h2>Top vs.&nbsp;Side Navigation</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Example</a></li><li><a href="#tabset-5-2">Top</a></li><li><a href="#tabset-5-3">Side</a></li><li><a href="#tabset-5-4">Hybrid</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Example</a></li><li><a href="#tabset-6-2">Top</a></li><li><a href="#tabset-6-3">Side</a></li><li><a href="#tabset-6-4">Hybrid</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1">
+<div id="tabset-6-1">
 <iframe width="1100" height="500" src="https://ohsu-octri-berd.github.io/Quarto_WNAR_2025/" title="workshop website">
 </iframe>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-6-2">
 <ul>
-<li>The navigation bar at the top of the page is customized with the <code>navbar</code> options in the YAML</li>
+<li>The navigation bar at the top of the page is customized with the <code>navbar</code> options in <code>_quarto.yml</code></li>
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
+<div style="font-size: 90%;">
 <ul>
 <li>Use <code>left:</code> and <code>right:</code> to specify which side of the top navigation bar you want the links to appear</li>
 <li>Other options:
@@ -603,9 +605,10 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <li>specifying when the navigation bar is collapsed to a “hamburger” menu</li>
 </ul></li>
 </ul>
+</div>
 </div><div class="column" style="width:50%;">
 <ul>
-<li><a href="https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml" target="_blank">YAML</a> excerpt:</li>
+<li><a href="https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml" target="_blank">_quarto.yml</a> excerpt:</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">website</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto WNAR 2025"</span></span>
@@ -627,51 +630,90 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <p>Learn more: <a href="https://quarto.org/docs/websites/website-navigation.html#top-navigation" target="_blank">Top Navigation</a></p>
 </div>
 </div>
-<div id="tabset-5-3">
-
+<div id="tabset-6-3">
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Options</a></li><li><a href="#tabset-5-2">Sections</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<ul>
+<li>The navigation bar at the left side of the page is customized with the <code>sidebar</code> options in <code>_quarto.yml</code></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 90%;">
+<ul>
+<li>Use <code>contents:</code> to specify which pages to link to</li>
+<li>Other options:
+<ul>
+<li><code>style:</code> options are <code>"docked"</code> and <code>"floating"</code></li>
+<li>adding a website <code>search</code> option on the sidebar (won’t appear if navigation bar already has one)</li>
+<li>how many navigation levels to display (<code>collapse-level:</code>)</li>
+</ul></li>
+</ul>
 </div>
-<div id="tabset-5-4">
-
+</div><div class="column" style="width:50%;">
+<ul>
+<li><a href="https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml" target="_blank">_quarto.yml</a> excerpt:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="at">    </span><span class="fu">style</span><span class="kw">:</span><span class="at"> </span><span class="st">"docked"</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="at">    </span><span class="fu">search</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="at">    </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> slides.qmd</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Workshop slides as "blog"</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Section for slides"</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="at">        </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> slides/part1_overview.qmd</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> 1 Overview</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> slides/part2_presentations.qmd</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> 2 Presentations</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> slides/part3_webpages.qmd</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> 3 Websites</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="footnote">
+<p>Learn more: <a href="https://quarto.org/docs/websites/website-navigation.html#side-navigation" target="_blank">Side Navigation</a></p>
+</div>
+</div>
+<div id="tabset-5-2">
+<ul>
+<li>Within the <code>contents:</code> list, sections of related pages can be grouped together with <code>section:</code></li>
+<li>For each <code>section:</code>, list the <code>contents:</code></li>
+<li>Exampl 1: See the <a href="https://github.com/OHSU-OCTRI-BERD/Quarto_WNAR_2025/blob/main/_quarto.yml" target="_blank">_quarto.yml</a> excerpt in the Options</li>
+<li>Example 2: Sections for weekly pages and homework-related pages from class <a href="https://niederhausen.github.io/BSTA_511_F24/" target="_blank">website</a>; <a href="https://github.com/niederhausen/BSTA_511_F24/blob/main/_quarto.yml" target="_blank">YAML</a></li>
+</ul>
+<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_511_F24/" title="workshop website">
+</iframe>
 </div>
 </div>
 </div>
-</section>
-<section id="next-page-navigation" class="slide level2">
-<h2>Next Page Navigation</h2>
+</div>
+<div id="tabset-6-4">
+<ul>
+<li>This option was not implemented in the workshop webpage</li>
+<li>Hybrid navigation allows for each top navigation bar item to have its own contents in the sidebar.</li>
+</ul>
+<p>Learn more: <a href="https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation" target="_blank">Hybrid Navigation</a></p>
+<iframe width="1100" height="500" src="https://quarto.org/docs/websites/website-navigation.html#hybrid-navigation" title="Hybrid navigation">
+</iframe>
+</div>
+</div>
+</div>
 </section>
 <section id="blog-style-webpage" class="slide level2">
 <h2>Blog-style webpage</h2>
 <div class="panel-tabset">
-<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Example</a></li><li><a href="#tabset-9-2">YAML</a></li><li><a href="#tabset-9-3"><code>fields</code> options</a></li></ul>
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Example</a></li><li><a href="#tabset-10-2">YAML</a></li><li><a href="#tabset-10-3"><code>fields</code> options</a></li></ul>
 <div class="tab-content">
-<div id="tabset-9-1">
+<div id="tabset-10-1">
 <p>The <strong><a href="../slides.html" target="_blank">Workshop Slides</a></strong> link on the left navigation bar of the workshop website is an example of a blog-style webpage</p>
 <iframe width="1100" height="500" src="https://ohsu-octri-berd.github.io/Quarto_WNAR_2025/slides.html" title="workshop slides">
 </iframe>
 </div>
-<div id="tabset-9-2">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">---</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Workshop Slides"</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="at">    </span><span class="fu">listing</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> slides</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="at">      </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="at">      </span><span class="fu">table-hover</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="at">      </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">]</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="at">      </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"title asc"</span></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="at">      </span><span class="fu">date-format</span><span class="kw">:</span><span class="at"> </span><span class="st">"short"</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="at">    </span><span class="fu">link-external-newwindow</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="tabset-9-3">
-<div class="panel-tabset">
-<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1"><code>[date, title]</code></a></li><li><a href="#tabset-8-2"><code>[description]</code></a></li><li><a href="#tabset-8-3"><code>[categories]</code></a></li></ul>
-<div class="tab-content">
-<div id="tabset-8-1">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Blog-style qmd YAML</strong></p>
+<div id="tabset-10-2">
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="pp">---</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Workshop Slides"</span></span>
 <span id="cb3-3"><a href="#cb3-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
@@ -685,105 +727,127 @@ Jessica Minnier, PhD, Meike Niederhausen, PhD
 <span id="cb3-11"><a href="#cb3-11"></a><span class="at">      </span><span class="fu">date-format</span><span class="kw">:</span><span class="at"> </span><span class="st">"short"</span></span>
 <span id="cb3-12"><a href="#cb3-12"></a><span class="at">    </span><span class="fu">link-external-newwindow</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb3-13"><a href="#cb3-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-10-3">
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1"><code>[date, title]</code></a></li><li><a href="#tabset-9-2"><code>[description]</code></a></li><li><a href="#tabset-9-3"><code>[categories]</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Blog-style qmd YAML</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Workshop Slides"</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="at">    </span><span class="fu">listing</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> slides</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="at">      </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="at">      </span><span class="fu">table-hover</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="at">      </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">]</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="at">      </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"title asc"</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="at">      </span><span class="fu">date-format</span><span class="kw">:</span><span class="at"> </span><span class="st">"short"</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="at">    </span><span class="fu">link-external-newwindow</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p><strong>Individual qmd YAML</strong></p>
 <ul>
 <li>The Example’s table of files included the <code>date</code> and <code>title</code> specified in each of the individual .qmd files’ YAMLs</li>
 <li>Excerpt of YAML:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1"></a><span class="pp">---</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Part 3: Creating Websites with Quarto"</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"6/15/25"</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="at">  revealjs</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
-<div id="tabset-8-2">
-<div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Example</a></li><li><a href="#tabset-6-2">YAMLs</a></li></ul>
-<div class="tab-content">
-<div id="tabset-6-1">
-<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_526_W25/weeks.html" title="fields description">
-</iframe>
-</div>
-<div id="tabset-6-2">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Blog-style qmd <a href="https://github.com/niederhausen/BSTA_526_W25/blob/main/weeks.qmd" target="_blank">YAML</a></strong></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1"></a><span class="pp">---</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Weekly Pages"</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="at">    </span><span class="fu">listing</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> weeks</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="at">      </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="at">      </span><span class="fu">table-hover</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="at">      </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">,</span><span class="at"> description</span><span class="kw">]</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="at">      </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date asc"</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="at">      </span><span class="fu">date-format</span><span class="kw">:</span><span class="at"> </span><span class="st">"short"</span></span>
-<span id="cb5-12"><a href="#cb5-12"></a><span class="at">    </span><span class="fu">link-external-newwindow</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb5-13"><a href="#cb5-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:50%;">
-<p><strong>Individual qmd YAML</strong></p>
-<ul>
-<li>Excerpt of <a href="https://github.com/niederhausen/BSTA_526_W25/blob/main/weeks/week_01.qmd" target="_blank">YAML</a> with <code>description:</code>:</li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="pp">---</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Week 1"</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"Intro to R/RStudio, Functions, Vectors, Data Types"</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"1/09/2025"</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="fu">date-modified</span><span class="kw">:</span><span class="at"> </span><span class="st">"today"</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb6-7"><a href="#cb6-7"></a><span class="at">  html</span></span>
-<span id="cb6-8"><a href="#cb6-8"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Part 3: Creating Websites with Quarto"</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"6/15/25"</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="at">  revealjs</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div id="tabset-8-3">
+<div id="tabset-9-2">
 <div class="panel-tabset">
 <ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Example</a></li><li><a href="#tabset-7-2">YAMLs</a></li></ul>
 <div class="tab-content">
 <div id="tabset-7-1">
-<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_511_F23/class_slides.html" title="fields categories">
+<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_526_W25/weeks.html" title="fields description">
 </iframe>
 </div>
 <div id="tabset-7-2">
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Blog-style qmd <a href="https://github.com/niederhausen/BSTA_511_F23/blob/main/class_slides.qmd" target="_blank">YAML</a></strong></p>
+<p><strong>Blog-style qmd <a href="https://github.com/niederhausen/BSTA_526_W25/blob/main/weeks.qmd" target="_blank">YAML</a></strong></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Weekly Pages"</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="at">    </span><span class="fu">listing</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> weeks</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="at">      </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a><span class="at">      </span><span class="fu">table-hover</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="at">      </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">,</span><span class="at"> description</span><span class="kw">]</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="at">      </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date asc"</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a><span class="at">      </span><span class="fu">date-format</span><span class="kw">:</span><span class="at"> </span><span class="st">"short"</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="at">    </span><span class="fu">link-external-newwindow</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p><strong>Individual qmd YAML</strong></p>
+<ul>
+<li>Excerpt of <a href="https://github.com/niederhausen/BSTA_526_W25/blob/main/weeks/week_01.qmd" target="_blank">YAML</a> with <code>description:</code>:</li>
+</ul>
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="pp">---</span></span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Class Slides"</span></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb7-5"><a href="#cb7-5"></a><span class="at">    </span><span class="fu">listing</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb7-6"><a href="#cb7-6"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> slides</span></span>
-<span id="cb7-7"><a href="#cb7-7"></a><span class="at">      </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
-<span id="cb7-8"><a href="#cb7-8"></a><span class="at">      </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">,</span><span class="at"> categories</span><span class="kw">]</span></span>
-<span id="cb7-9"><a href="#cb7-9"></a><span class="at">      </span><span class="fu">table-hover</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb7-10"><a href="#cb7-10"></a><span class="at">      </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date asc"</span></span>
-<span id="cb7-11"><a href="#cb7-11"></a><span class="at">      </span><span class="fu">date-format</span><span class="kw">:</span><span class="at"> </span><span class="st">"short"</span></span>
-<span id="cb7-12"><a href="#cb7-12"></a><span class="at">      </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb7-13"><a href="#cb7-13"></a><span class="at">    </span><span class="fu">link-external-newwindow</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb7-14"><a href="#cb7-14"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Week 1"</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"Intro to R/RStudio, Functions, Vectors, Data Types"</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"1/09/2025"</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="fu">date-modified</span><span class="kw">:</span><span class="at"> </span><span class="st">"today"</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="at">  html</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-9-3">
+<div class="panel-tabset">
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Example</a></li><li><a href="#tabset-8-2">YAMLs</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1">
+<iframe width="1100" height="500" src="https://niederhausen.github.io/BSTA_511_F23/class_slides.html" title="fields categories">
+</iframe>
+</div>
+<div id="tabset-8-2">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Blog-style qmd <a href="https://github.com/niederhausen/BSTA_511_F23/blob/main/class_slides.qmd" target="_blank">YAML</a></strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Class Slides"</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="at">    </span><span class="fu">listing</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> slides</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="at">      </span><span class="fu">type</span><span class="kw">:</span><span class="at"> table</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="at">      </span><span class="fu">fields</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">date</span><span class="kw">,</span><span class="at"> title</span><span class="kw">,</span><span class="at"> categories</span><span class="kw">]</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="at">      </span><span class="fu">table-hover</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a><span class="at">      </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date asc"</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a><span class="at">      </span><span class="fu">date-format</span><span class="kw">:</span><span class="at"> </span><span class="st">"short"</span></span>
+<span id="cb8-12"><a href="#cb8-12"></a><span class="at">      </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-13"><a href="#cb8-13"></a><span class="at">    </span><span class="fu">link-external-newwindow</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-14"><a href="#cb8-14"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
 <p><strong>Individual qmd YAML</strong></p>
 <ul>
 <li>Excerpt of <a href="https://github.com/niederhausen/BSTA_511_F23/blob/main/slides/Day01_bsta511.qmd" target="_blank">YAML</a> with <code>categories:</code>:</li>
 </ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="pp">---</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Day 1: Intro to R &amp; Rstudio"</span></span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"BSTA 511/611 Fall 2023, OHSU"</span></span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Meike Niederhausen, PhD"</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"09/27/2023"</span></span>
-<span id="cb8-6"><a href="#cb8-6"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"Week 1"</span><span class="kw">]</span></span>
-<span id="cb8-7"><a href="#cb8-7"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb8-8"><a href="#cb8-8"></a><span class="at">  revealjs</span></span>
-<span id="cb8-9"><a href="#cb8-9"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1"></a><span class="pp">---</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Day 1: Intro to R &amp; Rstudio"</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"BSTA 511/611 Fall 2023, OHSU"</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Meike Niederhausen, PhD"</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"09/27/2023"</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"Week 1"</span><span class="kw">]</span></span>
+<span id="cb9-7"><a href="#cb9-7"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb9-8"><a href="#cb9-8"></a><span class="at">  revealjs</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>

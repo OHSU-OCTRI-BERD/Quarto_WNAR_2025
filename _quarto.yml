@@ -20,14 +20,20 @@ website:
   sidebar:
     style: "docked"
     search: true
-    collapse-level: 4
+    collapse-level: 2
     contents:
       - href: index.qmd
         text: Home
       - href: slides.qmd
-        text: Workshop slides
-      # - href: webpages.qmd
-        # text: Webpages        
+        text: Workshop slides as "blog"
+      - section: "Section for slides"
+        contents: 
+          - href: slides/part1_overview.qmd
+            text: 1 Overview
+          - href: slides/part2_presentations.qmd
+            text: 2 Presentations
+          - href: slides/part3_webpages.qmd
+            text: 3 Websites
 
 format:
   html:

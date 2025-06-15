@@ -39,7 +39,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "This website and slides were created for the Creating Professional Presentations and Websites using R/Quarto workshop presented at the 2025 WNAR/IMS Annual Meeting on June 15, 2025.\nThe website structure was set up to be used as an example for demonstrating options when creating websites using Quarto in RStudio. See Part 3 slides for more information."
   },
   {
     "objectID": "part2_presentations.html#outline",
@@ -956,7 +956,7 @@
     "href": "slides/part3_webpages.html#template-default-website",
     "title": "Part 3: Creating Websites with Quarto",
     "section": "Template (default) website",
-    "text": "Template (default) website\n\nBefore renderingAfter rendering\n\n\n\nFiles_quarto.ymlindex.qmdabout.qmdstyles.css\n\n\n\n\n\n\n\n\n\nThis is the config file that specifies the general structure of the website\n\n\n\n\n\n\n\nThis is the home page of the website\n\n\n\n\n\n\n\nThis is an extra (optional) webpage where information about the website can be provided\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can render the website by clicking on the Render button, similar to rendering a quarto file.\n\n\nFiles_site folder 🕸️"
+    "text": "Template (default) website\n\nBefore renderingAfter rendering\n\n\n\nFiles_quarto.ymlindex.qmdabout.qmdstyles.css\n\n\n\n\n\n\n\n\n\nThis is the config file that specifies the general structure of the website\n\n\n\n\n\n\n\nThis is the home page of the website\n\n\n\n\n\n\n\nThis is an extra (optional) webpage where information about the website can be provided\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYou can render the website by clicking on the Render button, similar to rendering a quarto file.\n\n\nFiles_site folder 🕸️\n\n\n\n\n\n\n\n\n\n\n\nThe _site folder is created when rendering the website\nIt contains the html files that make up the website"
   },
   {
     "objectID": "slides/part3_webpages.html#top-vs-side-navigation",
@@ -1377,5 +1377,19 @@
     "title": "Part 3: Creating Websites with Quarto",
     "section": "",
     "text": "Download from Github"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#top-vs.-side-navigation",
+    "href": "slides/part3_webpages.html#top-vs.-side-navigation",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "Top vs. Side Navigation",
+    "text": "Top vs. Side Navigation\n\nExampleTopSideHybrid\n\n\n\n\n\n\n\nThe navigation bar at the top of the page is customized with the navbar options in _quarto.yml\n\n\n\n\n\nUse left: and right: to specify which side of the top navigation bar you want the links to appear\nOther options:\n\nbackground and foreground colors,\nadding a website search option and logo\nspecifying when the navigation bar is collapsed to a “hamburger” menu\n\n\n\n\n\n_quarto.yml excerpt:\n\nwebsite:\n  title: \"Quarto WNAR 2025\"\n  navbar:\n    background: primary\n    foreground: \"#fff\"\n    logo: \"/images/web/cat_laptop.gif\"\n    search: true\n    collapse-below: sm\n    left:\n      - href: index.qmd\n        text: Home\n    right:\n      - href: about.qmd\n        text: About\n\n\n\nLearn more: Top Navigation\n\n\n\n\nOptionsSections\n\n\n\nThe navigation bar at the left side of the page is customized with the sidebar options in _quarto.yml\n\n\n\n\n\nUse contents: to specify which pages to link to\nOther options:\n\nstyle: options are \"docked\" and \"floating\"\nadding a website search option on the sidebar (won’t appear if navigation bar already has one)\nhow many navigation levels to display (collapse-level:)\n\n\n\n\n\n_quarto.yml excerpt:\n\n  sidebar:\n    style: \"docked\"\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: slides.qmd\n        text: Workshop slides as \"blog\"\n      - section: \"Section for slides\"\n        contents: \n          - href: slides/part1_overview.qmd\n            text: 1 Overview\n          - href: slides/part2_presentations.qmd\n            text: 2 Presentations\n          - href: slides/part3_webpages.qmd\n            text: 3 Websites\n\n\n\nLearn more: Side Navigation\n\n\n\n\nWithin the contents: list, sections of related pages can be grouped together with section:\nFor each section:, list the contents:\nExampl 1: See the _quarto.yml excerpt in the Options\nExample 2: Sections for weekly pages and homework-related pages from class website; YAML\n\n\n\n\n\n\n\n\n\nThis option was not implemented in the workshop webpage\nHybrid navigation allows for each top navigation bar item to have its own contents in the sidebar.\n\nLearn more: Hybrid Navigation"
+  },
+  {
+    "objectID": "about.html#workshop-presenters",
+    "href": "about.html#workshop-presenters",
+    "title": "About",
+    "section": "Workshop Presenters",
+    "text": "Workshop Presenters\n\n\n\n\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu"
   }
 ]
