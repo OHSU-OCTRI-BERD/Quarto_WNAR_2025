@@ -3,20 +3,20 @@ title: "About"
 ---
 
 
-This website and slides were created for the  __[Creating Professional Presentations and Websites using R/Quarto](https://whova.com/embedded/session/hRqar%40ceM1oCRxx8SaTASu%40-ruGH1z6nVU55djYhzR8%3D/4627683/?widget=primary)__ workshop presented at the [2025 WNAR/IMS Annual Meeting](https://wnarofibs.wildapricot.org/wnar2025){target="_blank"} on June 15, 2025.
+This website and slides were created for the  __[Creating Professional Presentations and Websites using R/Quarto](https://whova.com/embedded/session/hRqar%40ceM1oCRxx8SaTASu%40-ruGH1z6nVU55djYhzR8%3D/4627683/?widget=primary){target="_blank"}__ workshop presented at the [2025 WNAR/IMS Annual Meeting](https://wnarofibs.wildapricot.org/wnar2025){target="_blank"} on June 15, 2025.
 
 The website structure was set up to be used as an example for demonstrating options when creating websites using Quarto in RStudio. See [Part 3 slides](slides/part3_webpages.qmd) for more information.
 
-## Workshop Presenters
+## Workshop Abstract
 
-<h5></h5>
+This course aims to teach statisticians and data scientists across all sectors of academia and industry to create professional style presentations and websites in R and RStudio using the recently developed Quarto package. This package is an extension of RMarkdown and most often used for literate programming reports that incorporate code from R and other programming languages with text, graphs, and results. However, this powerful package can create much more than just an analysis report. This workshop will teach R users who may be novices in Quarto about the other useful applications of Quarto, specifically how to build websites for their professional profiles as well as courses, and how to make presentations for talks and teaching. Quarto presentations can include code and results within slides as well as harness useful presentation tools such as annotations, outlines, notes, etc. Presentations can be formatted as html (Reveal JS), PowerPoint, or LaTeX Beamer slides. Participants will need to bring laptops with R and RStudio installed, and will receive instructions prior to the course to install required R packages. Example website and presentations can be found at https://niederhausen.github.io/BSTA_511_F24/
+
+## Instructors
+
 
 ::: columns
-::: {.column width="10%"}
 
-  <img src="/images/web/ohsu_logo.jpg" width="60px"/>
-:::
-::: {.column width="45%"}
+::: {.column width="50%"}
   <img class="circle" src="https://github.com/jminnier.png" height="200px"/> 
   
   Jessica Minnier
@@ -25,12 +25,12 @@ The website structure was set up to be used as an example for demonstrating opti
 
 
 
-  [{{< fa brands github >}} @jminnier](https://github.com/jminnier)  
-  [{{< fa link >}} jessicaminnier.com](https:/jessicaminnier.com)  
+  [{{< fa brands github >}} @jminnier](https://github.com/jminnier){target="_blank"}  
+  [{{< fa link >}} jessicaminnier.com](https:/jessicaminnier.com){target="_blank"}  
   [{{< fa paper-plane >}} `minnier [at] ohsu [dot] edu`](mailto:minnier@ohsu.edu)
 ]
 :::
-::: {.column width="45%"}
+::: {.column width="50%"}
 
 
   <img class="circle" src="/images/web/Niederhausen_Meike_bw.jpg" height="200px"/> 
@@ -40,11 +40,31 @@ The website structure was set up to be used as an example for demonstrating opti
   <small>Assistant Professor of Biostatistics</small>
   
 
- [{{< fa brands linkedin >}} @meike-niederhausen](https://www.linkedin.com/in/meike-niederhausen/)<br>
-  [{{< fa brands github >}} @niederhausen](https://github.com/niederhausen) <br> 
-  [{{< fa link >}} ohsu-psu-sph.org](https://ohsu-psu-sph.org/faculty-directory/name/meike-niederhausen/)<br>
+ [{{< fa brands linkedin >}} @meike-niederhausen](https://www.linkedin.com/in/meike-niederhausen/){target="_blank"}<br>
+  [{{< fa brands github >}} @niederhausen](https://github.com/niederhausen){target="_blank"} <br> 
+  [{{< fa link >}} ohsu-psu-sph.org](https://ohsu-psu-sph.org/faculty-directory/name/meike-niederhausen/){target="_blank"}<br>
   [{{< fa paper-plane >}} `niederha [at] ohsu [dot] edu`](mailto:niederh@ohsu.edu)
 
 
 :::
 :::
+
+::: columns
+
+::: {.column width="10%"}
+
+<img src="/images/web/ohsu_logo.jpg" width="60px"/>
+:::
+
+::: {.column width="90%"}
+
+[OHSU-PSU School of Public Health](https://ohsu-psu-sph.org/){target="_blank"}  
+[Oregon Clinical and Translational Research Institute (OCTRI) BERD](https://www.ohsu.edu/octri/biostatistics-epidemiology-and-research-design){target="_blank"} 
+
+:::
+:::
+
+
+## Acknowledgements
+
+Thank you to [Andrew Bray](https://andrewpbray.github.io/) for presenting the [From R Markdown to Quarto](https://andrew.quarto.pub/oregon-asa/) ASA Travelling Workshop to the Oregon Chapter of the ASA in June 2023. This workshop was a great starting point in making the switch from RMarkdown to Quarto and also creating Quarto webpages. 

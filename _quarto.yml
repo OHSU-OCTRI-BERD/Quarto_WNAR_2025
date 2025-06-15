@@ -6,7 +6,7 @@ website:
   title: "Quarto WNAR 2025"
   navbar:
     background: primary
-    foreground: "#fff"
+    foreground: "#ffffff"
     logo: "/images/web/cat_laptop.gif"
     search: true
     collapse-below: sm
@@ -37,11 +37,11 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+      - cosmo_modified.scss
     css: styles.css
     toc: true
-    # title-prefix: ""
-    # pagetitle: "{{< meta title >}}"
 
 
 

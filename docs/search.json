@@ -1376,7 +1376,7 @@
     "href": "slides/part3_webpages.html",
     "title": "Part 3: Creating Websites with Quarto",
     "section": "",
-    "text": "Download from Github"
+    "text": "Workshop websiteBSTA 511 Fall 2024BSTA 526 Winter 2025\n\n\nhttps://ohsu-octri-berd.github.io/Quarto_WNAR_2025/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_511_F24/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_526_W25/"
   },
   {
     "objectID": "slides/part3_webpages.html#top-vs.-side-navigation",
@@ -1391,5 +1391,40 @@
     "title": "About",
     "section": "Workshop Presenters",
     "text": "Workshop Presenters\n\n\n\n\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu"
+  },
+  {
+    "objectID": "about.html#workshop-abstract",
+    "href": "about.html#workshop-abstract",
+    "title": "About",
+    "section": "Workshop Abstract",
+    "text": "Workshop Abstract\nThis course aims to teach statisticians and data scientists across all sectors of academia and industry to create professional style presentations and websites in R and RStudio using the recently developed Quarto package. This package is an extension of RMarkdown and most often used for literate programming reports that incorporate code from R and other programming languages with text, graphs, and results. However, this powerful package can create much more than just an analysis report. This workshop will teach R users who may be novices in Quarto about the other useful applications of Quarto, specifically how to build websites for their professional profiles as well as courses, and how to make presentations for talks and teaching. Quarto presentations can include code and results within slides as well as harness useful presentation tools such as annotations, outlines, notes, etc. Presentations can be formatted as html (Reveal JS), PowerPoint, or LaTeX Beamer slides. Participants will need to bring laptops with R and RStudio installed, and will receive instructions prior to the course to install required R packages. Example website and presentations can be found at https://niederhausen.github.io/BSTA_511_F24/"
+  },
+  {
+    "objectID": "about.html#presenters",
+    "href": "about.html#presenters",
+    "title": "About",
+    "section": "Presenters",
+    "text": "Presenters\n\n\n\n\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu"
+  },
+  {
+    "objectID": "about.html#instructors",
+    "href": "about.html#instructors",
+    "title": "About",
+    "section": "Instructors",
+    "text": "Instructors\n\n\n\nJessica Minnier\nAssociate Professor of Biostatistics\n @jminnier\n jessicaminnier.com\n minnier [at] ohsu [dot] edu ]\n\n\nMeike Niederhausen\nAssistant Professor of Biostatistics\n @meike-niederhausen  @niederhausen   ohsu-psu-sph.org  niederha [at] ohsu [dot] edu\n\n\n\n\n\n\nOHSU-PSU School of Public Health\nOregon Clinical and Translational Research Institute (OCTRI) BERD"
+  },
+  {
+    "objectID": "slides/part3_webpages.html#sample-websites",
+    "href": "slides/part3_webpages.html#sample-websites",
+    "title": "Part 3: Creating Websites with Quarto",
+    "section": "",
+    "text": "Workshop websiteBSTA 511 Fall 2024BSTA 526 Winter 2025\n\n\nhttps://ohsu-octri-berd.github.io/Quarto_WNAR_2025/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_511_F24/\n\n\n\n\nhttps://niederhausen.github.io/BSTA_526_W25/"
+  },
+  {
+    "objectID": "about.html#acknowledgements",
+    "href": "about.html#acknowledgements",
+    "title": "About",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThank you to Andrew Bray for presenting the From R Markdown to Quarto ASA Travelling Workshop to the Oregon Chapter of the ASA in June 2023. This workshop was a great starting point in making the switch from RMarkdown to Quarto and also creating Quarto webpages."
   }
 ]
